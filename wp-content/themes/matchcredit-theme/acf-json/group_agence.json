@@ -1,0 +1,62 @@
+{
+    "key": "group_agence",
+    "title": "Agence — détails",
+    "fields": [
+        {
+            "key": "field_agence_courtier",
+            "label": "Courtier",
+            "name": "courtier",
+            "type": "text",
+            "default_value": "Éric Sabetay-Sabin"
+        },
+        {
+            "key": "field_agence_adresse",
+            "label": "Adresse",
+            "name": "adresse",
+            "type": "text",
+            "default_value": "71 boulevard Gustave Flaubert"
+        },
+        {
+            "key": "field_agence_cp_ville",
+            "label": "Code postal et ville",
+            "name": "code_postal_ville",
+            "type": "text",
+            "default_value": "63000 Clermont-Ferrand"
+        },
+        {
+            "key": "field_agence_telephone",
+            "label": "Téléphone",
+            "name": "telephone",
+            "type": "text",
+            "default_value": "04 73 40 40 00"
+        },
+        {
+            "key": "field_agence_horaires",
+            "label": "Horaires",
+            "name": "horaires",
+            "type": "text",
+            "default_value": "Lun–Ven 9h–12h / 14h–19h · Samedi sur rendez-vous"
+        },
+        {
+            "key": "field_agence_photo",
+            "label": "Photo agence",
+            "name": "photo",
+            "type": "image",
+            "return_format": "url"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "agence"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0
+}

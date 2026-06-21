@@ -1,0 +1,45 @@
+{
+    "key": "group_avis",
+    "title": "Avis — détails",
+    "fields": [
+        {
+            "key": "field_avis_nom",
+            "label": "Nom",
+            "name": "nom",
+            "type": "text",
+            "instructions": "Le titre de l'article sert aussi de nom affiché si ce champ est laissé vide.",
+            "default_value": ""
+        },
+        {
+            "key": "field_avis_texte",
+            "label": "Texte de l'avis",
+            "name": "texte",
+            "type": "textarea",
+            "rows": 4,
+            "default_value": ""
+        },
+        {
+            "key": "field_avis_note",
+            "label": "Note (sur 5)",
+            "name": "note",
+            "type": "number",
+            "min": 1,
+            "max": 5,
+            "default_value": 5
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "avis"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0
+}
