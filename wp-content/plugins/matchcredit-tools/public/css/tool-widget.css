@@ -1,0 +1,173 @@
+/*
+ * Valeurs mirroirs des tokens et du look "card" du thème (.compare-controls /
+ * .cc-label / .bar-label dans src/scss/home/_simulateur.scss). Le plugin
+ * reste autonome (pas d'import cross-boundary du SCSS du thème) ; si la
+ * charte évolue, resynchroniser ces valeurs à la main.
+ *
+ * Limite assumée : tailles en rem + breakpoint fixe, pas le système fluide
+ * to-dvw() maison du thème (qui nécessiterait de dupliquer le build Sass
+ * dans le plugin) — acceptable pour un widget encapsulé dans une carte.
+ */
+.mc-tool {
+	--mc-purple-deep: #5c4a8a;
+	--mc-purple-ink: #1a1428;
+	--mc-text: #1f1b2e;
+	--mc-text-mid: #6b7280;
+	--mc-rule: #d1c9dd;
+	--mc-cream: #faf9f7;
+	--mc-yellow: #f5a623;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1.75rem;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 2rem;
+	border: 1px solid var(--mc-rule);
+	border-radius: 4px;
+	background: #fff;
+	font-family: "Inter", system-ui, sans-serif;
+	color: var(--mc-text);
+}
+
+@media (max-width: 600px) {
+	.mc-tool {
+		padding: 1.25rem;
+		gap: 1.25rem;
+	}
+}
+
+.mc-tool__fields {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.mc-tool__field {
+	display: flex;
+	flex-direction: column;
+	gap: 0.625rem;
+}
+
+.mc-tool__label {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	font-size: 0.9375rem;
+	font-weight: 500;
+	color: var(--mc-text);
+}
+
+.mc-tool__slider {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 4px;
+	background: var(--mc-rule);
+	border-radius: 0;
+	outline: none;
+}
+
+.mc-tool__slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 22px;
+	height: 22px;
+	background: var(--mc-purple-ink);
+	border-radius: 50%;
+	cursor: pointer;
+	border: 4px solid var(--mc-cream);
+	box-shadow: 0 0 0 1px var(--mc-purple-ink);
+}
+
+.mc-tool__slider::-moz-range-thumb {
+	width: 22px;
+	height: 22px;
+	background: var(--mc-purple-ink);
+	border-radius: 50%;
+	cursor: pointer;
+	border: 4px solid var(--mc-cream);
+}
+
+.mc-tool__slider-value {
+	font-weight: 700;
+	font-size: 1.375rem;
+	color: var(--mc-purple-ink);
+	font-variant-numeric: tabular-nums;
+}
+
+.mc-tool__number,
+.mc-tool__select {
+	height: 2.5rem;
+	padding: 0 0.75rem;
+	border: 1px solid var(--mc-rule);
+	border-radius: 4px;
+	font-family: inherit;
+	background: #fff;
+}
+
+.mc-tool__results {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid var(--mc-rule);
+}
+
+.mc-tool__result {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: 0.5rem;
+}
+
+@media (max-width: 480px) {
+	.mc-tool__result {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.25rem;
+	}
+}
+
+.mc-tool__result-label {
+	color: var(--mc-text-mid);
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+.mc-tool__result-value {
+	font-weight: 700;
+	font-size: 1.25rem;
+	font-variant-numeric: tabular-nums;
+	letter-spacing: -0.01em;
+}
+
+.mc-tool__result--highlight .mc-tool__result-value {
+	color: var(--mc-purple-ink);
+	font-size: 1.75rem;
+}
+
+.mc-tool__error {
+	color: #b42318;
+	font-size: 0.875rem;
+}
+
+.mc-tool__cta {
+	align-self: flex-start;
+	padding: 0.75rem 1.5rem;
+	border-radius: 999px;
+	background: var(--mc-purple-ink);
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 0.9375rem;
+}
+
+.mc-tool__submit {
+	padding: 0.75rem 1.5rem;
+	border: none;
+	border-radius: 999px;
+	background: var(--mc-yellow);
+	font-weight: 600;
+	cursor: pointer;
+}
