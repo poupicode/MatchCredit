@@ -1,0 +1,57 @@
+{
+    "key": "group_page_calculette",
+    "title": "Page calculette",
+    "fields": [
+        {
+            "key": "field_pc_eyebrow",
+            "label": "Étiquette (eyebrow)",
+            "name": "calculette_eyebrow",
+            "type": "text",
+            "default_value": "Calculette"
+        },
+        {
+            "key": "field_pc_titre",
+            "label": "Titre",
+            "name": "calculette_titre",
+            "type": "wysiwyg",
+            "default_value": ""
+        },
+        {
+            "key": "field_pc_texte_intro",
+            "label": "Texte d'introduction",
+            "name": "calculette_texte_intro",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "new_lines": ""
+        },
+        {
+            "key": "field_pc_outil",
+            "label": "Calculette à afficher",
+            "name": "calculette_outil",
+            "type": "post_object",
+            "instructions": "Choisir la calculette/simulation configurée dans Calculettes & Simulations.",
+            "post_type": [
+                "mc_tool"
+            ],
+            "return_format": "object",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-calculette.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782004439
+}

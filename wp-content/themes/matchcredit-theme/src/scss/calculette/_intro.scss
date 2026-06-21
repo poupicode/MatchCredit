@@ -1,0 +1,33 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.calculette-hero {
+	background: $cream;
+	// Padding vertical uniquement : .container gère déjà le gutter horizontal
+	// (to-dvw(32)/to-dvw(20, 390)) — un padding horizontal ici le doublerait.
+	padding: mixins.to-dvw(120) 0;
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(56, 390) 0;
+	}
+}
+
+.section-intro--calculette {
+	margin-bottom: mixins.to-dvw(64);
+
+	p {
+		max-width: mixins.to-dvw(580);
+	}
+
+	@media (max-width: 600px) {
+		margin-bottom: mixins.to-dvw(32, 390);
+
+		p {
+			max-width: none;
+		}
+	}
+}
+
+.calculette-widget {
+	width: 100%;
+}
