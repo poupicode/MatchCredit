@@ -1,0 +1,143 @@
+{
+    "key": "group_options_bas_de_page",
+    "title": "Pied de page",
+    "fields": [
+        {
+            "key": "field_bas_tab_texte",
+            "label": "Texte & citation",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_bas_tagline",
+            "label": "Accroche (sous le logo)",
+            "name": "bas_tagline",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Courtier en prêts immobiliers depuis 2008. Auvergne-Rhône-Alpes. ORIAS n° 23 008 432."
+        },
+        {
+            "key": "field_bas_citation",
+            "label": "Citation",
+            "name": "bas_citation",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "« Dis-moi ce que tu veux,\nje te dirai ce que tu peux. »"
+        },
+        {
+            "key": "field_bas_tab_agence",
+            "label": "Agence de proximité",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_bas_agence_nom",
+            "label": "Nom de l'agence",
+            "name": "bas_agence_nom",
+            "type": "text",
+            "default_value": "Éric Sabetay-Sabin"
+        },
+        {
+            "key": "field_bas_agence_adresse",
+            "label": "Adresse",
+            "name": "bas_agence_adresse",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "71 boulevard Gustave Flaubert\n63000 Clermont-Ferrand"
+        },
+        {
+            "key": "field_bas_agence_telephone",
+            "label": "Téléphone",
+            "name": "bas_agence_telephone",
+            "type": "text",
+            "default_value": "04 73 40 40 00"
+        },
+        {
+            "key": "field_bas_lien_rdv",
+            "label": "Lien \"Prendre rendez-vous\"",
+            "name": "bas_lien_rdv",
+            "type": "link",
+            "return_format": "array",
+            "default_value": {
+                "title": "Prendre rendez-vous",
+                "url": "#rdv",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_bas_tab_legal",
+            "label": "Mentions légales",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_bas_copyright",
+            "label": "Copyright (sans l'année)",
+            "name": "bas_copyright",
+            "type": "text",
+            "default_value": "MatchCrédit SARL · Clermont-Ferrand",
+            "instructions": "L'année en cours est ajoutée automatiquement devant ce texte."
+        },
+        {
+            "key": "field_bas_lien_legal_1",
+            "label": "Lien légal 1",
+            "name": "bas_lien_legal_1",
+            "type": "link",
+            "return_format": "array",
+            "default_value": {
+                "title": "MatchCrédit & vos données",
+                "url": "#",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_bas_lien_legal_2",
+            "label": "Lien légal 2",
+            "name": "bas_lien_legal_2",
+            "type": "link",
+            "return_format": "array",
+            "default_value": {
+                "title": "Mentions légales",
+                "url": "#",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_bas_lien_legal_3",
+            "label": "Lien légal 3",
+            "name": "bas_lien_legal_3",
+            "type": "link",
+            "return_format": "array",
+            "default_value": {
+                "title": "Poster une réclamation",
+                "url": "#",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_bas_mention_orias",
+            "label": "Texte légal ORIAS (bandeau bas de page)",
+            "name": "bas_mention_orias",
+            "type": "textarea",
+            "rows": 6,
+            "default_value": "MatchCrédit, SARL au capital de 10 000 €, immatriculée au RCS de Clermont-Ferrand. Intermédiaire en opérations de banque et services de paiement (IOBSP), inscrite à l'ORIAS sous le n° 23 008 432 (www.orias.fr), en qualité de Mandataire d'Intermédiaire en Opérations de Banque et en Services de Paiement (MIOBSP). Soumise au contrôle de l'Autorité de Contrôle Prudentiel et de Résolution (ACPR), 4 Place de Budapest, CS 92459, 75436 PARIS CEDEX 09. Aucun versement, de quelque nature que ce soit, ne peut être exigé d'un particulier, avant l'obtention d'un ou plusieurs prêts d'argent. Pour tout crédit, un emprunteur dispose d'un délai de rétractation. Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-reglages-footer.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0
+}

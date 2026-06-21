@@ -1,0 +1,48 @@
+{
+    "key": "group_options_haut_de_page",
+    "title": "Bandeau — haut de page",
+    "fields": [
+        {
+            "key": "field_haut_texte_annonce",
+            "label": "Texte d'annonce",
+            "name": "haut_texte_annonce",
+            "type": "text",
+            "default_value": "Courtier en prêts immobiliers · depuis 2008"
+        },
+        {
+            "key": "field_haut_ville",
+            "label": "Ville",
+            "name": "haut_ville",
+            "type": "text",
+            "default_value": "Clermont-Ferrand"
+        },
+        {
+            "key": "field_haut_horaires",
+            "label": "Horaires",
+            "name": "haut_horaires",
+            "type": "text",
+            "default_value": "Lun–Ven 9h–12h / 14h–19h · Samedi sur rendez-vous"
+        },
+        {
+            "key": "field_haut_telephone",
+            "label": "Téléphone",
+            "name": "haut_telephone",
+            "type": "text",
+            "default_value": "04 73 40 40 00"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-reglages-header.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0
+}

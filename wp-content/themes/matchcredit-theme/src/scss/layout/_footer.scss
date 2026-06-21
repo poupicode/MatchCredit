@@ -1,0 +1,143 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.footer {
+  background: $purple-ink;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 100px 0 32px;
+
+  h4 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 600;
+    margin: 0 0 20px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  a {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.15s;
+    text-decoration: none;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+  .logo {
+    color: white;
+  }
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 64px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+.footer-tag {
+  margin-top: 24px;
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 320px;
+}
+
+.footer-quote {
+  font-family: $font-serif;
+  font-style: italic;
+  color: $yellow;
+  font-size: 19px;
+  line-height: 1.4;
+  padding: 16px 0 16px 18px;
+  border-left: 2px solid $yellow;
+  margin-top: 24px;
+}
+
+.footer-agence-card {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 1.55;
+
+  strong {
+    display: block;
+    color: white;
+    font-family: $font-sans;
+    margin-bottom: 6px;
+  }
+}
+
+.footer-huge {
+  font-family: $font-sans;
+  font-size: mixins.to-dvw(220);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.05);
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  margin: 64px 0 0;
+  text-align: center;
+  user-select: none;
+
+  @media (max-width: 600px) {
+    font-size: mixins.to-dvw(60, 390);
+  }
+}
+
+.footer-bottom {
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.legal-mention {
+  background: white;
+  padding: 32px 0 36px;
+  border-top: 1px solid $rule;
+
+  .container {
+    max-width: 1100px;
+  }
+
+  p {
+    font-size: 11.5px;
+    line-height: 1.6;
+    color: $text-mid;
+    letter-spacing: 0.005em;
+
+    strong {
+      color: $purple-ink;
+    }
+  }
+}
