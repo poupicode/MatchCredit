@@ -1,0 +1,93 @@
+@use "variables" as *;
+@use "mixins";
+
+// Carte "avant / après" (ex. exemple concret du regroupement de crédits) —
+// reprend les gros chiffres italiques Fraunces déjà utilisés pour .chiffres-val.
+.example-card {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	gap: mixins.to-dvw(32);
+	align-items: center;
+	background: $white;
+	border: 1px solid $rule;
+	border-radius: 4px;
+	padding: mixins.to-dvw(40);
+
+	@media (max-width: 600px) {
+		grid-template-columns: 1fr;
+		gap: mixins.to-dvw(20, 390);
+		padding: mixins.to-dvw(28, 390);
+	}
+}
+
+.example-before {
+	display: grid;
+	gap: mixins.to-dvw(12);
+
+	.example-line {
+		display: flex;
+		justify-content: space-between;
+		gap: mixins.to-dvw(16);
+		font-size: mixins.to-dvw(14);
+		color: $text-mid;
+		padding-bottom: mixins.to-dvw(10);
+		border-bottom: 1px solid $border;
+
+		strong {
+			color: $purple-ink;
+			font-family: $font-sans;
+			font-weight: 700;
+		}
+	}
+
+	@media (max-width: 600px) {
+		gap: mixins.to-dvw(8, 390);
+
+		.example-line {
+			font-size: mixins.to-dvw(13, 390);
+			padding-bottom: mixins.to-dvw(8, 390);
+		}
+	}
+}
+
+.example-arrow {
+	width: mixins.to-dvw(40);
+	height: mixins.to-dvw(40);
+	border-radius: 50%;
+	background: $purple-bg;
+	color: $purple-deep;
+	display: grid;
+	place-items: center;
+
+	@media (max-width: 600px) {
+		transform: rotate(90deg);
+		width: mixins.to-dvw(32, 390);
+		height: mixins.to-dvw(32, 390);
+		margin: 0 auto;
+	}
+}
+
+.example-after {
+	.lbl {
+		font-family: $font-serif;
+		font-style: italic;
+		font-size: mixins.to-dvw(14);
+		color: $text-mid;
+		margin-bottom: mixins.to-dvw(8);
+	}
+
+	.val {
+		font-family: $font-sans;
+		font-size: mixins.to-dvw(48);
+		font-weight: 700;
+		color: $purple-ink;
+		letter-spacing: -0.03em;
+		line-height: 1;
+	}
+
+	@media (max-width: 600px) {
+		.val {
+			font-size: mixins.to-dvw(36, 390);
+		}
+	}
+}

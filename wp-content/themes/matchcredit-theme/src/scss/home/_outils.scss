@@ -19,6 +19,14 @@
 	grid-template-columns: repeat(3, 1fr);
 	gap: mixins.to-dvw(24);
 
+	&--4 {
+		grid-template-columns: repeat(4, 1fr);
+
+		@media (max-width: 900px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
 	@media (max-width: 600px) {
 		grid-template-columns: 1fr;
 		gap: mixins.to-dvw(20, 390);
@@ -69,6 +77,22 @@
 			font-size: mixins.to-dvw(14, 390);
 			margin-bottom: mixins.to-dvw(16, 390);
 		}
+	}
+}
+
+.card-num {
+	font-family: $font-serif;
+	font-style: italic;
+	font-weight: 300;
+	font-size: mixins.to-dvw(48);
+	line-height: 1;
+	color: $yellow-deep;
+	letter-spacing: -0.03em;
+	margin-bottom: mixins.to-dvw(12);
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(36, 390);
+		margin-bottom: mixins.to-dvw(8, 390);
 	}
 }
 

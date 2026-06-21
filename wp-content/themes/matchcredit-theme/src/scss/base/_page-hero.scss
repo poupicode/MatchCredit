@@ -1,0 +1,40 @@
+@use "variables" as *;
+@use "mixins";
+
+// Hero générique réutilisé par les pages "Rachat de crédit" et ses sous-pages
+// (un seul layout, des champs ACF différents par page — voir matchcredit_section()).
+// Reprend le split 2 colonnes + carte de rappel de home/_hero.scss (.hero-grid,
+// .hero-rdv-card sont des classes globales, non scopées sous .hero).
+.page-hero {
+	background: $purple-bg;
+	padding: mixins.to-dvw(100) 0;
+	border-bottom: 1px solid $rule;
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(48, 390) 0;
+	}
+}
+
+.page-hero-title {
+	font-size: mixins.to-dvw(52);
+	margin: 0 0 mixins.to-dvw(24);
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(32, 390);
+		margin-bottom: mixins.to-dvw(16, 390);
+	}
+}
+
+.page-hero-subtitle {
+	font-size: mixins.to-dvw(18);
+	color: $text-mid;
+	max-width: mixins.to-dvw(560);
+	margin-bottom: mixins.to-dvw(36);
+	line-height: 1.6;
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(15, 390);
+		max-width: none;
+		margin-bottom: mixins.to-dvw(24, 390);
+	}
+}

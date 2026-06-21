@@ -1,0 +1,58 @@
+@use "variables" as *;
+@use "mixins";
+
+// Layout éditorial à 2 colonnes (repère à gauche, contenu riche à droite) —
+// même logique que .faq-grid / .how-intro sur la home, généralisée pour
+// les pages "Rachat de crédit". Évite les sections à colonne unique qui
+// laissent la moitié droite vide.
+// L'étiquette (eyebrow) est une ligne à part, AU-DESSUS des 2 colonnes — pas dans
+// .page-split-aside — pour que le titre (gauche) et le contenu (droite)
+// démarrent exactement à la même hauteur (sinon le texte de droite remonte
+// au niveau de l'étiquette alors que le titre de gauche est poussé dessous).
+.page-split-head {
+	// .eyebrow porte déjà sa propre marge basse (voir base/typography) — pas de marge
+	// supplémentaire ici, sinon double espace avant la grille.
+	margin-bottom: 0;
+}
+
+.page-split {
+	display: grid;
+	grid-template-columns: 1fr 1.7fr;
+	gap: mixins.to-dvw(64);
+	align-items: start;
+
+	@media (max-width: 600px) {
+		grid-template-columns: 1fr;
+		gap: mixins.to-dvw(28, 390);
+	}
+}
+
+.page-split-aside {
+	// Statique par défaut : le sticky ne rend bien que sur les sections au contenu
+	// long (étapes, listes), pas sur un simple paragraphe court — voir .page-split-aside--sticky.
+	h2 {
+		margin-bottom: 0;
+		font-size: mixins.to-dvw(34);
+
+		@media (max-width: 600px) {
+			font-size: mixins.to-dvw(26, 390);
+		}
+	}
+
+	&--sticky {
+		position: sticky;
+		top: mixins.to-dvw(120);
+
+		@media (max-width: 600px) {
+			position: static;
+		}
+	}
+}
+
+.page-split-content {
+	min-width: 0;
+
+	> .section-intro:last-child {
+		margin-bottom: 0;
+	}
+}

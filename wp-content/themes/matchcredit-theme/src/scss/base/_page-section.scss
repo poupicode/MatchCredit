@@ -1,0 +1,85 @@
+@use "variables" as *;
+@use "mixins";
+
+// Wrapper générique pour les sections de contenu des pages "Rachat de crédit" et
+// sous-pages — padding vertical uniquement (voir feedback_double_padding_sections :
+// .container gère déjà le gutter horizontal, un padding horizontal ici le doublerait).
+.page-section {
+	padding: mixins.to-dvw(100) 0;
+
+	&--cream {
+		background: $cream-warm;
+	}
+
+	&--white {
+		background: $white;
+	}
+
+	&--bordered {
+		border-top: 1px solid $rule;
+	}
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(48, 390) 0;
+	}
+}
+
+.page-note {
+	background: $purple-bg;
+	border-left: 3px solid $purple-deep;
+	padding: mixins.to-dvw(20) mixins.to-dvw(28);
+	font-size: mixins.to-dvw(15);
+	color: $purple-ink;
+	line-height: 1.6;
+	max-width: mixins.to-dvw(720);
+	margin-top: mixins.to-dvw(24);
+
+	strong {
+		font-weight: 700;
+	}
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(16, 390) mixins.to-dvw(20, 390);
+		font-size: mixins.to-dvw(14, 390);
+		max-width: none;
+		margin-top: mixins.to-dvw(16, 390);
+	}
+}
+
+.page-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: mixins.to-dvw(16);
+	max-width: mixins.to-dvw(720);
+
+	li {
+		position: relative;
+		padding-left: mixins.to-dvw(28);
+		font-size: mixins.to-dvw(17);
+		color: $text-mid;
+		line-height: 1.6;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0.65em;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: $yellow;
+		}
+	}
+
+	@media (max-width: 600px) {
+		gap: mixins.to-dvw(12, 390);
+		max-width: none;
+
+		li {
+			padding-left: mixins.to-dvw(22, 390);
+			font-size: mixins.to-dvw(15, 390);
+		}
+	}
+}

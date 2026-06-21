@@ -1,0 +1,356 @@
+{
+    "key": "group_page_rachat_soulte",
+    "title": "Sous-page Rachat de soulte",
+    "fields": [
+        {
+            "key": "field_rs_tab_hero",
+            "label": "01. Hero",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rs_hero_eyebrow",
+            "label": "Étiquette (eyebrow)",
+            "name": "rs_hero_eyebrow",
+            "type": "text",
+            "default_value": "Séparation & rachat de soulte"
+        },
+        {
+            "key": "field_rs_hero_titre",
+            "label": "Titre",
+            "name": "rs_hero_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Comment calculer un <em>rachat de soulte</em> ?"
+        },
+        {
+            "key": "field_rs_hero_soustitre",
+            "label": "Sous-titre",
+            "name": "rs_hero_soustitre",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Séparation, divorce, sortie d'indivision : quand l'un de vous souhaite garder le bien commun, la soulte permet de racheter la part de l'autre. Voici comment elle se calcule."
+        },
+        {
+            "key": "field_rs_hero_bouton",
+            "label": "Bouton",
+            "name": "rs_hero_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Prendre rendez-vous",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_rs_hero_carte_titre",
+            "label": "Carte rappel — titre",
+            "name": "rs_hero_carte_titre",
+            "type": "text",
+            "default_value": "Étudier mon financement de rachat de soulte"
+        },
+        {
+            "key": "field_rs_hero_carte_cf7",
+            "label": "Carte rappel — shortcode Contact Form 7",
+            "name": "rs_hero_carte_cf7",
+            "type": "text",
+            "instructions": "Coller ici le shortcode du formulaire CF7.",
+            "default_value": ""
+        },
+        {
+            "key": "field_rs_tab_intro",
+            "label": "02. Intro",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rs_intro_eyebrow",
+            "label": "Étiquette",
+            "name": "rs_intro_eyebrow",
+            "type": "text",
+            "default_value": "Séparation"
+        },
+        {
+            "key": "field_rs_intro_titre",
+            "label": "Titre (repère colonne gauche)",
+            "name": "rs_intro_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Garder le bien, <em>racheter</em> la part"
+        },
+        {
+            "key": "field_rs_intro_texte",
+            "label": "Texte",
+            "name": "rs_intro_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Un bien acheté à deux, un crédit souscrit en commun : quand la vie de couple prend un autre chemin, la question du logement se pose vite. Le revendre et repartir à zéro ? Le garder ? Si l'un de vous souhaite conserver le bien, il devra racheter la part de l'autre — c'est ce qu'on appelle la soulte."
+        },
+        {
+            "key": "field_rs_intro_note",
+            "label": "Encadré \"À savoir\"",
+            "name": "rs_intro_note",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Tant que le rachat de soulte n'est pas finalisé, les deux ex-conjoints restent responsables du remboursement du crédit en cours."
+        },
+        {
+            "key": "field_rs_tab_definition",
+            "label": "03. Définition",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rs_definition_eyebrow",
+            "label": "Étiquette",
+            "name": "rs_definition_eyebrow",
+            "type": "text",
+            "default_value": "Définition"
+        },
+        {
+            "key": "field_rs_definition_titre",
+            "label": "Titre",
+            "name": "rs_definition_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Qu'est-ce que <em>la soulte</em>, concrètement ?"
+        },
+        {
+            "key": "field_rs_definition_texte",
+            "label": "Texte",
+            "name": "rs_definition_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "La soulte est la compensation financière versée par celui qui garde le bien à celui qui en cède sa part. Avant tout calcul, une étape s'impose : faire évaluer le bien par un professionnel, car l'évolution du marché immobilier peut changer la donne par rapport au prix d'achat initial."
+        },
+        {
+            "key": "field_rs_tab_calcul",
+            "label": "04. Calcul",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rs_calcul_eyebrow",
+            "label": "Étiquette",
+            "name": "rs_calcul_eyebrow",
+            "type": "text",
+            "default_value": "Le calcul"
+        },
+        {
+            "key": "field_rs_calcul_titre",
+            "label": "Titre",
+            "name": "rs_calcul_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Ce qui entre dans <em>le calcul</em> du rachat de soulte"
+        },
+        {
+            "key": "field_rs_calcul_liste",
+            "label": "Liste (un élément par ligne)",
+            "name": "rs_calcul_liste",
+            "type": "textarea",
+            "rows": 6,
+            "new_lines": "",
+            "instructions": "Pour les pourcentages réglementaires (droits de partage, contribution de sécurité immobilière), laisser le repère [% à confirmer] tant que le chiffre exact n'a pas été validé avec un notaire — ne jamais publier un pourcentage non vérifié.",
+            "default_value": "Le capital restant dû sur le crédit en cours\nLa soulte due par l'un des ex-conjoints à l'autre\nLes droits de partage, un pourcentage de l'actif net global fixé par la loi [% à confirmer]\nLa contribution de sécurité immobilière [% à confirmer]\nLes émoluments du notaire"
+        },
+        {
+            "key": "field_rs_tab_etapes",
+            "label": "05. Étapes",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rs_etapes_eyebrow",
+            "label": "Étiquette",
+            "name": "rs_etapes_eyebrow",
+            "type": "text",
+            "default_value": "La procédure"
+        },
+        {
+            "key": "field_rs_etapes_titre",
+            "label": "Titre",
+            "name": "rs_etapes_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Les étapes <em>du rachat de soulte</em>"
+        },
+        {
+            "key": "field_rs_etape_1",
+            "label": "Étape 1",
+            "name": "rs_etape_1",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rs_etape_1_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Évaluation du bien"
+                },
+                {
+                    "key": "field_rs_etape_1_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Réalisée par un professionnel, souvent le notaire lui-même."
+                }
+            ]
+        },
+        {
+            "key": "field_rs_etape_2",
+            "label": "Étape 2",
+            "name": "rs_etape_2",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rs_etape_2_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Liquidation du régime patrimonial"
+                },
+                {
+                    "key": "field_rs_etape_2_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Des deux ex-époux, étape préalable au calcul de la soulte."
+                }
+            ]
+        },
+        {
+            "key": "field_rs_etape_3",
+            "label": "Étape 3",
+            "name": "rs_etape_3",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rs_etape_3_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Calcul de la soulte"
+                },
+                {
+                    "key": "field_rs_etape_3_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "En tenant compte du capital restant dû et des frais annexes."
+                }
+            ]
+        },
+        {
+            "key": "field_rs_etape_4",
+            "label": "Étape 4",
+            "name": "rs_etape_4",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rs_etape_4_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Montage du nouveau dossier de prêt"
+                },
+                {
+                    "key": "field_rs_etape_4_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Pour celui qui conserve le bien — c'est ici que votre courtier intervient."
+                }
+            ]
+        },
+        {
+            "key": "field_rs_etape_5",
+            "label": "Étape 5",
+            "name": "rs_etape_5",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rs_etape_5_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Signature chez le notaire"
+                },
+                {
+                    "key": "field_rs_etape_5_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Étape obligatoire pour officialiser le rachat de soulte."
+                }
+            ]
+        },
+        {
+            "key": "field_rs_tab_accompagnement",
+            "label": "06. Accompagnement",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rs_accompagnement_eyebrow",
+            "label": "Étiquette",
+            "name": "rs_accompagnement_eyebrow",
+            "type": "text",
+            "default_value": "Et après ?"
+        },
+        {
+            "key": "field_rs_accompagnement_titre",
+            "label": "Titre (repère colonne gauche)",
+            "name": "rs_accompagnement_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Votre <em>courtier</em> à vos côtés"
+        },
+        {
+            "key": "field_rs_accompagnement_texte",
+            "label": "Texte",
+            "name": "rs_accompagnement_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Le rachat de soulte s'effectue obligatoirement chez un notaire. En parallèle, monter un nouveau dossier de prêt demande de trouver la solution de financement la plus adaptée à votre nouvelle situation — c'est exactement là que votre courtier MatchCrédit intervient : un accompagnement 100 % personnalisé, dans votre intérêt."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-rachat-soulte.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782047475
+}

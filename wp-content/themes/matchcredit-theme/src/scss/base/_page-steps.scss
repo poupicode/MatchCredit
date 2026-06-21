@@ -1,0 +1,80 @@
+@use "variables" as *;
+@use "mixins";
+
+// Liste d'étapes numérotées (ex. "Les étapes du rachat de soulte").
+.page-steps {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	counter-reset: page-step;
+	display: grid;
+	gap: mixins.to-dvw(32);
+
+	@media (max-width: 600px) {
+		gap: mixins.to-dvw(24, 390);
+	}
+}
+
+.page-step {
+	counter-increment: page-step;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: mixins.to-dvw(24);
+	align-items: start;
+
+	&::before {
+		content: counter(page-step);
+		width: mixins.to-dvw(48);
+		height: mixins.to-dvw(48);
+		border-radius: 50%;
+		background: $purple-ink;
+		color: $yellow;
+		font-family: $font-sans;
+		font-weight: 700;
+		font-size: mixins.to-dvw(18);
+		display: grid;
+		place-items: center;
+		flex-shrink: 0;
+	}
+
+	h3 {
+		font-size: mixins.to-dvw(20);
+		font-weight: 700;
+		color: $purple-ink;
+		margin: 0 0 mixins.to-dvw(8);
+	}
+
+	p {
+		font-size: mixins.to-dvw(15);
+		color: $text-mid;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	> div {
+		padding-top: mixins.to-dvw(10);
+	}
+
+	@media (max-width: 600px) {
+		gap: mixins.to-dvw(16, 390);
+
+		&::before {
+			width: mixins.to-dvw(36, 390);
+			height: mixins.to-dvw(36, 390);
+			font-size: mixins.to-dvw(15, 390);
+		}
+
+		h3 {
+			font-size: mixins.to-dvw(17, 390);
+			margin-bottom: mixins.to-dvw(4, 390);
+		}
+
+		p {
+			font-size: mixins.to-dvw(14, 390);
+		}
+
+		> div {
+			padding-top: mixins.to-dvw(4, 390);
+		}
+	}
+}

@@ -1,0 +1,9 @@
+@use "variables" as *;
+@use "mixins";
+
+// Conteneur simple (1 colonne) pour les accordéons des pages "Rachat de crédit" —
+// réutilise les classes .faq-list/.faq-item/.faq-q/.faq-a/.faq-toggle (home/_faq.scss),
+// déjà globales et non scopées sous .faq.
+.page-accordion {
+	max-width: mixins.to-dvw(820);
+}

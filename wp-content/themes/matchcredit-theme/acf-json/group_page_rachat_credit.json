@@ -1,0 +1,412 @@
+{
+    "key": "group_page_rachat_credit",
+    "title": "Page Rachat de crédit",
+    "fields": [
+        {
+            "key": "field_rc_tab_hero",
+            "label": "01. Hero",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rc_hero_eyebrow",
+            "label": "Étiquette (eyebrow)",
+            "name": "rc_hero_eyebrow",
+            "type": "text",
+            "default_value": "Rachat de crédit"
+        },
+        {
+            "key": "field_rc_hero_titre",
+            "label": "Titre",
+            "name": "rc_hero_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Rachat de crédit : retrouvez de <em>l'air</em> dans votre budget"
+        },
+        {
+            "key": "field_rc_hero_soustitre",
+            "label": "Sous-titre",
+            "name": "rc_hero_soustitre",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Taux qui ne correspond plus au marché, mensualités trop lourdes, projet de vie qui change : faire racheter son crédit peut rebattre les cartes. Encore faut-il savoir si c'est le bon moment pour vous."
+        },
+        {
+            "key": "field_rc_hero_bouton",
+            "label": "Bouton",
+            "name": "rc_hero_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Prendre rendez-vous",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_rc_hero_carte_titre",
+            "label": "Carte rappel — titre",
+            "name": "rc_hero_carte_titre",
+            "type": "text",
+            "default_value": "Étudier mon dossier de rachat de crédit"
+        },
+        {
+            "key": "field_rc_hero_carte_cf7",
+            "label": "Carte rappel — shortcode Contact Form 7",
+            "name": "rc_hero_carte_cf7",
+            "type": "text",
+            "instructions": "Coller ici le shortcode du formulaire CF7 (ex : [contact-form-7 id=\"123\" title=\"Demande de rappel\"]).",
+            "default_value": ""
+        },
+        {
+            "key": "field_rc_tab_intro",
+            "label": "02. Intro",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rc_intro_eyebrow",
+            "label": "Étiquette",
+            "name": "rc_intro_eyebrow",
+            "type": "text",
+            "default_value": "Le constat"
+        },
+        {
+            "key": "field_rc_intro_titre",
+            "label": "Titre (repère colonne gauche)",
+            "name": "rc_intro_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "À qui ça <em>s'adresse</em>"
+        },
+        {
+            "key": "field_rc_intro_texte_1",
+            "label": "Paragraphe 1",
+            "name": "rc_intro_texte_1",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Un crédit immobilier s'inscrit dans la durée — et la vie change plus vite que les conditions d'un prêt signé il y a 5, 10 ou 15 ans. Séparation, baisse de revenus, envie de simplifier son budget, ou simplement un marché qui a évolué : autant de raisons de se poser la question du rachat de crédit."
+        },
+        {
+            "key": "field_rc_intro_texte_2",
+            "label": "Paragraphe 2",
+            "name": "rc_intro_texte_2",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Chez MatchCrédit, on le répète à chaque rendez-vous : un crédit ne se résume pas à un taux. L'assurance emprunteur, le TAEG, les frais de dossier et les indemnités de remboursement anticipé pèsent tout autant dans la balance. C'est l'ensemble qu'il faut comparer, pas une seule ligne du tableau."
+        },
+        {
+            "key": "field_rc_tab_questions",
+            "label": "03. Questions à se poser",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rc_questions_eyebrow",
+            "label": "Étiquette",
+            "name": "rc_questions_eyebrow",
+            "type": "text",
+            "default_value": "Avant de vous lancer"
+        },
+        {
+            "key": "field_rc_questions_titre",
+            "label": "Titre",
+            "name": "rc_questions_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Les questions <em>à se poser</em>"
+        },
+        {
+            "key": "field_rc_questions_nb",
+            "label": "Nombre de questions à afficher",
+            "name": "rc_questions_nb",
+            "type": "select",
+            "instructions": "Pas de répéteur en ACF Free : les questions sont des champs fixes.",
+            "choices": {
+                "1": "1",
+                "2": "2",
+                "3": "3"
+            },
+            "default_value": "3",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_rc_question_1",
+            "label": "Question 1",
+            "name": "rc_question_1",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rc_question_1_q",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Ai-je vraiment intérêt à faire racheter mon crédit ?"
+                },
+                {
+                    "key": "field_rc_question_1_r",
+                    "label": "Réponse",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Tout dépend de l'écart entre votre taux actuel et les conditions du marché, de votre capital restant dû et de l'ancienneté de votre prêt. Un rachat a surtout du sens dans la première moitié de la durée du crédit, quand la part d'intérêts remboursée est encore élevée. Mais ce n'est jamais une question de taux seul : il faut comparer le coût total restant (intérêts, assurance, frais) entre votre contrat actuel et celui qui le remplacerait — c'est exactement ce qu'on chiffre ensemble lors du premier rendez-vous."
+                }
+            ]
+        },
+        {
+            "key": "field_rc_question_2",
+            "label": "Question 2",
+            "name": "rc_question_2",
+            "type": "group",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_rc_questions_nb",
+                        "operator": "==",
+                        "value": "2"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_rc_questions_nb",
+                        "operator": "==",
+                        "value": "3"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_rc_question_2_q",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Quels documents dois-je préparer ?"
+                },
+                {
+                    "key": "field_rc_question_2_r",
+                    "label": "Réponse",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Offre de prêt initiale, tableau d'amortissement à jour, dernier avis d'imposition, 3 derniers relevés de compte et 3 derniers bulletins de salaire. Si vous avez un crédit à la consommation ou un prêt auto en cours, ajoutez leurs tableaux d'amortissement respectifs : ils entrent dans le calcul de votre taux d'endettement. Rien de figé non plus — on vous dit précisément ce qui manque si le dossier doit être complété, et rien ne vous est demandé avant l'étude elle-même."
+                }
+            ]
+        },
+        {
+            "key": "field_rc_question_3",
+            "label": "Question 3",
+            "name": "rc_question_3",
+            "type": "group",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_rc_questions_nb",
+                        "operator": "==",
+                        "value": "3"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_rc_question_3_q",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Combien de temps ça prend ?"
+                },
+                {
+                    "key": "field_rc_question_3_r",
+                    "label": "Réponse",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Un seul rendez-vous suffit généralement pour savoir si l'opération est pertinente pour vous, avant même de monter un dossier — comptez environ 30 minutes pour passer en revue votre situation et obtenir une première estimation chiffrée. Si l'opération est intéressante, le montage du nouveau dossier auprès des banques prend ensuite en moyenne 4 à 6 semaines, de la simulation jusqu'au déblocage des fonds."
+                }
+            ]
+        },
+        {
+            "key": "field_rc_tab_situations",
+            "label": "04. Situations",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rc_situations_eyebrow",
+            "label": "Étiquette",
+            "name": "rc_situations_eyebrow",
+            "type": "text",
+            "default_value": "3 situations, 3 solutions"
+        },
+        {
+            "key": "field_rc_situations_titre",
+            "label": "Titre",
+            "name": "rc_situations_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Quelle <em>situation</em> vous correspond ?"
+        },
+        {
+            "key": "field_rc_situation_1",
+            "label": "Situation 1",
+            "name": "rc_situation_1",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rc_situation_1_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Renégocier mon taux"
+                },
+                {
+                    "key": "field_rc_situation_1_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Vous êtes propriétaire et voulez savoir si le marché actuel justifie une renégociation."
+                },
+                {
+                    "key": "field_rc_situation_1_lien",
+                    "label": "Lien (vers la sous-page)",
+                    "name": "lien",
+                    "type": "link",
+                    "default_value": {
+                        "title": "En savoir plus",
+                        "url": "/rachat-credit/renegocier-taux/",
+                        "target": ""
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_rc_situation_2",
+            "label": "Situation 2",
+            "name": "rc_situation_2",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rc_situation_2_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Calculer un rachat de soulte"
+                },
+                {
+                    "key": "field_rc_situation_2_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Vous traversez une séparation et devez racheter la part de votre ex-conjoint sur le bien commun."
+                },
+                {
+                    "key": "field_rc_situation_2_lien",
+                    "label": "Lien (vers la sous-page)",
+                    "name": "lien",
+                    "type": "link",
+                    "default_value": {
+                        "title": "En savoir plus",
+                        "url": "/rachat-credit/rachat-soulte/",
+                        "target": ""
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_rc_situation_3",
+            "label": "Situation 3",
+            "name": "rc_situation_3",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rc_situation_3_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Regrouper mes crédits"
+                },
+                {
+                    "key": "field_rc_situation_3_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Vous cumulez plusieurs prêts et voulez une seule mensualité, plus simple à gérer."
+                },
+                {
+                    "key": "field_rc_situation_3_lien",
+                    "label": "Lien (vers la sous-page)",
+                    "name": "lien",
+                    "type": "link",
+                    "default_value": {
+                        "title": "En savoir plus",
+                        "url": "/rachat-credit/regroupement-credits/",
+                        "target": ""
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_rc_tab_documents",
+            "label": "05. Documents",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rc_documents_eyebrow",
+            "label": "Étiquette",
+            "name": "rc_documents_eyebrow",
+            "type": "text",
+            "default_value": "Avant le rendez-vous"
+        },
+        {
+            "key": "field_rc_documents_titre",
+            "label": "Titre",
+            "name": "rc_documents_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Les documents <em>à préparer</em>"
+        },
+        {
+            "key": "field_rc_documents_liste",
+            "label": "Liste (un document par ligne)",
+            "name": "rc_documents_liste",
+            "type": "textarea",
+            "rows": 6,
+            "new_lines": "",
+            "default_value": "Offre de prêt initiale\nTableau d'amortissement à jour\nDernier avis d'imposition\n3 derniers relevés de compte\n3 derniers bulletins de salaire"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-rachat-credit.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782047475
+}

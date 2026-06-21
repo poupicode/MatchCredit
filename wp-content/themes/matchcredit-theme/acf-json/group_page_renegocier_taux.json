@@ -1,0 +1,417 @@
+{
+    "key": "group_page_renegocier_taux",
+    "title": "Sous-page Renégocier taux",
+    "fields": [
+        {
+            "key": "field_rt_tab_hero",
+            "label": "01. Hero",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rt_hero_eyebrow",
+            "label": "Étiquette (eyebrow)",
+            "name": "rt_hero_eyebrow",
+            "type": "text",
+            "default_value": "Renégociation de taux"
+        },
+        {
+            "key": "field_rt_hero_titre",
+            "label": "Titre",
+            "name": "rt_hero_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Quand renégocier <em>son taux d'intérêt</em> ?"
+        },
+        {
+            "key": "field_rt_hero_soustitre",
+            "label": "Sous-titre",
+            "name": "rt_hero_soustitre",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Vous avez souscrit votre crédit immobilier il y a plusieurs années. La question mérite d'être posée régulièrement : les conditions du marché ont-elles évolué en votre faveur ?"
+        },
+        {
+            "key": "field_rt_hero_bouton",
+            "label": "Bouton",
+            "name": "rt_hero_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Prendre rendez-vous",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_rt_hero_carte_titre",
+            "label": "Carte rappel — titre",
+            "name": "rt_hero_carte_titre",
+            "type": "text",
+            "default_value": "Étudier ma renégociation de taux"
+        },
+        {
+            "key": "field_rt_hero_carte_cf7",
+            "label": "Carte rappel — shortcode Contact Form 7",
+            "name": "rt_hero_carte_cf7",
+            "type": "text",
+            "instructions": "Coller ici le shortcode du formulaire CF7.",
+            "default_value": ""
+        },
+        {
+            "key": "field_rt_tab_intro",
+            "label": "02. Intro",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rt_intro_eyebrow",
+            "label": "Étiquette",
+            "name": "rt_intro_eyebrow",
+            "type": "text",
+            "default_value": "Le constat"
+        },
+        {
+            "key": "field_rt_intro_titre",
+            "label": "Titre (repère colonne gauche)",
+            "name": "rt_intro_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Une question de <em>calcul</em>"
+        },
+        {
+            "key": "field_rt_intro_texte",
+            "label": "Texte",
+            "name": "rt_intro_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Renégocier son prêt, ce n'est pas une question de mode, c'est une question de calcul. Pourquoi continuer à payer des mensualités calées sur des conditions d'il y a 5 ou 10 ans, si le marché permet aujourd'hui de faire mieux ? Encore faut-il savoir évaluer correctement la situation — et c'est là qu'un courtier fait la différence."
+        },
+        {
+            "key": "field_rt_tab_criteres",
+            "label": "03. Critères",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rt_criteres_eyebrow",
+            "label": "Étiquette",
+            "name": "rt_criteres_eyebrow",
+            "type": "text",
+            "default_value": "À vérifier"
+        },
+        {
+            "key": "field_rt_criteres_titre",
+            "label": "Titre",
+            "name": "rt_criteres_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Les critères qui font qu'une renégociation <em>a du sens</em>"
+        },
+        {
+            "key": "field_rt_criteres_nb",
+            "label": "Nombre de critères à afficher",
+            "name": "rt_criteres_nb",
+            "type": "select",
+            "instructions": "Pas de répéteur en ACF Free : les critères sont des champs fixes.",
+            "choices": {
+                "1": "1",
+                "2": "2",
+                "3": "3",
+                "4": "4"
+            },
+            "default_value": "4",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_rt_critere_1",
+            "label": "Critère 1",
+            "name": "rt_critere_1",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rt_critere_1_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "L'ancienneté du crédit"
+                },
+                {
+                    "key": "field_rt_critere_1_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Sur les prêts longue durée, la renégociation permet souvent de réduire à la fois la durée restante et le coût total du crédit."
+                }
+            ]
+        },
+        {
+            "key": "field_rt_critere_2",
+            "label": "Critère 2",
+            "name": "rt_critere_2",
+            "type": "group",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_rt_criteres_nb",
+                        "operator": "==",
+                        "value": "2"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_rt_criteres_nb",
+                        "operator": "==",
+                        "value": "3"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_rt_criteres_nb",
+                        "operator": "==",
+                        "value": "4"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_rt_critere_2_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Les crédits récents (moins de 5 ans)"
+                },
+                {
+                    "key": "field_rt_critere_2_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "C'est en début de prêt qu'on rembourse le plus d'intérêts : c'est donc le moment où la renégociation a le plus d'impact."
+                }
+            ]
+        },
+        {
+            "key": "field_rt_critere_3",
+            "label": "Critère 3",
+            "name": "rt_critere_3",
+            "type": "group",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_rt_criteres_nb",
+                        "operator": "==",
+                        "value": "3"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_rt_criteres_nb",
+                        "operator": "==",
+                        "value": "4"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_rt_critere_3_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "L'écart de taux"
+                },
+                {
+                    "key": "field_rt_critere_3_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Plus l'écart entre votre taux actuel et les conditions du marché est important, plus l'opération est intéressante. C'est votre courtier qui peut le chiffrer précisément pour vous."
+                }
+            ]
+        },
+        {
+            "key": "field_rt_critere_4",
+            "label": "Critère 4",
+            "name": "rt_critere_4",
+            "type": "group",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_rt_criteres_nb",
+                        "operator": "==",
+                        "value": "4"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_rt_critere_4_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Le capital restant dû"
+                },
+                {
+                    "key": "field_rt_critere_4_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Plus il est élevé, plus la renégociation a de marge pour produire un effet significatif sur vos mensualités ou la durée."
+                }
+            ]
+        },
+        {
+            "key": "field_rt_tab_concurrence",
+            "label": "04. Concurrence",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rt_concurrence_eyebrow",
+            "label": "Étiquette",
+            "name": "rt_concurrence_eyebrow",
+            "type": "text",
+            "default_value": "Comparer pour de vrai"
+        },
+        {
+            "key": "field_rt_concurrence_titre",
+            "label": "Titre",
+            "name": "rt_concurrence_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Faire jouer <em>la concurrence</em>, sans y passer des heures"
+        },
+        {
+            "key": "field_rt_concurrence_texte",
+            "label": "Texte",
+            "name": "rt_concurrence_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Vous ne savez pas par où commencer ? C'est tout l'intérêt de passer par un courtier spécialisé en prêts immobiliers : il connaît les offres du moment et sait les comparer pour votre profil précis. Le taux n'est qu'une partie de l'équation — indemnités de remboursement anticipé, frais de dossier, niveau de l'assurance emprunteur entrent aussi dans le calcul.<br><br>Une simulation rigoureuse, avant/après, reste le moyen le plus fiable de savoir si l'opération est vraiment avantageuse pour vous."
+        },
+        {
+            "key": "field_rt_tab_arbitrage",
+            "label": "05. Mensualités ou durée",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rt_arbitrage_eyebrow",
+            "label": "Étiquette",
+            "name": "rt_arbitrage_eyebrow",
+            "type": "text",
+            "default_value": "Faire le bon choix"
+        },
+        {
+            "key": "field_rt_arbitrage_titre",
+            "label": "Titre",
+            "name": "rt_arbitrage_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Réduire mes mensualités <em>ou la durée</em> de mon crédit ?"
+        },
+        {
+            "key": "field_rt_arbitrage_1",
+            "label": "Option 1",
+            "name": "rt_arbitrage_1",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rt_arbitrage_1_q",
+                    "label": "Titre",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Réduire mes mensualités"
+                },
+                {
+                    "key": "field_rt_arbitrage_1_r",
+                    "label": "Texte",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Vous gagnez en pouvoir d'achat mois après mois, en conservant la même durée de remboursement. C'est l'option la plus directe pour desserrer un budget contraint : la baisse se voit dès le mois suivant la mise en place du nouveau contrat, sans toucher à l'horizon de fin de crédit déjà prévu."
+                }
+            ]
+        },
+        {
+            "key": "field_rt_arbitrage_2",
+            "label": "Option 2",
+            "name": "rt_arbitrage_2",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rt_arbitrage_2_q",
+                    "label": "Titre",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Réduire la durée"
+                },
+                {
+                    "key": "field_rt_arbitrage_2_r",
+                    "label": "Texte",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Vous remboursez plus vite, en gardant le même niveau de mensualité. Le montant prélevé chaque mois ne change pas, mais le taux plus avantageux fait reculer la date de fin de crédit — concrètement, vous finissez de rembourser plus tôt et le coût total des intérêts sur l'ensemble du prêt diminue."
+                }
+            ]
+        },
+        {
+            "key": "field_rt_arbitrage_3",
+            "label": "Option 3",
+            "name": "rt_arbitrage_3",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rt_arbitrage_3_q",
+                    "label": "Titre",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Faire les deux"
+                },
+                {
+                    "key": "field_rt_arbitrage_3_r",
+                    "label": "Texte",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "C'est possible selon votre situation : une renégociation bien menée peut alléger vos mensualités tout en réduisant légèrement la durée, surtout quand l'écart de taux est important. Le bon dosage entre les deux dépend de votre capacité d'épargne actuelle et de vos projets à venir (travaux, nouvel achat, retraite anticipée) — une simulation chiffrée permet d'arbitrer en connaissance de cause plutôt qu'au feeling."
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-renegocier-taux.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782047475
+}

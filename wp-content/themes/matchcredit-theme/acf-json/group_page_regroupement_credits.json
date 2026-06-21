@@ -1,0 +1,418 @@
+{
+    "key": "group_page_regroupement_credits",
+    "title": "Sous-page Regroupement de crédits",
+    "fields": [
+        {
+            "key": "field_rg_tab_hero",
+            "label": "01. Hero",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rg_hero_eyebrow",
+            "label": "Étiquette (eyebrow)",
+            "name": "rg_hero_eyebrow",
+            "type": "text",
+            "default_value": "Regroupement de crédits"
+        },
+        {
+            "key": "field_rg_hero_titre",
+            "label": "Titre",
+            "name": "rg_hero_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Regroupement de crédits : quels <em>avantages</em> ?"
+        },
+        {
+            "key": "field_rg_hero_soustitre",
+            "label": "Sous-titre",
+            "name": "rg_hero_soustitre",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Plusieurs crédits en cours, plusieurs dates de prélèvement, plusieurs interlocuteurs ? Le regroupement de crédits simplifie tout ça en un seul contrat."
+        },
+        {
+            "key": "field_rg_hero_bouton",
+            "label": "Bouton",
+            "name": "rg_hero_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Prendre rendez-vous",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_rg_hero_carte_titre",
+            "label": "Carte rappel — titre",
+            "name": "rg_hero_carte_titre",
+            "type": "text",
+            "default_value": "Étudier mon regroupement de crédits"
+        },
+        {
+            "key": "field_rg_hero_carte_cf7",
+            "label": "Carte rappel — shortcode Contact Form 7",
+            "name": "rg_hero_carte_cf7",
+            "type": "text",
+            "instructions": "Coller ici le shortcode du formulaire CF7.",
+            "default_value": ""
+        },
+        {
+            "key": "field_rg_tab_intro",
+            "label": "02. Intro",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rg_intro_eyebrow",
+            "label": "Étiquette",
+            "name": "rg_intro_eyebrow",
+            "type": "text",
+            "default_value": "Simplifier son budget"
+        },
+        {
+            "key": "field_rg_intro_titre",
+            "label": "Titre (repère colonne gauche)",
+            "name": "rg_intro_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Une seule <em>mensualité</em>"
+        },
+        {
+            "key": "field_rg_intro_texte",
+            "label": "Texte",
+            "name": "rg_intro_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Le regroupement de crédits consiste à réunir en un seul contrat plusieurs crédits en cours de remboursement. Résultat : une seule mensualité calculée selon votre budget, une seule date de prélèvement, un seul interlocuteur. Le mot d'ordre : se simplifier la vie."
+        },
+        {
+            "key": "field_rg_tab_comparatif",
+            "label": "03. Comparatif",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rg_comparatif_eyebrow",
+            "label": "Étiquette",
+            "name": "rg_comparatif_eyebrow",
+            "type": "text",
+            "default_value": "Ne pas confondre"
+        },
+        {
+            "key": "field_rg_comparatif_titre",
+            "label": "Titre",
+            "name": "rg_comparatif_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Rachat de crédit ou regroupement de crédits : <em>quelle différence</em> ?"
+        },
+        {
+            "key": "field_rg_comparatif_col1",
+            "label": "Colonne 1 — titre",
+            "name": "rg_comparatif_col1",
+            "type": "text",
+            "default_value": "Rachat de crédit"
+        },
+        {
+            "key": "field_rg_comparatif_col2",
+            "label": "Colonne 2 — titre",
+            "name": "rg_comparatif_col2",
+            "type": "text",
+            "default_value": "Regroupement de crédits"
+        },
+        {
+            "key": "field_rg_comparatif_ligne_1",
+            "label": "Ligne 1",
+            "name": "rg_comparatif_ligne_1",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rg_comparatif_ligne_1_a",
+                    "label": "Colonne 1",
+                    "name": "col1",
+                    "type": "text",
+                    "default_value": "Rachat de votre prêt immobilier en cours par un autre établissement"
+                },
+                {
+                    "key": "field_rg_comparatif_ligne_1_b",
+                    "label": "Colonne 2",
+                    "name": "col2",
+                    "type": "text",
+                    "default_value": "Fusion de plusieurs crédits différents en un seul contrat"
+                }
+            ]
+        },
+        {
+            "key": "field_rg_comparatif_ligne_2",
+            "label": "Ligne 2",
+            "name": "rg_comparatif_ligne_2",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rg_comparatif_ligne_2_a",
+                    "label": "Colonne 1",
+                    "name": "col1",
+                    "type": "text",
+                    "default_value": "Objectif : obtenir un taux plus avantageux"
+                },
+                {
+                    "key": "field_rg_comparatif_ligne_2_b",
+                    "label": "Colonne 2",
+                    "name": "col2",
+                    "type": "text",
+                    "default_value": "Objectif : simplifier la gestion et alléger les mensualités"
+                }
+            ]
+        },
+        {
+            "key": "field_rg_comparatif_ligne_3",
+            "label": "Ligne 3",
+            "name": "rg_comparatif_ligne_3",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rg_comparatif_ligne_3_a",
+                    "label": "Colonne 1",
+                    "name": "col1",
+                    "type": "text",
+                    "default_value": "Concerne un seul type de prêt"
+                },
+                {
+                    "key": "field_rg_comparatif_ligne_3_b",
+                    "label": "Colonne 2",
+                    "name": "col2",
+                    "type": "text",
+                    "default_value": "Peut mélanger crédit conso, auto, renouvelable, immobilier, voire certaines dettes"
+                }
+            ]
+        },
+        {
+            "key": "field_rg_tab_integre",
+            "label": "04. Ce qui peut être intégré",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rg_integre_eyebrow",
+            "label": "Étiquette",
+            "name": "rg_integre_eyebrow",
+            "type": "text",
+            "default_value": "Périmètre"
+        },
+        {
+            "key": "field_rg_integre_titre",
+            "label": "Titre",
+            "name": "rg_integre_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Ce que le regroupement de crédits peut <em>intégrer</em>"
+        },
+        {
+            "key": "field_rg_integre_1",
+            "label": "Élément 1",
+            "name": "rg_integre_1",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rg_integre_1_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Crédits à la consommation"
+                },
+                {
+                    "key": "field_rg_integre_1_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Prêt personnel, crédit renouvelable."
+                }
+            ]
+        },
+        {
+            "key": "field_rg_integre_2",
+            "label": "Élément 2",
+            "name": "rg_integre_2",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rg_integre_2_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Crédit immobilier"
+                },
+                {
+                    "key": "field_rg_integre_2_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "En complément d'autres prêts en cours."
+                }
+            ]
+        },
+        {
+            "key": "field_rg_integre_3",
+            "label": "Élément 3",
+            "name": "rg_integre_3",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rg_integre_3_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Crédit auto"
+                },
+                {
+                    "key": "field_rg_integre_3_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Intégré au même titre que les autres crédits en cours."
+                }
+            ]
+        },
+        {
+            "key": "field_rg_integre_4",
+            "label": "Élément 4",
+            "name": "rg_integre_4",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rg_integre_4_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Certaines dettes"
+                },
+                {
+                    "key": "field_rg_integre_4_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Loyers impayés, dettes fiscales, selon les situations."
+                }
+            ]
+        },
+        {
+            "key": "field_rg_tab_avantages",
+            "label": "05. Avantages",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rg_avantages_eyebrow",
+            "label": "Étiquette",
+            "name": "rg_avantages_eyebrow",
+            "type": "text",
+            "default_value": "Les bénéfices"
+        },
+        {
+            "key": "field_rg_avantages_titre",
+            "label": "Titre",
+            "name": "rg_avantages_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Au-delà de <em>la simplicité</em> du quotidien"
+        },
+        {
+            "key": "field_rg_avantages_liste",
+            "label": "Liste (un avantage par ligne)",
+            "name": "rg_avantages_liste",
+            "type": "textarea",
+            "rows": 4,
+            "new_lines": "",
+            "default_value": "Mieux anticiper une baisse de revenus\nDégager de la marge pour financer un nouveau projet\nAdapter la mensualité à votre budget réel, le plus souvent avec un allongement de la durée totale"
+        },
+        {
+            "key": "field_rg_tab_exemple",
+            "label": "06. Exemple concret",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rg_exemple_eyebrow",
+            "label": "Étiquette",
+            "name": "rg_exemple_eyebrow",
+            "type": "text",
+            "default_value": "Cas pratique"
+        },
+        {
+            "key": "field_rg_exemple_titre",
+            "label": "Titre",
+            "name": "rg_exemple_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Un exemple <em>concret</em>"
+        },
+        {
+            "key": "field_rg_exemple_texte",
+            "label": "Texte",
+            "name": "rg_exemple_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Un couple cumule un crédit auto, un crédit conso et un prêt immobilier, avec trois dates de prélèvement différentes chaque mois. En regroupant les trois, ils retrouvent une mensualité unique, plus en phase avec leur budget — et dégagent une marge suffisante pour financer des travaux qu'ils avaient mis de côté."
+        },
+        {
+            "key": "field_rg_exemple_avant_liste",
+            "label": "Avant — un crédit par ligne (\"Libellé — Montant\")",
+            "name": "rg_exemple_avant_liste",
+            "type": "textarea",
+            "rows": 4,
+            "new_lines": "",
+            "instructions": "Format : Libellé — Montant (ex. Crédit auto — 180 €/mois). Chiffres illustratifs, à ajuster si besoin.",
+            "default_value": "Crédit auto — 180 €/mois\nCrédit conso — 295 €/mois\nPrêt immobilier — 410 €/mois"
+        },
+        {
+            "key": "field_rg_exemple_apres_label",
+            "label": "Après — libellé",
+            "name": "rg_exemple_apres_label",
+            "type": "text",
+            "default_value": "Nouvelle mensualité unique"
+        },
+        {
+            "key": "field_rg_exemple_apres_montant",
+            "label": "Après — montant",
+            "name": "rg_exemple_apres_montant",
+            "type": "text",
+            "default_value": "620 €/mois"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-regroupement-credits.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782047880
+}

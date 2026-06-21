@@ -1,0 +1,61 @@
+{
+    "key": "group_options_cta_credit",
+    "title": "CTA pages crédit",
+    "fields": [
+        {
+            "key": "field_cta_credit_titre",
+            "label": "Titre",
+            "name": "cta_titre",
+            "type": "wysiwyg",
+            "default_value": "Vous aspirez à un meilleur équilibre <em>de vie.</em>"
+        },
+        {
+            "key": "field_cta_credit_texte",
+            "label": "Texte",
+            "name": "cta_texte",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "La vie est remplie d'opportunités : MatchCrédit vous accompagne pour saisir la vôtre en négociant auprès des banques la mensualité qui vous correspond."
+        },
+        {
+            "key": "field_cta_credit_bouton",
+            "label": "Bouton",
+            "name": "cta_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Prendre rendez-vous",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_cta_credit_telephone",
+            "label": "Téléphone",
+            "name": "cta_telephone",
+            "type": "text",
+            "default_value": "04 73 40 40 00"
+        },
+        {
+            "key": "field_cta_credit_horaires",
+            "label": "Horaires",
+            "name": "cta_horaires",
+            "type": "text",
+            "default_value": "Lun–Ven 9h–12h / 14h–19h · Samedi sur rendez-vous"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-reglages-cta.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782047475
+}

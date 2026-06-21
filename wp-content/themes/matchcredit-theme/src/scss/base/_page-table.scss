@@ -1,0 +1,47 @@
+@use "variables" as *;
+@use "mixins";
+
+// Tableau comparatif à 2 colonnes (ex. "Rachat de crédit ou regroupement ?").
+.page-table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid $rule;
+
+	th,
+	td {
+		padding: mixins.to-dvw(20) mixins.to-dvw(28);
+		text-align: left;
+		font-size: mixins.to-dvw(15);
+		border-bottom: 1px solid $rule;
+		vertical-align: top;
+	}
+
+	th {
+		font-family: $font-sans;
+		font-weight: 700;
+		color: $purple-ink;
+		background: $purple-bg;
+	}
+
+	td {
+		color: $text-mid;
+		line-height: 1.5;
+	}
+
+	tr:last-child td {
+		border-bottom: none;
+	}
+
+	@media (max-width: 600px) {
+		display: block;
+		overflow-x: auto;
+
+		th,
+		td {
+			padding: mixins.to-dvw(14, 390) mixins.to-dvw(18, 390);
+			font-size: mixins.to-dvw(13, 390);
+			white-space: normal;
+			min-width: 220px;
+		}
+	}
+}
