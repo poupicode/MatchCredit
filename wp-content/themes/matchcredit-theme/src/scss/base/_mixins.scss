@@ -1,0 +1,11 @@
+@use "sass:math";
+
+$design-width-desktop: 1440;
+$design-width-mobile: 390;
+
+@function to-dvw($value, $ref: $design-width-desktop) {
+	@if $ref == $design-width-desktop {
+		@return min(calc(#{math.div($value, $ref) * 100} * 1dvw), #{$value}px);
+	}
+	@return (math.div($value, $ref) * 100) + dvw;
+}

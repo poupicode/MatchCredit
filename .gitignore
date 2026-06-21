@@ -1,0 +1,30 @@
+# =============================================
+# Repo minimal : uniquement le thème custom et le plugin custom.
+# Tout le reste (WP core, design-system, scripts, db-backup,
+# docker-compose, mockups...) reste local, pas versionné.
+# =============================================
+/*
+!/.gitignore
+!/wp-content/
+
+/wp-content/*
+!/wp-content/themes/
+!/wp-content/plugins/
+
+/wp-content/themes/*
+!/wp-content/themes/matchcredit-theme/
+
+/wp-content/plugins/*
+!/wp-content/plugins/matchcredit-tools/
+
+# Dépendances et build des deux dossiers custom
+/wp-content/themes/matchcredit-theme/node_modules/
+/wp-content/plugins/matchcredit-tools/admin/node_modules/
+
+# Système & IDE
+.DS_Store
+Thumbs.db
+.env
+.env.local
+*.log
+.claude/

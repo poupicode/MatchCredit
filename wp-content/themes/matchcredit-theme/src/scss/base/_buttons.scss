@@ -1,0 +1,107 @@
+@use "variables" as *;
+@use "mixins";
+
+.btn-yellow {
+	background: $yellow;
+	color: $purple-ink;
+	font-family: $font-sans;
+	font-weight: 600;
+	font-size: mixins.to-dvw(17);
+	padding: mixins.to-dvw(18) mixins.to-dvw(28);
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: mixins.to-dvw(12);
+	transition: background-color 0.15s, box-shadow 0.15s;
+	text-decoration: none;
+
+	&:hover {
+		background: $yellow-deep;
+		box-shadow: inset 0 0 0 4px $purple-ink;
+	}
+
+	.arrow {
+		width: mixins.to-dvw(28);
+		height: mixins.to-dvw(28);
+		border-radius: 50%;
+		background: $purple-ink;
+		color: $yellow;
+		display: grid;
+		place-items: center;
+	}
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(15, 390);
+		padding: mixins.to-dvw(14, 390) mixins.to-dvw(22, 390);
+		gap: mixins.to-dvw(10, 390);
+
+		.arrow {
+			width: mixins.to-dvw(24, 390);
+			height: mixins.to-dvw(24, 390);
+		}
+	}
+}
+
+.btn-dark {
+	background: $purple-ink;
+	color: $yellow;
+	font-family: $font-sans;
+	font-weight: 600;
+	font-size: mixins.to-dvw(17);
+	padding: mixins.to-dvw(20) mixins.to-dvw(32);
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: mixins.to-dvw(12);
+	transition: background-color 0.15s, box-shadow 0.15s;
+	text-decoration: none;
+
+	&:hover {
+		background: $purple-dark;
+		box-shadow: inset 0 0 0 4px $yellow;
+	}
+
+	.arrow {
+		width: mixins.to-dvw(28);
+		height: mixins.to-dvw(28);
+		border-radius: 50%;
+		background: $yellow;
+		color: $purple-ink;
+		display: grid;
+		place-items: center;
+		flex-shrink: 0;
+	}
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(15, 390);
+		padding: mixins.to-dvw(16, 390) mixins.to-dvw(24, 390);
+
+		.arrow {
+			width: mixins.to-dvw(24, 390);
+			height: mixins.to-dvw(24, 390);
+		}
+	}
+}
+
+.btn-text {
+	font-family: $font-sans;
+	font-weight: 500;
+	font-size: mixins.to-dvw(15);
+	color: $purple-ink;
+	border-bottom: 1px solid currentColor;
+	padding-bottom: 2px;
+	text-decoration: none;
+	transition: color 0.15s, border-color 0.15s;
+
+	&:hover {
+		color: $purple-deep;
+	}
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(14, 390);
+	}
+}

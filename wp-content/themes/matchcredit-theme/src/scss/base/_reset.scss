@@ -1,0 +1,39 @@
+@use "variables" as *;
+@use "mixins";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $font-body;
+	color: $text;
+	background: $cream;
+}
+
+h1, h2, h3, h4 {
+	font-family: $font-sans;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+a {
+	color: inherit;
+}
+
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+	padding: 0 mixins.to-dvw(100);
+
+	@media (max-width: 600px) {
+		padding: 0 mixins.to-dvw(20, 390);
+	}
+}

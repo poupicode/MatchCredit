@@ -1,0 +1,16 @@
+{
+  "name": "matchcredit-theme",
+  "private": true,
+  "scripts": {
+    "dev:vite": "vite build --watch",
+    "dev:sync": "browser-sync start --proxy 'localhost:8080' --files 'assets/css/**/*.css' 'assets/js/**/*.js' 'home/**/*.php' '*.php' --no-open --no-notify",
+    "dev": "concurrently -k \"npm:dev:vite\" \"npm:dev:sync\"",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.3",
+    "sass": "^1.77.0",
+    "vite": "^5.4.0"
+  }
+}
