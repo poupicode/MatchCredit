@@ -1,0 +1,1558 @@
+{
+    "key": "group_page_accueil",
+    "title": "Page d'accueil",
+    "fields": [
+        {
+            "key": "field_pa_tab_hero",
+            "label": "01. Hero",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_pa_hero_badge",
+            "label": "Badge",
+            "name": "badge",
+            "type": "text",
+            "default_value": "Courtier en prêts immobiliers · Auvergne-Rhône-Alpes · depuis 2008"
+        },
+        {
+            "key": "field_pa_hero_titre",
+            "label": "Titre",
+            "name": "titre",
+            "type": "wysiwyg",
+            "default_value": "Concrétisez l'achat<br><em>de votre bien immobilier</em><br>avec un emprunt <span class=\"marker\">sur-mesure.</span>",
+            "instructions": "Mettre en italique (bouton I) le segment d'accent. Pour le mot souligné en jaune, entourer manuellement de <span class=\"marker\">...</span>."
+        },
+        {
+            "key": "field_pa_hero_slogan",
+            "label": "Slogan",
+            "name": "slogan",
+            "type": "textarea",
+            "rows": 2,
+            "new_lines": "",
+            "default_value": "« Dis-moi ce que tu veux,\nje te dirai ce que tu peux. »"
+        },
+        {
+            "key": "field_pa_hero_description",
+            "label": "Description",
+            "name": "description",
+            "type": "wysiwyg",
+            "default_value": "Votre courtier défend vos intérêts financiers auprès des établissements bancaires. Premier rendez-vous gratuit, sans engagement, sous 24h."
+        },
+        {
+            "key": "field_pa_hero_bouton_principal",
+            "label": "Bouton principal",
+            "name": "bouton_principal",
+            "type": "link",
+            "default_value": {
+                "title": "Prendre rendez-vous",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_pa_hero_bouton_secondaire",
+            "label": "Bouton secondaire",
+            "name": "bouton_secondaire",
+            "type": "link",
+            "default_value": {
+                "title": "Calculer ma capacité d'emprunt",
+                "url": "/calculette/capacite-emprunt",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_pa_hero_carte_titre",
+            "label": "Carte rappel — titre",
+            "name": "carte_titre",
+            "type": "text",
+            "default_value": "En 3 minutes, on vous rappelle."
+        },
+        {
+            "key": "field_pa_hero_carte_cf7",
+            "label": "Carte rappel — shortcode Contact Form 7",
+            "name": "carte_cf7_shortcode",
+            "type": "text",
+            "instructions": "Coller ici le shortcode du formulaire CF7 (ex : [contact-form-7 id=\"123\" title=\"Demande de rappel\"]).",
+            "default_value": ""
+        },
+        {
+            "key": "field_pa_tab_projet",
+            "label": "02. Quel est votre projet",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_pa_projet_etiquette",
+            "label": "Étiquette",
+            "name": "projet_etiquette",
+            "type": "text",
+            "default_value": "Par où commencer ?"
+        },
+        {
+            "key": "field_pa_projet_titre",
+            "label": "Titre",
+            "name": "projet_titre",
+            "type": "wysiwyg",
+            "default_value": "Quel est <em>votre projet</em> ?"
+        },
+        {
+            "key": "field_pa_projet_intro",
+            "label": "Intro",
+            "name": "projet_intro",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Chaque projet est unique. Dites-nous où vous en êtes, on s'occupe du reste."
+        },
+        {
+            "key": "field_pa_projet_nb_profils",
+            "label": "Nombre de profils à afficher",
+            "name": "projet_nb_profils",
+            "type": "select",
+            "instructions": "Pas de répéteur en ACF Free : les profils sont des champs fixes. Choisis combien en afficher, la grille s'adapte.",
+            "choices": {
+                "1": "1",
+                "2": "2"
+            },
+            "default_value": "2",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_pa_profil_1",
+            "label": "Profil 1",
+            "name": "profil_1",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_pa_profil1_numero",
+                    "label": "Numéro",
+                    "name": "numero",
+                    "type": "text",
+                    "default_value": "01"
+                },
+                {
+                    "key": "field_pa_profil1_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "wysiwyg",
+                    "default_value": "Premier achat immobilier"
+                },
+                {
+                    "key": "field_pa_profil1_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Vous devenez propriétaire pour la première fois. On vous guide de l'étude de faisabilité jusqu'à la signature chez le notaire."
+                },
+                {
+                    "key": "field_pa_profil1_lien1",
+                    "label": "Lien 1",
+                    "name": "lien_1",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Quelle est votre capacité d'emprunt ?",
+                        "url": "/credit-immobilier/quelle-est-votre-capacite-emprunt",
+                        "target": ""
+                    }
+                },
+                {
+                    "key": "field_pa_profil1_lien2",
+                    "label": "Lien 2",
+                    "name": "lien_2",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Comment financer un coup de cœur immobilier ?",
+                        "url": "/credit-immobilier/coup-de-coeur-immobilier-comment-le-financer",
+                        "target": ""
+                    }
+                },
+                {
+                    "key": "field_pa_profil1_lien3",
+                    "label": "Lien 3",
+                    "name": "lien_3",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Que sont les frais de garantie ?",
+                        "url": "/credit-immobilier/que-sont-les-frais-dhypotheque",
+                        "target": ""
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_pa_profil_2",
+            "label": "Profil 2",
+            "name": "profil_2",
+            "type": "group",
+            "layout": "block",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_pa_projet_nb_profils",
+                        "operator": "==",
+                        "value": "2"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_pa_profil2_numero",
+                    "label": "Numéro",
+                    "name": "numero",
+                    "type": "text",
+                    "default_value": "02"
+                },
+                {
+                    "key": "field_pa_profil2_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "wysiwyg",
+                    "default_value": "Déjà propriétaire"
+                },
+                {
+                    "key": "field_pa_profil2_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Vous avez un crédit en cours et vous voulez renégocier, investir ou financer un nouveau projet. On trouve la meilleure solution à l'instant T."
+                },
+                {
+                    "key": "field_pa_profil2_lien1",
+                    "label": "Lien 1",
+                    "name": "lien_1",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Quand renégocier ses taux d'intérêt ?",
+                        "url": "/rachat-credit/quand-renegocier-taux-interet",
+                        "target": ""
+                    }
+                },
+                {
+                    "key": "field_pa_profil2_lien2",
+                    "label": "Lien 2",
+                    "name": "lien_2",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Comment calculer un rachat de soulte ?",
+                        "url": "/rachat-credit/comment-calculer-rachat-soulte",
+                        "target": ""
+                    }
+                },
+                {
+                    "key": "field_pa_profil2_lien3",
+                    "label": "Lien 3",
+                    "name": "lien_3",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Comment réussir son investissement locatif ?",
+                        "url": "/credit-immobilier/comment-reussir-investissement-locatif",
+                        "target": ""
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_pa_tab_chiffres",
+            "label": "03. Chiffres clés",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_pa_chiffres_nb",
+            "label": "Nombre de chiffres à afficher",
+            "name": "chiffres_nb",
+            "type": "select",
+            "instructions": "Pas de répéteur en ACF Free : 3 chiffres fixes. Choisis combien en afficher.",
+            "choices": {
+                "1": "1",
+                "2": "2",
+                "3": "3"
+            },
+            "default_value": "3",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_pa_chiffre_1",
+            "label": "Chiffre 1",
+            "name": "chiffre_1",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_pa_chiffre1_valeur",
+                    "label": "Valeur",
+                    "name": "valeur",
+                    "type": "text",
+                    "default_value": "18"
+                },
+                {
+                    "key": "field_pa_chiffre1_unite",
+                    "label": "Unité",
+                    "name": "unite",
+                    "type": "text",
+                    "default_value": "ans"
+                },
+                {
+                    "key": "field_pa_chiffre1_label",
+                    "label": "Label",
+                    "name": "label",
+                    "type": "text",
+                    "default_value": "d'expérience à vos côtés"
+                },
+                {
+                    "key": "field_pa_chiffre1_sous_label",
+                    "label": "Sous-label",
+                    "name": "sous_label",
+                    "type": "text",
+                    "default_value": "Fondé en 2008, MatchCrédit accompagne vos projets depuis plus de 18 ans"
+                }
+            ]
+        },
+        {
+            "key": "field_pa_chiffre_2",
+            "label": "Chiffre 2",
+            "name": "chiffre_2",
+            "type": "group",
+            "layout": "block",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_pa_chiffres_nb",
+                        "operator": "==",
+                        "value": "2"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_pa_chiffres_nb",
+                        "operator": "==",
+                        "value": "3"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_pa_chiffre2_valeur",
+                    "label": "Valeur",
+                    "name": "valeur",
+                    "type": "text",
+                    "default_value": "3"
+                },
+                {
+                    "key": "field_pa_chiffre2_unite",
+                    "label": "Unité",
+                    "name": "unite",
+                    "type": "text",
+                    "default_value": "%"
+                },
+                {
+                    "key": "field_pa_chiffre2_label",
+                    "label": "Label",
+                    "name": "label",
+                    "type": "text",
+                    "default_value": "Meilleur taux obtenu"
+                },
+                {
+                    "key": "field_pa_chiffre2_sous_label",
+                    "label": "Sous-label",
+                    "name": "sous_label",
+                    "type": "text",
+                    "default_value": "Sur une durée de 25 ans, hors assurance"
+                }
+            ]
+        },
+        {
+            "key": "field_pa_chiffre_3",
+            "label": "Chiffre 3",
+            "name": "chiffre_3",
+            "type": "group",
+            "layout": "block",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_pa_chiffres_nb",
+                        "operator": "==",
+                        "value": "3"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_pa_chiffre3_valeur",
+                    "label": "Valeur",
+                    "name": "valeur",
+                    "type": "text",
+                    "default_value": "20"
+                },
+                {
+                    "key": "field_pa_chiffre3_unite",
+                    "label": "Unité",
+                    "name": "unite",
+                    "type": "text",
+                    "default_value": "+"
+                },
+                {
+                    "key": "field_pa_chiffre3_label",
+                    "label": "Label",
+                    "name": "label",
+                    "type": "text",
+                    "default_value": "Banques partenaires"
+                },
+                {
+                    "key": "field_pa_chiffre3_sous_label",
+                    "label": "Sous-label",
+                    "name": "sous_label",
+                    "type": "text",
+                    "default_value": "On fait jouer la concurrence pour vous obtenir la meilleure offre"
+                }
+            ]
+        },
+        {
+            "key": "field_pa_tab_methode",
+            "label": "04. Notre méthode",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_pa_methode_etiquette",
+            "label": "Étiquette",
+            "name": "methode_etiquette",
+            "type": "text",
+            "default_value": "Notre méthode"
+        },
+        {
+            "key": "field_pa_methode_titre",
+            "label": "Titre",
+            "name": "methode_titre",
+            "type": "wysiwyg",
+            "default_value": "Trois étapes,<br><em>zéro paperasse</em><br>pour commencer."
+        },
+        {
+            "key": "field_pa_methode_texte_intro",
+            "label": "Texte d'intro",
+            "name": "methode_texte_intro",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "De la première rencontre à la signature chez le notaire, on vous accompagne à chaque étape, sans jargon ni paperasse inutile."
+        },
+        {
+            "key": "field_pa_methode_nb_etapes",
+            "label": "Nombre d'étapes à afficher",
+            "name": "methode_nb_etapes",
+            "type": "select",
+            "instructions": "Pas de répéteur en ACF Free : 3 étapes fixes. Choisis combien en afficher.",
+            "choices": {
+                "1": "1",
+                "2": "2",
+                "3": "3"
+            },
+            "default_value": "3",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_pa_etape_1",
+            "label": "Étape 1",
+            "name": "etape_1",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_pa_etape1_numero",
+                    "label": "Numéro",
+                    "name": "numero",
+                    "type": "text",
+                    "default_value": "01"
+                },
+                {
+                    "key": "field_pa_etape1_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "wysiwyg",
+                    "default_value": "On vous écoute"
+                },
+                {
+                    "key": "field_pa_etape1_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Un rendez-vous de 45 minutes en agence ou en visio. On analyse votre situation, votre projet, vos capacités. Pas de jargon, pas de pression."
+                },
+                {
+                    "key": "field_pa_etape1_tag1",
+                    "label": "Tag 1",
+                    "name": "tag_1",
+                    "type": "text",
+                    "default_value": "Gratuit"
+                },
+                {
+                    "key": "field_pa_etape1_tag2",
+                    "label": "Tag 2",
+                    "name": "tag_2",
+                    "type": "text",
+                    "default_value": "Sous 24h"
+                }
+            ]
+        },
+        {
+            "key": "field_pa_etape_2",
+            "label": "Étape 2",
+            "name": "etape_2",
+            "type": "group",
+            "layout": "block",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_pa_methode_nb_etapes",
+                        "operator": "==",
+                        "value": "2"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_pa_methode_nb_etapes",
+                        "operator": "==",
+                        "value": "3"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_pa_etape2_numero",
+                    "label": "Numéro",
+                    "name": "numero",
+                    "type": "text",
+                    "default_value": "02"
+                },
+                {
+                    "key": "field_pa_etape2_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "wysiwyg",
+                    "default_value": "On négocie"
+                },
+                {
+                    "key": "field_pa_etape2_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Votre dossier est présenté aux banques les plus adaptées à votre profil. On compare, on argumente, on obtient les meilleures conditions."
+                },
+                {
+                    "key": "field_pa_etape2_tag1",
+                    "label": "Tag 1",
+                    "name": "tag_1",
+                    "type": "text",
+                    "default_value": "2 à 3 semaines"
+                },
+                {
+                    "key": "field_pa_etape2_tag2",
+                    "label": "Tag 2",
+                    "name": "tag_2",
+                    "type": "text",
+                    "default_value": ""
+                }
+            ]
+        },
+        {
+            "key": "field_pa_etape_3",
+            "label": "Étape 3",
+            "name": "etape_3",
+            "type": "group",
+            "layout": "block",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_pa_methode_nb_etapes",
+                        "operator": "==",
+                        "value": "3"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_pa_etape3_numero",
+                    "label": "Numéro",
+                    "name": "numero",
+                    "type": "text",
+                    "default_value": "03"
+                },
+                {
+                    "key": "field_pa_etape3_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "wysiwyg",
+                    "default_value": "On signe"
+                },
+                {
+                    "key": "field_pa_etape3_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Offre de prêt acceptée, on vous accompagne jusqu'à la signature chez le notaire. Du début à la fin, on reste là."
+                },
+                {
+                    "key": "field_pa_etape3_tag1",
+                    "label": "Tag 1",
+                    "name": "tag_1",
+                    "type": "text",
+                    "default_value": "Jusqu'à la signature"
+                },
+                {
+                    "key": "field_pa_etape3_tag2",
+                    "label": "Tag 2",
+                    "name": "tag_2",
+                    "type": "text",
+                    "default_value": ""
+                }
+            ]
+        },
+        {
+            "key": "field_pa_tab_outils",
+            "label": "05. Nos outils",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_pa_outils_etiquette",
+            "label": "Étiquette",
+            "name": "outils_etiquette",
+            "type": "text",
+            "default_value": "Nos outils"
+        },
+        {
+            "key": "field_pa_outils_titre",
+            "label": "Titre",
+            "name": "outils_titre",
+            "type": "wysiwyg",
+            "default_value": "Calculez, simulez,<br><em>comparez.</em>"
+        },
+        {
+            "key": "field_pa_outils_carte1_badge",
+            "label": "Carte 1 — Badge",
+            "name": "carte_1_badge",
+            "type": "text",
+            "default_value": "Calculer"
+        },
+        {
+            "key": "field_pa_outils_carte1_titre",
+            "label": "Carte 1 — Titre",
+            "name": "carte_1_titre",
+            "type": "wysiwyg",
+            "default_value": "Calculettes immobilier",
+            "instructions": "Mettre en italique (bouton I) un segment si besoin d'effet visuel."
+        },
+        {
+            "key": "field_pa_outils_carte1_texte",
+            "label": "Carte 1 — Texte",
+            "name": "carte_1_texte",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Capacité d'emprunt, durée de remboursement, mensualités, frais de garantie et de notaire. Toutes nos calculettes immobilier au même endroit."
+        },
+        {
+            "key": "field_pa_outils_carte1_lien",
+            "label": "Carte 1 — Lien",
+            "name": "carte_1_lien",
+            "type": "link",
+            "default_value": {
+                "title": "Accéder aux calculettes",
+                "url": "/calculette/capacite-emprunt",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_pa_outils_carte2_badge",
+            "label": "Carte 2 — Badge",
+            "name": "carte_2_badge",
+            "type": "text",
+            "default_value": "Simuler"
+        },
+        {
+            "key": "field_pa_outils_carte2_titre",
+            "label": "Carte 2 — Titre",
+            "name": "carte_2_titre",
+            "type": "wysiwyg",
+            "default_value": "Crédit conso",
+            "instructions": "Mettre en italique (bouton I) un segment si besoin d'effet visuel."
+        },
+        {
+            "key": "field_pa_outils_carte2_texte",
+            "label": "Carte 2 — Texte",
+            "name": "carte_2_texte",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Besoin de trésorerie, crédit auto, crédit express ou crédit travaux. Simulez votre crédit conso en quelques clics."
+        },
+        {
+            "key": "field_pa_outils_carte2_lien",
+            "label": "Carte 2 — Lien",
+            "name": "carte_2_lien",
+            "type": "link",
+            "default_value": {
+                "title": "Simuler mon crédit conso",
+                "url": "/simulation/besoin-tresorerie",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_pa_outils_carte3_badge",
+            "label": "Carte 3 — Badge",
+            "name": "carte_3_badge",
+            "type": "text",
+            "default_value": "Comparer"
+        },
+        {
+            "key": "field_pa_outils_carte3_titre",
+            "label": "Carte 3 — Titre",
+            "name": "carte_3_titre",
+            "type": "wysiwyg",
+            "default_value": "Bien emprunter",
+            "instructions": "Mettre en italique (bouton I) un segment si besoin d'effet visuel."
+        },
+        {
+            "key": "field_pa_outils_carte3_texte",
+            "label": "Carte 3 — Texte",
+            "name": "carte_3_texte",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Charte de transparence, déroulé des rendez-vous, accompagnement 100% personnalisé. On vous dit tout avant de commencer."
+        },
+        {
+            "key": "field_pa_outils_carte3_lien",
+            "label": "Carte 3 — Lien",
+            "name": "carte_3_lien",
+            "type": "link",
+            "default_value": {
+                "title": "Découvrir nos engagements",
+                "url": "/votre-courtier-vous-accompagne-projet-immobilier",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_pa_tab_simulateur",
+            "label": "06. Simulateur",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_pa_simulateur_etiquette",
+            "label": "Étiquette",
+            "name": "simulateur_etiquette",
+            "type": "text",
+            "default_value": "Simulateur"
+        },
+        {
+            "key": "field_pa_simulateur_titre",
+            "label": "Titre",
+            "name": "simulateur_titre",
+            "type": "wysiwyg",
+            "default_value": "Votre banque,<br><em>ou nous.</em>"
+        },
+        {
+            "key": "field_pa_simulateur_texte_intro",
+            "label": "Texte intro",
+            "name": "simulateur_texte_intro",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Comparez ce que vous coûte un crédit en direct avec votre banque, et ce qu'on peut obtenir pour vous. La différence parle d'elle-même."
+        },
+        {
+            "key": "field_pa_simulateur_montant_defaut",
+            "label": "Montant par défaut",
+            "name": "montant_defaut",
+            "type": "text",
+            "default_value": "220000"
+        },
+        {
+            "key": "field_pa_simulateur_duree_defaut",
+            "label": "Durée par défaut (années)",
+            "name": "duree_defaut",
+            "type": "text",
+            "default_value": "25"
+        },
+        {
+            "key": "field_pa_simulateur_colonne1_label",
+            "label": "Colonne 1 — Label",
+            "name": "colonne_1_label",
+            "type": "text",
+            "default_value": "Votre banque"
+        },
+        {
+            "key": "field_pa_simulateur_colonne1_taux",
+            "label": "Colonne 1 — Taux par défaut",
+            "name": "colonne_1_taux_defaut",
+            "type": "text",
+            "default_value": "3.45"
+        },
+        {
+            "key": "field_pa_simulateur_colonne1_mensualite",
+            "label": "Colonne 1 — Mensualité par défaut",
+            "name": "colonne_1_mensualite_defaut",
+            "type": "text",
+            "default_value": "1095"
+        },
+        {
+            "key": "field_pa_simulateur_colonne2_label",
+            "label": "Colonne 2 — Label",
+            "name": "colonne_2_label",
+            "type": "text",
+            "default_value": "MatchCrédit"
+        },
+        {
+            "key": "field_pa_simulateur_colonne2_taux",
+            "label": "Colonne 2 — Taux par défaut",
+            "name": "colonne_2_taux_defaut",
+            "type": "text",
+            "default_value": "2.92"
+        },
+        {
+            "key": "field_pa_simulateur_colonne2_mensualite",
+            "label": "Colonne 2 — Mensualité par défaut",
+            "name": "colonne_2_mensualite_defaut",
+            "type": "text",
+            "default_value": "1034"
+        },
+        {
+            "key": "field_pa_simulateur_economie_label",
+            "label": "Économie — Label",
+            "name": "economie_label",
+            "type": "text",
+            "default_value": "Économie totale estimée"
+        },
+        {
+            "key": "field_pa_simulateur_economie_valeur",
+            "label": "Économie — Valeur par défaut",
+            "name": "economie_valeur_defaut",
+            "type": "text",
+            "default_value": "18300"
+        },
+        {
+            "key": "field_pa_simulateur_economie_sous_label",
+            "label": "Économie — Sous-label",
+            "name": "economie_sous_label",
+            "type": "text",
+            "default_value": "soit environ 61 € économisés chaque mois pendant 25 ans"
+        },
+        {
+            "key": "field_pa_simulateur_bouton",
+            "label": "Bouton",
+            "name": "simulateur_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Je veux cette économie",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_pa_tab_pourquoi",
+            "label": "07. Pourquoi nous choisir",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_pa_pourquoi_etiquette",
+            "label": "Étiquette",
+            "name": "pourquoi_etiquette",
+            "type": "text",
+            "default_value": "Pourquoi nous choisir"
+        },
+        {
+            "key": "field_pa_pourquoi_titre",
+            "label": "Titre",
+            "name": "pourquoi_titre",
+            "type": "wysiwyg",
+            "default_value": "Quatre bonnes raisons <em>de passer par un courtier.</em>"
+        },
+        {
+            "key": "field_pa_pourquoi_nb_raisons",
+            "label": "Nombre de raisons à afficher",
+            "name": "pourquoi_nb_raisons",
+            "type": "select",
+            "instructions": "Pas de répéteur en ACF Free : 4 raisons fixes. Choisis combien en afficher.",
+            "choices": {
+                "1": "1",
+                "2": "2",
+                "3": "3",
+                "4": "4"
+            },
+            "default_value": "4",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_pa_raison_1",
+            "label": "Raison 1",
+            "name": "raison_1",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_pa_raison1_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "wysiwyg",
+                    "default_value": "Protection"
+                },
+                {
+                    "key": "field_pa_raison1_sous_titre",
+                    "label": "Sous-titre (effet italique)",
+                    "name": "sous_titre",
+                    "type": "text",
+                    "default_value": "Défense de vos intérêts"
+                },
+                {
+                    "key": "field_pa_raison1_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Votre courtier se substitue à vous face aux banques. Il interroge, compare et négocie. Son seul objectif : vous obtenir les meilleures conditions."
+                }
+            ]
+        },
+        {
+            "key": "field_pa_raison_2",
+            "label": "Raison 2",
+            "name": "raison_2",
+            "type": "group",
+            "layout": "block",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_pa_pourquoi_nb_raisons",
+                        "operator": "==",
+                        "value": "2"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_pa_pourquoi_nb_raisons",
+                        "operator": "==",
+                        "value": "3"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_pa_pourquoi_nb_raisons",
+                        "operator": "==",
+                        "value": "4"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_pa_raison2_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "wysiwyg",
+                    "default_value": "Accompagnement"
+                },
+                {
+                    "key": "field_pa_raison2_sous_titre",
+                    "label": "Sous-titre (effet italique)",
+                    "name": "sous_titre",
+                    "type": "text",
+                    "default_value": "100% personnalisé"
+                },
+                {
+                    "key": "field_pa_raison2_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "De la première simulation à la signature, vous êtes accompagné à chaque étape. On ne vous lâche pas en cours de route."
+                }
+            ]
+        },
+        {
+            "key": "field_pa_raison_3",
+            "label": "Raison 3",
+            "name": "raison_3",
+            "type": "group",
+            "layout": "block",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_pa_pourquoi_nb_raisons",
+                        "operator": "==",
+                        "value": "3"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_pa_pourquoi_nb_raisons",
+                        "operator": "==",
+                        "value": "4"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_pa_raison3_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "wysiwyg",
+                    "default_value": "Gain de temps"
+                },
+                {
+                    "key": "field_pa_raison3_sous_titre",
+                    "label": "Sous-titre (effet italique)",
+                    "name": "sous_titre",
+                    "type": "text",
+                    "default_value": "Du temps pour ce qui compte vraiment"
+                },
+                {
+                    "key": "field_pa_raison3_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Fini les allers-retours entre banques, les dossiers à répéter dix fois et le jargon incompréhensible. On s'occupe de tout."
+                }
+            ]
+        },
+        {
+            "key": "field_pa_raison_4",
+            "label": "Raison 4",
+            "name": "raison_4",
+            "type": "group",
+            "layout": "block",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_pa_pourquoi_nb_raisons",
+                        "operator": "==",
+                        "value": "4"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_pa_raison4_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "wysiwyg",
+                    "default_value": "Écoute"
+                },
+                {
+                    "key": "field_pa_raison4_sous_titre",
+                    "label": "Sous-titre (effet italique)",
+                    "name": "sous_titre",
+                    "type": "text",
+                    "default_value": "Compris et entendu dès le départ"
+                },
+                {
+                    "key": "field_pa_raison4_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Chaque situation est différente. CDI, indépendant, primo-accédant ou investisseur — on part toujours de votre réalité, pas d'un modèle standard."
+                }
+            ]
+        },
+        {
+            "key": "field_pa_tab_avis",
+            "label": "08. Avis clients",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_pa_avis_titre",
+            "label": "Titre",
+            "name": "avis_titre",
+            "type": "wysiwyg",
+            "default_value": "Ce qu'on <em>nous dit.</em>"
+        },
+        {
+            "key": "field_pa_avis_sous_titre",
+            "label": "Sous-titre",
+            "name": "avis_sous_titre",
+            "type": "text",
+            "default_value": "Ils ont franchi le pas. Voilà ce qu'ils en pensent.",
+            "instructions": "Les avis eux-mêmes ne sont pas ici : ce sont des articles du CPT \"Avis\" dédié (voir group_avis.json)."
+        },
+        {
+            "key": "field_pa_tab_parrainage",
+            "label": "09. Parrainage",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_pa_parrainage_etiquette",
+            "label": "Étiquette",
+            "name": "parrainage_etiquette",
+            "type": "text",
+            "default_value": "Parrainage"
+        },
+        {
+            "key": "field_pa_parrainage_titre",
+            "label": "Titre",
+            "name": "parrainage_titre",
+            "type": "wysiwyg",
+            "default_value": "Parrainez <em>vos proches.</em>"
+        },
+        {
+            "key": "field_pa_parrainage_texte",
+            "label": "Texte",
+            "name": "parrainage_texte",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Votre crédit est signé, vous connaissez notre façon de travailler. Si vous recommandez MatchCrédit à quelqu'un qui concrétise son projet, on vous offre un chèque cadeau de 100€."
+        },
+        {
+            "key": "field_pa_parrainage_label_montant",
+            "label": "Étiquette au-dessus du montant",
+            "name": "parrainage_label_montant",
+            "type": "text",
+            "default_value": "Jusqu'à"
+        },
+        {
+            "key": "field_pa_parrainage_montant",
+            "label": "Montant mis en avant",
+            "name": "parrainage_montant",
+            "type": "text",
+            "default_value": "100 €"
+        },
+        {
+            "key": "field_pa_parrainage_mention_montant",
+            "label": "Mention sous le montant",
+            "name": "parrainage_mention_montant",
+            "type": "text",
+            "default_value": "offerts par parrainage*"
+        },
+        {
+            "key": "field_pa_parrainage_bouton",
+            "label": "Bouton",
+            "name": "parrainage_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Je parraine un proche",
+                "url": "/credit-immobilier/parrainage",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_pa_parrainage_mention_legale",
+            "label": "Mention légale",
+            "name": "parrainage_mention_legale",
+            "type": "text",
+            "default_value": "*Chèque cadeau versé à la signature de l'offre de prêt du filleul."
+        },
+        {
+            "key": "field_pa_tab_agence",
+            "label": "10. L'agence",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_pa_agence_titre",
+            "label": "Titre",
+            "name": "agence_titre",
+            "type": "wysiwyg",
+            "default_value": "Votre agence,<br><em>à Clermont-Ferrand.</em>"
+        },
+        {
+            "key": "field_pa_agence_texte_intro",
+            "label": "Texte intro",
+            "name": "agence_texte_intro",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Une équipe locale, disponible en agence ou en visio. On se déplace aussi à domicile si besoin."
+        },
+        {
+            "key": "field_pa_agence_bouton",
+            "label": "Bouton",
+            "name": "agence_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Prendre rendez-vous",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_pa_tab_faq",
+            "label": "11. FAQ",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_pa_faq_etiquette",
+            "label": "Étiquette",
+            "name": "faq_etiquette",
+            "type": "text",
+            "default_value": "Questions fréquentes"
+        },
+        {
+            "key": "field_pa_faq_titre",
+            "label": "Titre",
+            "name": "faq_titre",
+            "type": "wysiwyg",
+            "default_value": "Ce qu'on nous demande<br><em>avant le RDV.</em>"
+        },
+        {
+            "key": "field_pa_faq_texte_intro",
+            "label": "Texte d'intro",
+            "name": "faq_texte_intro",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Les réponses aux questions qu'on nous pose le plus souvent, avant même de prendre rendez-vous."
+        },
+        {
+            "key": "field_pa_faq_nb_questions",
+            "label": "Nombre de questions à afficher",
+            "name": "faq_nb_questions",
+            "type": "select",
+            "instructions": "Pas de répéteur en ACF Free : 5 questions fixes. Choisis combien en afficher.",
+            "choices": {
+                "1": "1",
+                "2": "2",
+                "3": "3",
+                "4": "4",
+                "5": "5"
+            },
+            "default_value": "5",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_pa_question_1",
+            "label": "Question 1",
+            "name": "question_1",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_pa_question1_question",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Le premier rendez-vous est-il vraiment gratuit ?"
+                },
+                {
+                    "key": "field_pa_question1_reponse",
+                    "label": "Réponse",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Oui, complètement gratuit et sans engagement. On prend le temps d'étudier votre situation sans vous facturer quoi que ce soit. Vous repartez avec une simulation personnalisée."
+                }
+            ]
+        },
+        {
+            "key": "field_pa_question_2",
+            "label": "Question 2",
+            "name": "question_2",
+            "type": "group",
+            "layout": "block",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_pa_faq_nb_questions",
+                        "operator": "==",
+                        "value": "2"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_pa_faq_nb_questions",
+                        "operator": "==",
+                        "value": "3"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_pa_faq_nb_questions",
+                        "operator": "==",
+                        "value": "4"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_pa_faq_nb_questions",
+                        "operator": "==",
+                        "value": "5"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_pa_question2_question",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Travaillez-vous avec ma banque actuelle ?"
+                },
+                {
+                    "key": "field_pa_question2_reponse",
+                    "label": "Réponse",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Très probablement. On travaille avec une vingtaine d'établissements bancaires. Et si votre banque fait partie du lot, on peut comparer ce qu'elle propose avec ce que les autres offrent."
+                }
+            ]
+        },
+        {
+            "key": "field_pa_question_3",
+            "label": "Question 3",
+            "name": "question_3",
+            "type": "group",
+            "layout": "block",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_pa_faq_nb_questions",
+                        "operator": "==",
+                        "value": "3"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_pa_faq_nb_questions",
+                        "operator": "==",
+                        "value": "4"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_pa_faq_nb_questions",
+                        "operator": "==",
+                        "value": "5"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_pa_question3_question",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Combien coûte le service MatchCrédit ?"
+                },
+                {
+                    "key": "field_pa_question3_reponse",
+                    "label": "Réponse",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Nos honoraires sont transparents et dus uniquement à la signature de votre offre de prêt. Zéro frais si votre projet n'aboutit pas."
+                }
+            ]
+        },
+        {
+            "key": "field_pa_question_4",
+            "label": "Question 4",
+            "name": "question_4",
+            "type": "group",
+            "layout": "block",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_pa_faq_nb_questions",
+                        "operator": "==",
+                        "value": "4"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_pa_faq_nb_questions",
+                        "operator": "==",
+                        "value": "5"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_pa_question4_question",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Je suis indépendant / en CDD / intermittent — vous pouvez m'aider ?"
+                },
+                {
+                    "key": "field_pa_question4_reponse",
+                    "label": "Réponse",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "C'est précisément notre spécialité. Les profils atypiques demandent une approche sur mesure — c'est exactement ce qu'on fait depuis 2008."
+                }
+            ]
+        },
+        {
+            "key": "field_pa_question_5",
+            "label": "Question 5",
+            "name": "question_5",
+            "type": "group",
+            "layout": "block",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_pa_faq_nb_questions",
+                        "operator": "==",
+                        "value": "5"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_pa_question5_question",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Comment se passe le premier rendez-vous ?"
+                },
+                {
+                    "key": "field_pa_question5_reponse",
+                    "label": "Réponse",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "45 minutes en agence à Clermont-Ferrand ou en visio. On fait le point sur votre projet, votre situation financière et vos objectifs. À la fin, vous savez où vous en êtes."
+                }
+            ]
+        },
+        {
+            "key": "field_pa_tab_immat",
+            "label": "12. Immatriculations",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_pa_orias_logo",
+            "label": "Logo ORIAS",
+            "name": "orias_logo",
+            "type": "image",
+            "return_format": "url"
+        },
+        {
+            "key": "field_pa_orias_texte",
+            "label": "Texte ORIAS",
+            "name": "orias_texte",
+            "type": "text",
+            "default_value": "COBSP ORIAS n° 08 040 634"
+        },
+        {
+            "key": "field_pa_orias_lien",
+            "label": "Lien ORIAS",
+            "name": "orias_lien",
+            "type": "link",
+            "default_value": {
+                "title": "Voir sur ORIAS",
+                "url": "https://www.orias.fr",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_pa_afib_logo",
+            "label": "Logo AFIB",
+            "name": "afib_logo",
+            "type": "image",
+            "return_format": "url"
+        },
+        {
+            "key": "field_pa_afib_texte",
+            "label": "Texte AFIB",
+            "name": "afib_texte",
+            "type": "text",
+            "default_value": "Membre AFIB"
+        },
+        {
+            "key": "field_pa_afib_lien",
+            "label": "Lien AFIB",
+            "name": "afib_lien",
+            "type": "link",
+            "default_value": {
+                "title": "Voir sur AFIB",
+                "url": "https://afib-bancassurance.fr",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_pa_tab_cta_final",
+            "label": "13. CTA final",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_pa_cta_titre",
+            "label": "Titre",
+            "name": "cta_titre",
+            "type": "wysiwyg",
+            "default_value": "On en parle <em>demain ?</em>"
+        },
+        {
+            "key": "field_pa_cta_texte",
+            "label": "Texte",
+            "name": "cta_texte",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Premier rendez-vous gratuit, sans engagement. En agence à Clermont-Ferrand ou en visio — réponse sous 24h."
+        },
+        {
+            "key": "field_pa_cta_telephone",
+            "label": "Téléphone",
+            "name": "cta_telephone",
+            "type": "text",
+            "default_value": "04 73 40 40 00"
+        },
+        {
+            "key": "field_pa_cta_horaires",
+            "label": "Horaires",
+            "name": "cta_horaires",
+            "type": "text",
+            "default_value": "Lun–Ven 9h–18h"
+        },
+        {
+            "key": "field_pa_cta_bouton",
+            "label": "Bouton",
+            "name": "cta_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Prendre rendez-vous",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-accueil.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1781963981
+}

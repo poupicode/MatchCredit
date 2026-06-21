@@ -1,0 +1,96 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.cta-final {
+	background: $yellow;
+	color: $purple-ink;
+	padding: mixins.to-dvw(100) 0;
+	position: relative;
+	overflow: hidden;
+
+	h2 {
+		color: $purple-ink;
+		font-size: mixins.to-dvw(84);
+		font-weight: 700;
+		letter-spacing: -0.04em;
+		max-width: 16ch;
+		margin-bottom: mixins.to-dvw(40);
+
+		.ital,
+		em {
+			font-family: $font-serif;
+			font-style: italic;
+			font-weight: 400;
+			color: $purple-ink;
+		}
+	}
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(56, 390) 0;
+
+		h2 {
+			font-size: mixins.to-dvw(40, 390);
+			margin-bottom: mixins.to-dvw(24, 390);
+		}
+	}
+}
+
+.cta-final-text {
+	font-size: mixins.to-dvw(19);
+	max-width: mixins.to-dvw(560);
+	margin-bottom: mixins.to-dvw(32);
+	color: $purple-ink;
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(16, 390);
+		max-width: none;
+		margin-bottom: mixins.to-dvw(24, 390);
+	}
+}
+
+.cta-shape {
+	position: absolute;
+	width: mixins.to-dvw(300);
+	height: mixins.to-dvw(300);
+	border-radius: 50%;
+	border: 60px solid $purple-ink;
+	right: -100px;
+	top: -100px;
+	opacity: 0.15;
+
+	@media (max-width: 600px) {
+		width: mixins.to-dvw(180, 390);
+		height: mixins.to-dvw(180, 390);
+	}
+}
+
+.cta-final-row {
+	display: flex;
+	align-items: center;
+	gap: mixins.to-dvw(32);
+	flex-wrap: wrap;
+
+	@media (max-width: 600px) {
+		gap: mixins.to-dvw(20, 390);
+	}
+}
+
+.cta-final-meta {
+	font-size: mixins.to-dvw(15);
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+
+	strong {
+		font-weight: 700;
+		font-size: mixins.to-dvw(17);
+	}
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(13, 390);
+
+		strong {
+			font-size: mixins.to-dvw(15, 390);
+		}
+	}
+}

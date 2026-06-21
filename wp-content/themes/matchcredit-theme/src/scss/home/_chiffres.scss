@@ -1,0 +1,82 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.section-chiffres {
+	padding: mixins.to-dvw(80) 0;
+	background-color: $cream-warm;
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(48, 390) 0;
+	}
+}
+
+.chiffres-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1px;
+	background: $rule;
+	border: 1px solid $rule;
+
+	@media (max-width: 600px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.chiffres-item {
+	background: $cream-warm;
+	padding: mixins.to-dvw(48) mixins.to-dvw(40);
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(32, 390) mixins.to-dvw(24, 390);
+	}
+}
+
+.chiffres-label {
+	font-family: $font-serif;
+	font-style: italic;
+	font-size: mixins.to-dvw(14);
+	color: $text-mid;
+	margin-bottom: mixins.to-dvw(12);
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(13, 390);
+		margin-bottom: mixins.to-dvw(8, 390);
+	}
+}
+
+.chiffres-val {
+	font-family: $font-sans;
+	font-size: mixins.to-dvw(72);
+	font-weight: 700;
+	color: $purple-ink;
+	letter-spacing: -0.04em;
+	line-height: 1;
+	font-variant-numeric: tabular-nums;
+
+	.unit {
+		font-size: mixins.to-dvw(28);
+		color: $purple-soft;
+		margin-left: mixins.to-dvw(4);
+	}
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(44, 390);
+
+		.unit {
+			font-size: mixins.to-dvw(18, 390);
+		}
+	}
+}
+
+.chiffres-text {
+	margin-top: mixins.to-dvw(12);
+	font-size: mixins.to-dvw(14);
+	color: $text-mid;
+	max-width: mixins.to-dvw(240);
+
+	@media (max-width: 600px) {
+		margin-top: mixins.to-dvw(8, 390);
+		font-size: mixins.to-dvw(13, 390);
+		max-width: none;
+	}
+}

@@ -1,0 +1,133 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.how {
+	background: $purple-ink;
+	color: white;
+	padding: mixins.to-dvw(120) 0;
+
+	h2 {
+		color: white;
+
+		em {
+			color: $yellow;
+		}
+	}
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(56, 390) 0;
+	}
+}
+
+.how-intro {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	gap: mixins.to-dvw(48);
+	margin-bottom: mixins.to-dvw(64);
+	align-items: center;
+
+	@media (max-width: 600px) {
+		grid-template-columns: 1fr;
+		gap: mixins.to-dvw(24, 390);
+		margin-bottom: mixins.to-dvw(40, 390);
+	}
+}
+
+.eyebrow--yellow {
+	color: $yellow;
+}
+
+.how-intro-text {
+	font-size: mixins.to-dvw(17);
+	line-height: 1.6;
+	color: rgba(255, 255, 255, 0.65);
+	max-width: mixins.to-dvw(440);
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(15, 390);
+		max-width: none;
+	}
+}
+
+.steps {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1px;
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+
+	@media (max-width: 600px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.step-card {
+	background: $purple-ink;
+	padding: mixins.to-dvw(48) mixins.to-dvw(40) mixins.to-dvw(56);
+	position: relative;
+	transition: background 0.25s;
+
+	&:hover {
+		background: rgba(245, 166, 35, 0.05);
+	}
+
+	h3 {
+		color: white;
+		font-size: mixins.to-dvw(26);
+		font-weight: 600;
+		margin-bottom: mixins.to-dvw(16);
+		letter-spacing: -0.02em;
+	}
+
+	p {
+		color: rgba(255, 255, 255, 0.65);
+		font-size: mixins.to-dvw(15);
+		line-height: 1.6;
+		margin-bottom: mixins.to-dvw(24);
+	}
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(32, 390) mixins.to-dvw(28, 390) mixins.to-dvw(36, 390);
+
+		h3 {
+			font-size: mixins.to-dvw(22, 390);
+			margin-bottom: mixins.to-dvw(12, 390);
+		}
+
+		p {
+			font-size: mixins.to-dvw(14, 390);
+			margin-bottom: mixins.to-dvw(16, 390);
+		}
+	}
+}
+
+.step-num {
+	font-family: $font-serif;
+	font-style: italic;
+	font-weight: 300;
+	font-size: mixins.to-dvw(96);
+	line-height: 1;
+	color: $yellow;
+	margin-bottom: mixins.to-dvw(32);
+	letter-spacing: -0.04em;
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(56, 390);
+		margin-bottom: mixins.to-dvw(20, 390);
+	}
+}
+
+.step-meta {
+	display: flex;
+	align-items: center;
+	gap: mixins.to-dvw(8);
+	font-size: mixins.to-dvw(12);
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: $yellow;
+	font-weight: 600;
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(11, 390);
+	}
+}

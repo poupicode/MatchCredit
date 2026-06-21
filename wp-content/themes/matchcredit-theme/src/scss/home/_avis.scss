@@ -1,0 +1,95 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.section-avis {
+	background: $cream-warm;
+	padding: mixins.to-dvw(100) 0;
+
+	.section-h em {
+		font-family: $font-serif;
+		font-style: italic;
+		font-weight: 400;
+		color: $purple-deep;
+	}
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(48, 390) 0;
+	}
+}
+
+.section-intro--avis {
+	margin-bottom: mixins.to-dvw(48);
+	max-width: mixins.to-dvw(640);
+
+	p {
+		font-size: mixins.to-dvw(18);
+	}
+
+	@media (max-width: 600px) {
+		margin-bottom: mixins.to-dvw(28, 390);
+		max-width: none;
+
+		p {
+			font-size: mixins.to-dvw(15, 390);
+		}
+	}
+}
+
+.avis-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: mixins.to-dvw(24);
+
+	@media (max-width: 600px) {
+		grid-template-columns: 1fr;
+		gap: mixins.to-dvw(16, 390);
+	}
+}
+
+.avis-card {
+	background: white;
+	border: 1px solid $rule;
+	border-radius: 4px;
+	padding: mixins.to-dvw(32);
+	display: flex;
+	flex-direction: column;
+	gap: mixins.to-dvw(16);
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(24, 390);
+		gap: mixins.to-dvw(12, 390);
+	}
+}
+
+.avis-note {
+	color: $yellow-deep;
+	font-size: mixins.to-dvw(18);
+	letter-spacing: 2px;
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(16, 390);
+	}
+}
+
+.avis-texte {
+	font-family: $font-serif;
+	font-style: italic;
+	font-size: mixins.to-dvw(17);
+	line-height: 1.5;
+	color: $text;
+	flex: 1;
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(15, 390);
+	}
+}
+
+.avis-nom {
+	font-size: mixins.to-dvw(14);
+	font-weight: 600;
+	color: $purple-ink;
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(13, 390);
+	}
+}

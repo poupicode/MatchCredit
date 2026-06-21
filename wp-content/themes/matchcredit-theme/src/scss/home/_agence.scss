@@ -1,0 +1,118 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.section-agences {
+	background: $cream;
+	padding: mixins.to-dvw(120) 0;
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(56, 390) 0;
+	}
+}
+
+.section-intro--agence {
+	max-width: mixins.to-dvw(720);
+
+	p {
+		font-size: mixins.to-dvw(18);
+		max-width: mixins.to-dvw(480);
+	}
+
+	@media (max-width: 600px) {
+		max-width: none;
+
+		p {
+			font-size: mixins.to-dvw(15, 390);
+			max-width: none;
+		}
+	}
+}
+
+.agence-cta {
+	margin-top: mixins.to-dvw(48);
+
+	@media (max-width: 600px) {
+		margin-top: mixins.to-dvw(28, 390);
+	}
+}
+
+.agences-edit {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 1px;
+	background: $rule;
+	border: 1px solid $rule;
+}
+
+.agence-edit {
+	background: $cream;
+	padding: mixins.to-dvw(40) mixins.to-dvw(36) mixins.to-dvw(44);
+	position: relative;
+	transition: background 0.25s;
+
+	&:hover {
+		background: $cream-warm;
+	}
+
+	.agence-photo {
+		width: 100%;
+		height: auto;
+		border-radius: 4px;
+		margin-bottom: mixins.to-dvw(24);
+	}
+
+	h3 {
+		font-size: mixins.to-dvw(28);
+		font-weight: 700;
+		color: $purple-ink;
+		margin: 0 0 mixins.to-dvw(6);
+		letter-spacing: -0.02em;
+	}
+
+	.who {
+		font-family: $font-serif;
+		font-style: italic;
+		font-weight: 400;
+		color: $purple-deep;
+		font-size: mixins.to-dvw(17);
+		margin-bottom: mixins.to-dvw(24);
+	}
+
+	.info {
+		font-size: mixins.to-dvw(14);
+		line-height: 1.7;
+		color: $text;
+		padding-top: mixins.to-dvw(20);
+		border-top: 1px solid $rule;
+
+		strong {
+			color: $purple-ink;
+			font-variant-numeric: tabular-nums;
+		}
+
+		a {
+			color: $purple-ink;
+			border-bottom: 1px solid $purple-soft;
+			display: inline-block;
+			margin-top: 2px;
+		}
+	}
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(28, 390) mixins.to-dvw(24, 390) mixins.to-dvw(32, 390);
+
+		h3 {
+			font-size: mixins.to-dvw(22, 390);
+		}
+
+		.who {
+			font-size: mixins.to-dvw(15, 390);
+			margin-bottom: mixins.to-dvw(16, 390);
+		}
+
+		.info {
+			font-size: mixins.to-dvw(13, 390);
+			padding-top: mixins.to-dvw(16, 390);
+		}
+	}
+}

@@ -1,0 +1,336 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.hero {
+	position: relative;
+	padding: mixins.to-dvw(80) 0 mixins.to-dvw(100);
+	background: $cream;
+
+	h1 {
+		font-size: mixins.to-dvw(60);
+		font-weight: 700;
+		letter-spacing: -0.045em;
+		color: $purple-ink;
+
+		&.compact {
+			font-size: mixins.to-dvw(60);
+			display: inline;
+		}
+	}
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(48, 390) 0 mixins.to-dvw(56, 390);
+
+		h1 {
+			font-size: mixins.to-dvw(48, 390);
+
+			&.compact {
+				font-size: mixins.to-dvw(40, 390);
+			}
+		}
+	}
+}
+
+.hero-meta {
+	display: flex;
+	align-items: center;
+	gap: mixins.to-dvw(16);
+	margin-bottom: mixins.to-dvw(10);
+	font-size: mixins.to-dvw(13);
+	text-transform: uppercase;
+	color: $text-mid;
+	font-weight: 500;
+
+	&::before {
+		content: "";
+		width: mixins.to-dvw(32);
+		height: 1px;
+		background: $purple-ink;
+	}
+
+	@media (max-width: 600px) {
+		gap: mixins.to-dvw(12, 390);
+		margin-bottom: mixins.to-dvw(8, 390);
+		font-size: mixins.to-dvw(12, 390);
+
+		&::before {
+			width: mixins.to-dvw(24, 390);
+		}
+	}
+}
+
+.hero-grid {
+	display: grid;
+	grid-template-columns: 1.4fr 1fr;
+	gap: mixins.to-dvw(80);
+	align-items: end;
+
+	@media (max-width: 600px) {
+		grid-template-columns: 1fr;
+		gap: mixins.to-dvw(48, 390);
+	}
+}
+
+.line {
+	display: block;
+}
+
+.ital,
+.hero h1 em {
+	font-family: $font-serif;
+	font-style: italic;
+	font-weight: 400;
+	color: $purple-deep;
+}
+
+.marker {
+	position: relative;
+	display: inline-block;
+	z-index: 1;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: -6px;
+		right: -6px;
+		bottom: 8%;
+		height: 36%;
+		background: $yellow;
+		z-index: -1;
+		transform: skewX(-4deg);
+	}
+}
+
+.hero-content {
+	margin-top: mixins.to-dvw(32);
+
+	@media (max-width: 600px) {
+		margin-top: mixins.to-dvw(24, 390);
+	}
+}
+
+.hero-slogan {
+	font-family: $font-serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: mixins.to-dvw(22);
+	color: $purple-deep;
+	border-left: 3px solid $yellow;
+	padding-left: mixins.to-dvw(20);
+	margin-bottom: mixins.to-dvw(32);
+	line-height: 1.4;
+	max-width: mixins.to-dvw(440);
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(18, 390);
+		padding-left: mixins.to-dvw(16, 390);
+		margin-bottom: mixins.to-dvw(24, 390);
+		max-width: none;
+	}
+}
+
+.hero-description {
+	font-size: mixins.to-dvw(18);
+	color: $text;
+	max-width: mixins.to-dvw(480);
+	margin-bottom: mixins.to-dvw(32);
+
+	p {
+		margin: 0;
+	}
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(16, 390);
+		max-width: none;
+		margin-bottom: mixins.to-dvw(24, 390);
+	}
+}
+
+.cta-row {
+	display: flex;
+	align-items: center;
+	gap: mixins.to-dvw(24);
+	flex-wrap: wrap;
+
+	@media (max-width: 600px) {
+		gap: mixins.to-dvw(16, 390);
+	}
+}
+
+.hero-rdv-card {
+	background: $purple-ink;
+	color: white;
+	padding: mixins.to-dvw(32);
+	border-radius: 4px;
+	position: relative;
+
+	.label {
+		font-family: $font-sans;
+		font-size: mixins.to-dvw(11);
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: $yellow;
+		font-weight: 700;
+		margin-bottom: mixins.to-dvw(8);
+	}
+
+	h3 {
+		font-family: $font-sans;
+		font-size: mixins.to-dvw(24);
+		font-weight: 700;
+		color: white;
+		margin: 0 0 mixins.to-dvw(8);
+		letter-spacing: -0.02em;
+
+		.ital {
+			color: $yellow;
+		}
+	}
+
+	.sub {
+		font-size: mixins.to-dvw(13);
+		color: rgba(255, 255, 255, 0.65);
+		margin-bottom: mixins.to-dvw(24);
+	}
+
+	.field {
+		margin-bottom: mixins.to-dvw(12);
+
+		label {
+			display: block;
+			font-size: mixins.to-dvw(11);
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+			color: rgba(255, 255, 255, 0.6);
+			margin-bottom: mixins.to-dvw(6);
+		}
+
+		input,
+		select {
+			width: 100%;
+			background: rgba(255, 255, 255, 0.06);
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			color: white;
+			padding: mixins.to-dvw(11) mixins.to-dvw(14);
+			font-family: $font-sans;
+			font-size: mixins.to-dvw(14);
+			border-radius: 2px;
+
+			&:focus {
+				outline: none;
+				border-color: $yellow;
+			}
+
+			&::placeholder {
+				color: rgba(255, 255, 255, 0.4);
+			}
+		}
+
+		select {
+			appearance: none;
+
+			option {
+				color: $purple-ink;
+				background: white;
+			}
+		}
+	}
+
+	button {
+		width: 100%;
+		margin-top: mixins.to-dvw(8);
+		justify-content: center;
+	}
+
+	.legal-mini {
+		font-size: mixins.to-dvw(11);
+		color: rgba(255, 255, 255, 0.5);
+		text-align: center;
+		margin-top: mixins.to-dvw(12);
+	}
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(24, 390);
+
+		h3 {
+			font-size: mixins.to-dvw(20, 390);
+		}
+
+		.sub {
+			font-size: mixins.to-dvw(12, 390);
+		}
+
+		.field {
+			input,
+			select {
+				font-size: mixins.to-dvw(14, 390);
+			}
+		}
+	}
+}
+
+.hero-foot {
+	margin-top: mixins.to-dvw(80);
+	padding-top: mixins.to-dvw(32);
+	border-top: 1px solid $rule;
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	gap: mixins.to-dvw(32);
+	align-items: start;
+
+	@media (max-width: 600px) {
+		grid-template-columns: 1fr 1fr;
+		margin-top: mixins.to-dvw(48, 390);
+		padding-top: mixins.to-dvw(24, 390);
+		gap: mixins.to-dvw(24, 390);
+	}
+}
+
+.hero-foot-label {
+	font-size: mixins.to-dvw(12);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: $text-mid;
+	margin-bottom: mixins.to-dvw(8);
+	font-weight: 500;
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(11, 390);
+	}
+}
+
+.hero-foot-engagement {
+	font-family: $font-serif;
+	font-style: italic;
+	font-size: mixins.to-dvw(22);
+	color: $purple-ink;
+	font-weight: 400;
+	margin-top: mixins.to-dvw(4);
+	max-width: mixins.to-dvw(360);
+	line-height: 1.3;
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(17, 390);
+		max-width: none;
+	}
+}
+
+.hero-foot-val {
+	font-family: $font-sans;
+	font-size: mixins.to-dvw(28);
+	font-weight: 700;
+	color: $purple-ink;
+	font-variant-numeric: tabular-nums;
+	letter-spacing: -0.02em;
+
+	.unit {
+		color: $purple-soft;
+		font-size: 0.7em;
+		margin-left: mixins.to-dvw(4);
+	}
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(22, 390);
+	}
+}

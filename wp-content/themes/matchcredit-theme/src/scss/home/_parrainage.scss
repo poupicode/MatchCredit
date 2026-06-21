@@ -1,0 +1,125 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.parrain-edit {
+	background: $purple-bg;
+	padding: mixins.to-dvw(100) 0;
+	position: relative;
+	overflow: hidden;
+
+	h2 {
+		font-size: mixins.to-dvw(64);
+		font-weight: 700;
+		letter-spacing: -0.03em;
+		margin: mixins.to-dvw(10) 0;
+		color: $purple-ink;
+
+		em {
+			font-family: $font-serif;
+			font-style: italic;
+			font-weight: 400;
+			color: $purple-deep;
+		}
+	}
+
+	p {
+		font-size: mixins.to-dvw(19);
+		line-height: 1.55;
+		color: $text;
+		max-width: mixins.to-dvw(540);
+		margin-bottom: mixins.to-dvw(32);
+	}
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(56, 390) 0;
+
+		h2 {
+			font-size: mixins.to-dvw(36, 390);
+			margin-bottom: mixins.to-dvw(16, 390);
+		}
+
+		p {
+			font-size: mixins.to-dvw(16, 390);
+			max-width: none;
+			margin-bottom: mixins.to-dvw(24, 390);
+		}
+	}
+}
+
+.parrain-edit-grid {
+	display: grid;
+	grid-template-columns: 1.4fr 1fr;
+	gap: mixins.to-dvw(64);
+	align-items: center;
+
+	@media (max-width: 600px) {
+		grid-template-columns: 1fr;
+		gap: mixins.to-dvw(32, 390);
+	}
+}
+
+.amount-block {
+	background: $purple-ink;
+	color: white;
+	padding: mixins.to-dvw(48) mixins.to-dvw(56);
+	border-radius: 4px;
+	text-align: center;
+	position: relative;
+
+	.lbl {
+		font-size: mixins.to-dvw(13);
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: rgba(255, 255, 255, 0.65);
+		font-weight: 600;
+		margin-bottom: mixins.to-dvw(16);
+	}
+
+	.num {
+		font-size: mixins.to-dvw(96);
+		font-weight: 700;
+		color: $yellow;
+		letter-spacing: -0.04em;
+		line-height: 1;
+		margin-bottom: mixins.to-dvw(8);
+	}
+
+	.sub {
+		font-family: $font-serif;
+		font-style: italic;
+		font-size: mixins.to-dvw(18);
+		color: white;
+		font-weight: 400;
+	}
+
+	.conditions {
+		margin-top: mixins.to-dvw(24);
+		padding-top: mixins.to-dvw(20);
+		border-top: 1px solid rgba(255, 255, 255, 0.15);
+		font-size: mixins.to-dvw(12);
+		color: rgba(255, 255, 255, 0.6);
+		line-height: 1.5;
+	}
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(32, 390) mixins.to-dvw(36, 390);
+
+		.lbl {
+			font-size: mixins.to-dvw(12, 390);
+		}
+
+		.num {
+			font-size: mixins.to-dvw(64, 390);
+		}
+
+		.sub {
+			font-size: mixins.to-dvw(16, 390);
+		}
+
+		.conditions {
+			font-size: mixins.to-dvw(11, 390);
+			margin-top: mixins.to-dvw(16, 390);
+			padding-top: mixins.to-dvw(16, 390);
+		}
+	}
+}
