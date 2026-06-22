@@ -18,6 +18,3 @@ jobs:
             cd /home/poupi/projects/matchcredit/web
             git fetch origin
             git reset --hard origin/dev
-            docker exec matchcredit_wp chown -R www-data:www-data \
-              /var/www/html/wp-content/themes/matchcredit-theme \
-              /var/www/html/wp-content/plugins/matchcredit-tools
