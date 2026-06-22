@@ -53,6 +53,16 @@ $footer_legal_links    = array(
 	</div>
 </div>
 
+<div class="cookie-banner" id="cookie-banner" hidden>
+	<div class="container cookie-banner-row">
+		<p class="cookie-banner-text">Nous utilisons des cookies pour mesurer l'audience du site et améliorer votre expérience. Vous pouvez accepter ou refuser leur dépôt.</p>
+		<div class="cookie-banner-actions">
+			<button type="button" class="btn-text" id="cookie-refuse">Refuser</button>
+			<button type="button" class="btn-yellow" id="cookie-accept">Accepter</button>
+		</div>
+	</div>
+</div>
+
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -132,7 +132,17 @@ class MC_Tools_Renderer {
 	public static function compute( array $config, array $values ): array {
 		$variables = array();
 		foreach ( $config['fields'] as $field ) {
-			$variables[ $field['id'] ] = is_numeric( $values[ $field['id'] ] ?? null ) ? (float) $values[ $field['id'] ] : ( $values[ $field['id'] ] ?? '' );
+			$raw = $values[ $field['id'] ] ?? null;
+
+			if ( in_array( $field['type'] ?? '', array( 'select', 'radio_cards' ), true ) ) {
+				$variables[ $field['id'] ] = (string) ( $raw ?? '' );
+				continue;
+			}
+
+			// '' (champ vide/non fourni) doit rester absent (null), pas devenir 0 —
+			// sinon les presets ne peuvent plus distinguer "non fourni" de "vaut zéro"
+			// et leurs garde-fous sur `null === $variable` ne se déclenchent jamais.
+			$variables[ $field['id'] ] = ( null !== $raw && '' !== $raw && is_numeric( $raw ) ) ? (float) $raw : null;
 		}
 
 		if ( 'custom' === $config['preset'] ) {

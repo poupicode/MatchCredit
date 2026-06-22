@@ -11,6 +11,7 @@
 @use "base/page-example";
 @use "layout/header";
 @use "layout/footer";
+@use "layout/cookie-banner";
 @use "home/hero";
 @use "home/projet";
 @use "home/chiffres";
@@ -25,3 +26,10 @@
 @use "home/immatriculations";
 @use "home/cta-final";
 @use "calculette/intro";
+@use "lexique/liste";
+@use "contact/contact-hero";
+@use "contact/formulaire";
+@use "contact/contact-pourquoi";
+@use "contact/equipe";
+@use "contact/infos";
+@use "contact/metier";

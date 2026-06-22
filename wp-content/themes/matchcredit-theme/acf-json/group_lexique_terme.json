@@ -1,0 +1,47 @@
+{
+    "key": "group_lexique_terme",
+    "title": "Terme de lexique — détails",
+    "fields": [
+        {
+            "key": "field_lexique_lettre",
+            "label": "Lettre",
+            "name": "lettre",
+            "type": "text",
+            "instructions": "Initiale du terme, utilisée pour le regroupement et le tri (ex. \"A\").",
+            "required": 1,
+            "maxlength": 1
+        },
+        {
+            "key": "field_lexique_definition",
+            "label": "Définition",
+            "name": "definition",
+            "type": "wysiwyg",
+            "required": 1,
+            "tabs": "visual",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_lexique_lien_interne",
+            "label": "Lien interne",
+            "name": "lien_interne",
+            "type": "text",
+            "instructions": "Optionnel. Chemin ou URL inséré dans la définition (ex. /calculette/mensualite-credit-immobilier)."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "lexique_terme"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782064341
+}

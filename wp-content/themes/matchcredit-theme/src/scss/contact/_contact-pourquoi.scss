@@ -1,0 +1,100 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.section-contact-pourquoi {
+	background: $cream;
+	padding: mixins.to-dvw(100) 0;
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(48, 390) 0;
+	}
+}
+
+.contact-why-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1px;
+	background: $rule;
+	border: 1px solid $rule;
+	margin-top: mixins.to-dvw(48);
+
+	@media (max-width: 800px) {
+		grid-template-columns: 1fr;
+		margin-top: mixins.to-dvw(28, 390);
+	}
+}
+
+.contact-why-card {
+	background: $cream;
+	padding: mixins.to-dvw(40) mixins.to-dvw(32) mixins.to-dvw(44);
+	transition: background 0.25s;
+
+	&:hover {
+		background: $white;
+	}
+
+	h3 {
+		font-size: mixins.to-dvw(22);
+		font-weight: 700;
+		color: $purple-ink;
+		margin: 0 0 mixins.to-dvw(12);
+		letter-spacing: -0.02em;
+		line-height: 1.2;
+
+		.ital {
+			display: block;
+			font-size: mixins.to-dvw(18);
+			margin-top: 2px;
+		}
+	}
+
+	p {
+		font-size: mixins.to-dvw(14);
+		line-height: 1.65;
+		color: $text;
+	}
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(28, 390) mixins.to-dvw(24, 390) mixins.to-dvw(32, 390);
+
+		h3 {
+			font-size: mixins.to-dvw(19, 390);
+			margin: 0 0 mixins.to-dvw(8, 390);
+
+			.ital {
+				font-size: mixins.to-dvw(16, 390);
+			}
+		}
+
+		p {
+			font-size: mixins.to-dvw(14, 390);
+		}
+	}
+}
+
+.contact-why-icon {
+	width: mixins.to-dvw(44);
+	height: mixins.to-dvw(44);
+	color: $purple-deep;
+	margin-bottom: mixins.to-dvw(24);
+	display: grid;
+	place-items: center;
+	border: 1px solid $purple-soft;
+	border-radius: 50%;
+
+	@media (max-width: 600px) {
+		width: mixins.to-dvw(36, 390);
+		height: mixins.to-dvw(36, 390);
+		margin-bottom: mixins.to-dvw(16, 390);
+	}
+
+	svg {
+		width: mixins.to-dvw(16);
+		height: mixins.to-dvw(16);
+
+		@media (max-width: 600px) {
+			width: mixins.to-dvw(14, 390);
+			height: mixins.to-dvw(14, 390);
+		}
+	}
+}

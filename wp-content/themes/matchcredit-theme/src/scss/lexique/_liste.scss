@@ -1,0 +1,191 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.lexique-liste {
+	padding: mixins.to-dvw(80) 0 mixins.to-dvw(120);
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(32, 390) 0 mixins.to-dvw(64, 390);
+	}
+}
+
+.lexique-layout {
+	display: grid;
+	grid-template-columns: mixins.to-dvw(80) 1fr;
+	gap: mixins.to-dvw(48);
+	align-items: flex-start;
+
+	@media (max-width: 800px) {
+		grid-template-columns: 1fr;
+		gap: mixins.to-dvw(24, 390);
+	}
+}
+
+// Colonne sticky desktop — masquée au profit du select mobile en dessous de 800px.
+.lexique-az {
+	position: sticky;
+	top: var(--header-h, 0px);
+	align-self: start;
+	padding-top: mixins.to-dvw(8);
+}
+
+.lexique-az-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: mixins.to-dvw(4);
+
+	a {
+		display: block;
+		text-align: center;
+		width: mixins.to-dvw(36);
+		height: mixins.to-dvw(36);
+		line-height: mixins.to-dvw(36);
+		border-radius: 50%;
+		font-family: $font-sans;
+		font-weight: 600;
+		font-size: mixins.to-dvw(14);
+		color: $text-mid;
+		text-decoration: none;
+		transition: background 0.15s $ease, color 0.15s $ease;
+
+		&:hover,
+		&.is-active {
+			background: $purple-deep;
+			color: $white;
+		}
+	}
+
+	@media (max-width: 800px) {
+		display: none;
+	}
+}
+
+.lexique-az-select {
+	display: none;
+	width: 100%;
+	padding: mixins.to-dvw(12, 390) mixins.to-dvw(16, 390);
+	border: 1px solid $border;
+	border-radius: 8px;
+	font-family: $font-body;
+	font-size: mixins.to-dvw(15, 390);
+	background: $white;
+	color: $text;
+
+	@media (max-width: 800px) {
+		display: block;
+	}
+}
+
+.lexique-content {
+	position: relative;
+	min-width: 0;
+}
+
+// Repère de lettre sticky en haut du contenu — masqué par défaut, le JS lui
+// donne is-visible + le texte de la lettre courante pendant le scroll.
+.lexique-sticky-letter {
+	position: sticky;
+	top: var(--header-h, 0px);
+	z-index: 5;
+	background: $cream;
+	font-family: $font-serif;
+	font-size: mixins.to-dvw(24);
+	font-weight: 600;
+	color: $purple-deep;
+	padding: mixins.to-dvw(8) 0;
+	border-bottom: 1px solid $rule;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.15s $ease;
+
+	&.is-visible {
+		opacity: 1;
+	}
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(20, 390);
+	}
+}
+
+.lexique-group {
+	padding-top: mixins.to-dvw(32);
+
+	&:first-child {
+		padding-top: 0;
+	}
+}
+
+.lexique-group-letter {
+	font-family: $font-serif;
+	font-size: mixins.to-dvw(36);
+	color: $purple-deep;
+	margin: 0 0 mixins.to-dvw(20);
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(28, 390);
+		margin-bottom: mixins.to-dvw(16, 390);
+	}
+}
+
+.lexique-terms {
+	display: grid;
+	gap: mixins.to-dvw(28);
+	margin: 0;
+
+	@media (max-width: 600px) {
+		gap: mixins.to-dvw(20, 390);
+	}
+}
+
+.lexique-term {
+	border-bottom: 1px solid $border;
+	padding-bottom: mixins.to-dvw(20);
+
+	dt {
+		font-family: $font-sans;
+		font-weight: 700;
+		font-size: mixins.to-dvw(18);
+		color: $text;
+		margin-bottom: mixins.to-dvw(8);
+	}
+
+	dd {
+		margin: 0;
+		font-size: mixins.to-dvw(15);
+		color: $text-mid;
+		line-height: 1.65;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	@media (max-width: 600px) {
+		padding-bottom: mixins.to-dvw(16, 390);
+
+		dt {
+			font-size: mixins.to-dvw(16, 390);
+		}
+
+		dd {
+			font-size: mixins.to-dvw(14, 390);
+		}
+	}
+}
+
+.lexique-term-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	margin-top: mixins.to-dvw(8);
+	color: $purple-deep;
+	font-weight: 600;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

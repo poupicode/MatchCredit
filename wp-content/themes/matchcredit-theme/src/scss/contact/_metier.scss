@@ -1,0 +1,35 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.section-metier {
+	background: $white;
+	padding: mixins.to-dvw(100) 0;
+	border-top: 1px solid $rule;
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(48, 390) 0;
+	}
+}
+
+.metier-content {
+	max-width: mixins.to-dvw(760);
+
+	p {
+		font-size: mixins.to-dvw(16);
+		line-height: 1.7;
+		color: $text-mid;
+
+		a {
+			color: $purple-deep;
+			font-weight: 600;
+		}
+	}
+
+	@media (max-width: 600px) {
+		max-width: none;
+
+		p {
+			font-size: mixins.to-dvw(14, 390);
+		}
+	}
+}

@@ -1,0 +1,263 @@
+{
+    "key": "group_page_contact",
+    "title": "Page contact",
+    "fields": [
+        {
+            "key": "field_contact_tab_hero",
+            "label": "01. Hero",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_contact_hero_badge",
+            "label": "Badge accroche",
+            "name": "contact_hero_badge",
+            "type": "text",
+            "default_value": "Réponse sous 24h"
+        },
+        {
+            "key": "field_contact_hero_titre",
+            "label": "Titre",
+            "name": "contact_hero_titre",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "Parlons de votre projet"
+        },
+        {
+            "key": "field_contact_hero_soustitre",
+            "label": "Sous-titre",
+            "name": "contact_hero_soustitre",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Un seul rendez-vous suffit pour avoir une vision claire du financement possible. Sans engagement, sans frais."
+        },
+        {
+            "key": "field_contact_tab_formulaire",
+            "label": "02. Formulaire",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_contact_formulaire_intro",
+            "label": "Texte d'intro",
+            "name": "contact_formulaire_intro",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Avant votre prise de décision, vous souhaitez être bien conseillé ? Contactez-nous : l'étude de faisabilité de votre projet immobilier est gratuite et sans engagement."
+        },
+        {
+            "key": "field_contact_form_cf7",
+            "label": "Formulaire de RDV — shortcode Contact Form 7",
+            "name": "contact_form_cf7",
+            "type": "textarea",
+            "instructions": "Coller ici le shortcode [contact-form-7 ...] une fois le formulaire 3 étapes (coordonnées → projet → disponibilités) construit dans Contact Form 7. Si le client n'a qu'une seule agence active, prévoir un champ \"région\" caché et pré-rempli plutôt qu'un champ visible.",
+            "rows": 2
+        },
+        {
+            "key": "field_contact_tab_pourquoi",
+            "label": "03. Pourquoi un courtier",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_contact_pourquoi_titre",
+            "label": "Titre de section",
+            "name": "contact_pourquoi_titre",
+            "type": "text",
+            "default_value": "Pourquoi passer par un courtier MatchCrédit ?"
+        },
+        {
+            "key": "field_contact_raison_1",
+            "label": "Raison 1",
+            "name": "raison_1",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_contact_raison1_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "wysiwyg",
+                    "tabs": "visual",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "default_value": "Protection"
+                },
+                {
+                    "key": "field_contact_raison1_sous_titre",
+                    "label": "Sous-titre (effet italique)",
+                    "name": "sous_titre",
+                    "type": "text",
+                    "default_value": "Défense de vos intérêts"
+                },
+                {
+                    "key": "field_contact_raison1_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Votre courtier négocie pour vous auprès des banques, en toute indépendance. Il n'a aucun intérêt à privilégier une offre plutôt qu'une autre : sa seule mission est de défendre votre dossier."
+                }
+            ]
+        },
+        {
+            "key": "field_contact_raison_2",
+            "label": "Raison 2",
+            "name": "raison_2",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_contact_raison2_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "wysiwyg",
+                    "tabs": "visual",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "default_value": "Accompagnement"
+                },
+                {
+                    "key": "field_contact_raison2_sous_titre",
+                    "label": "Sous-titre (effet italique)",
+                    "name": "sous_titre",
+                    "type": "text",
+                    "default_value": "100 % personnalisé"
+                },
+                {
+                    "key": "field_contact_raison2_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "De l'étude de votre profil emprunteur jusqu'à la signature, vous êtes informé, conseillé et soutenu à chaque étape de votre projet."
+                }
+            ]
+        },
+        {
+            "key": "field_contact_raison_3",
+            "label": "Raison 3",
+            "name": "raison_3",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_contact_raison3_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "wysiwyg",
+                    "tabs": "visual",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "default_value": "Gain de temps"
+                },
+                {
+                    "key": "field_contact_raison3_sous_titre",
+                    "label": "Sous-titre (effet italique)",
+                    "name": "sous_titre",
+                    "type": "text",
+                    "default_value": "Fini le tour des banques"
+                },
+                {
+                    "key": "field_contact_raison3_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Un seul interlocuteur pour comparer les offres, décortiquer les conditions et négocier à votre place. Vous gardez du temps pour le reste."
+                }
+            ]
+        },
+        {
+            "key": "field_contact_tab_equipe",
+            "label": "04. Équipe",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_contact_equipe_titre",
+            "label": "Titre de section",
+            "name": "contact_equipe_titre",
+            "type": "text",
+            "default_value": "Votre équipe à votre écoute"
+        },
+        {
+            "key": "field_contact_equipe_intro",
+            "label": "Texte d'intro",
+            "name": "contact_equipe_intro",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Des conseillers indépendants, inscrits à l'ORIAS, à votre écoute pour étudier votre projet.",
+            "instructions": "Les fiches conseillers (photo, rôle, lien RDV) se gèrent dans le CPT \"Membres équipe\", pas ici."
+        },
+        {
+            "key": "field_contact_tab_infos",
+            "label": "05. Infos pratiques",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_contact_infos_titre",
+            "label": "Titre de section",
+            "name": "contact_infos_titre",
+            "type": "text",
+            "default_value": "Nous trouver",
+            "instructions": "Adresse / téléphone / horaires viennent du CPT \"Agence\", pas de ce champ."
+        },
+        {
+            "key": "field_contact_acces",
+            "label": "Accès (bus, parking...)",
+            "name": "contact_acces",
+            "type": "text",
+            "instructions": "Optionnel. Ex. \"Arrêt de bus Foch à 2 min, parking gratuit à proximité.\""
+        },
+        {
+            "key": "field_contact_maps_embed",
+            "label": "Carte Google Maps — code d'intégration",
+            "name": "contact_maps_embed",
+            "type": "textarea",
+            "instructions": "Coller le code fourni par Google Maps → Partager → Intégrer une carte → copier le code (balise <iframe>). Ne nécessite pas de clé API.",
+            "rows": 4
+        },
+        {
+            "key": "field_contact_tab_metier",
+            "label": "06. Métier de courtier",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_contact_metier_titre",
+            "label": "Titre de section",
+            "name": "contact_metier_titre",
+            "type": "text",
+            "default_value": "Qu'est-ce qu'un courtier en prêt immobilier ?"
+        },
+        {
+            "key": "field_contact_metier_texte",
+            "label": "Texte",
+            "name": "contact_metier_texte",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Un courtier est un intermédiaire spécialisé dans la négociation de financements immobiliers auprès des banques. Son métier est encadré : chaque conseiller est inscrit à l'ORIAS et a un devoir de conseil envers ses clients.</p><p>Concrètement, il étudie votre profil emprunteur, met les banques en concurrence et négocie pour vous les meilleures conditions — taux, assurance, frais de dossier. Vous gagnez du temps, et vous gardez l'assurance qu'un professionnel défend vos intérêts, pas ceux d'un établissement bancaire en particulier.</p>"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-contact.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782067200
+}

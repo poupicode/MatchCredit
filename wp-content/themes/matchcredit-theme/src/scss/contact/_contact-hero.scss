@@ -1,0 +1,35 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.page-hero--contact {
+	text-align: left;
+}
+
+.page-hero-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background: $white;
+	border: 1px solid $purple-soft;
+	border-radius: 999px;
+	padding: mixins.to-dvw(8) mixins.to-dvw(18);
+	font-family: $font-sans;
+	font-weight: 600;
+	font-size: mixins.to-dvw(13);
+	color: $purple-deep;
+	margin-bottom: mixins.to-dvw(20);
+
+	&::before {
+		content: "";
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		background: $yellow;
+	}
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(12, 390);
+		padding: mixins.to-dvw(6, 390) mixins.to-dvw(14, 390);
+		margin-bottom: mixins.to-dvw(14, 390);
+	}
+}

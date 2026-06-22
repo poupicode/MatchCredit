@@ -87,7 +87,7 @@ class MC_Tools_Rest_Api {
 
 		$sanitized = array();
 		foreach ( ( $config['fields'] ?? array() ) as $field ) {
-			if ( isset( $values[ $field['id'] ] ) ) {
+			if ( isset( $values[ $field['id'] ] ) && '' !== $values[ $field['id'] ] ) {
 				$raw = $values[ $field['id'] ];
 				$sanitized[ $field['id'] ] = in_array( $field['type'], array( 'select', 'radio_cards' ), true )
 					? sanitize_text_field( (string) $raw )
@@ -220,7 +220,7 @@ class MC_Tools_Rest_Api {
 
 		$sanitized = array();
 		foreach ( $config['fields'] as $field ) {
-			if ( isset( $values[ $field['id'] ] ) ) {
+			if ( isset( $values[ $field['id'] ] ) && '' !== $values[ $field['id'] ] ) {
 				$raw = $values[ $field['id'] ];
 				$sanitized[ $field['id'] ] = in_array( $field['type'], array( 'select', 'radio_cards' ), true )
 					? sanitize_text_field( (string) $raw )

@@ -1,0 +1,660 @@
+[
+  {
+    "lettre": "A",
+    "terme": "Abattement",
+    "definition": "En matière de fiscalité, opération qui consiste à diminuer forfaitairement la base d'imposition d'un ménage. Pour l'impôt sur le revenu et pour les salariés, la loi française prévoit un premier abattement de 10% pour frais professionnels puis un second abattement de 20%. On distingue donc les revenus imposables avant abattements des revenus imposables après abattements."
+  },
+  {
+    "lettre": "A",
+    "terme": "Acompte",
+    "definition": "Somme d'argent remise par l'acheteur au vendeur lors de la signature d'un compromis ou d'une promesse de vente immobilière. Contrairement aux arrhes, elle engage définitivement l'acheteur et celui-ci ne pourra se rétracter : après versement de l'acompte, sauf en cas de clauses suspensives, l'acheteur peut être contraint à verser le solde. L'acompte représente en général 10% de la valeur du bien."
+  },
+  {
+    "lettre": "A",
+    "terme": "Acte authentique",
+    "definition": "Acte rédigé par un officier public et signé en sa présence. Par exemple, l'acte de vente immobilier est un acte authentique, contrairement à la promesse et au compromis de vente qui peuvent être signés directement entre les parties, sans intervention d'un officier public."
+  },
+  {
+    "lettre": "A",
+    "terme": "AERAS",
+    "definition": "Convention signée entre les pouvoirs publics, les professionnels, des associations de consommateurs et des associations de personnes malades ou handicapées pour permettre un meilleur accès à l'assurance et au crédit des personnes présentant un risque aggravé de santé."
+  },
+  {
+    "lettre": "A",
+    "terme": "AFIB",
+    "definition": "Association Française des Intermédiaires Bancaires, syndicat professionnel. La mission de l'AFIB : fédérer et représenter la profession d'intermédiaire de crédits, et s'imposer comme représentant de la profession auprès des pouvoirs publics et des établissements prêteurs."
+  },
+  {
+    "lettre": "A",
+    "terme": "Agent général d'assurance",
+    "definition": "Professionnel indépendant exerçant l'activité d'intermédiation en assurance et de gestion pour le compte d'une ou plusieurs entreprises d'assurance. L'agent général est immatriculé à l'ORIAS. Il conseille ses clients dans la mise au point et l'exécution de leurs contrats d'assurance et les assiste en cas de sinistres."
+  },
+  {
+    "lettre": "A",
+    "terme": "Agrément de crédit",
+    "definition": "Faculté donnée au prêteur d'émettre une offre tout en prévoyant que le contrat ne deviendra parfait que s'il donne son agrément."
+  },
+  {
+    "lettre": "A",
+    "terme": "Amortissement",
+    "definition": "Planification du remboursement du capital selon un calendrier déterminé. L'amortissement peut être étalé dans le temps, en plusieurs mensualités (prêt amortissable classique) ou effectué en une seule fois, à l'échéance (prêt in fine)."
+  },
+  {
+    "lettre": "A",
+    "terme": "Apport personnel",
+    "definition": "Somme que vous pouvez investir initialement dans votre opération : au sens strict, la partie de votre épargne consacrée au projet ; par extension, certains prêts aidés qui complètent ou constituent votre apport (Prêt Épargne Logement, Prêt 0%, Prêt 1% Logement, Prêt Fonctionnaire). Les banquiers l'analysent en pourcentage du montant total de l'opération."
+  },
+  {
+    "lettre": "A",
+    "terme": "Assurance complémentaire santé",
+    "definition": "Assurance permettant le remboursement de tout ou partie des dépenses de santé en complément des remboursements effectués par les régimes obligatoires d'assurance de santé."
+  },
+  {
+    "lettre": "A",
+    "terme": "Assurance décès",
+    "definition": "Assurance qui comporte en priorité une garantie décès, ayant pour objectif, en cas de décès, le versement d'un capital ou d'une rente à un ou plusieurs bénéficiaires."
+  },
+  {
+    "lettre": "A",
+    "terme": "Assurance décès invalidité",
+    "definition": "Dénommée parfois DIT. Contrat qui garantit le remboursement total ou partiel d'un crédit en cas de décès ou de maladie. Très souvent exigée par la banque."
+  },
+  {
+    "lettre": "A",
+    "terme": "Assurance décès temporaire",
+    "definition": "Contrat d'assurance qui garantit le versement d'un capital aux bénéficiaires jusqu'à une date limite fixée lors de la souscription du contrat."
+  },
+  {
+    "lettre": "A",
+    "terme": "Assurance décès vie entière",
+    "definition": "Contrat d'assurance qui garantit le versement du capital aux bénéficiaires désignés en cas de décès de l'assuré, quelle que soit la date à laquelle le décès survient."
+  },
+  {
+    "lettre": "A",
+    "terme": "Assurance dépendance",
+    "definition": "Assurance prévoyant le versement d'une prestation, essentiellement sous forme de rente, en cas de perte d'autonomie de l'assuré."
+  },
+  {
+    "lettre": "A",
+    "terme": "Assurance dommages ouvrage",
+    "definition": "Assurance obligatoire que doit prendre le maître d'ouvrage avant l'ouverture d'un chantier. Elle garantit le financement de la réparation des dommages qui mettent en péril la solidité de l'immeuble ou le rendent impropre à sa destination, pour une durée de dix ans à compter de la réception des travaux."
+  },
+  {
+    "lettre": "A",
+    "terme": "Assurance emprunteur",
+    "definition": "Assurance temporaire souscrite à l'occasion de la mise en place d'un crédit, qui garantit la prise en charge de tout ou partie du crédit en cas de survenance de certains événements (décès, perte totale et irréversible d'autonomie, invalidité permanente, incapacité temporaire de travail, et éventuellement perte d'emploi)."
+  },
+  {
+    "lettre": "A",
+    "terme": "Assurance garantie des accidents de la vie",
+    "definition": "Contrat d'assurance permettant l'indemnisation rapide, en dehors de toute recherche de responsabilité, en cas de dommages corporels accidentels importants de la vie privée. Contrat labellisé prévoyant un montant maximal d'indemnisation."
+  },
+  {
+    "lettre": "A",
+    "terme": "Assurance groupe",
+    "definition": "Contrat d'assurance collectif négocié par une entreprise bancaire pour le compte d'un ensemble de clients, pouvant couvrir l'incapacité de travail, l'invalidité, le décès ou la perte d'emploi."
+  },
+  {
+    "lettre": "A",
+    "terme": "Assurance habitation",
+    "definition": "Assurance multirisques ayant pour objectif de protéger une habitation et son contenu en cas de sinistre. Comporte généralement une garantie de dommages et une garantie de responsabilité civile. Obligatoire pour les locataires d'un logement non meublé."
+  },
+  {
+    "lettre": "A",
+    "terme": "Assurance perte d'emploi",
+    "definition": "Contrat facultatif qui garantit, sous certaines conditions, le paiement des mensualités de crédit à la banque en cas de perte d'emploi."
+  },
+  {
+    "lettre": "A",
+    "terme": "Assurance vie",
+    "definition": "Contrat par lequel l'assureur s'engage, en contrepartie du versement de primes, à verser à l'assuré ou aux bénéficiaires désignés un capital ou une rente, en cas de décès ou de survie de l'assuré, selon des modalités définies au contrat. Soumise à un régime fiscal spécifique."
+  },
+  {
+    "lettre": "A",
+    "terme": "ATD",
+    "definition": "Procédure administrative (saisie-attribution) permettant à la direction générale des Impôts et au Trésor public de faire bloquer puis se faire attribuer une somme due au titre des impôts."
+  },
+  {
+    "lettre": "A",
+    "terme": "Autorisation de découvert",
+    "definition": "Contrat de crédit en vertu duquel le prêteur autorise expressément l'emprunteur à disposer de fonds qui dépassent le solde de son compte de dépôt."
+  },
+  {
+    "lettre": "A",
+    "terme": "Autorisation de prélèvement",
+    "definition": "Autorisation écrite donnée par le client à sa banque ou son établissement de paiement de payer les prélèvements présentés par le créancier désigné. Nécessaire et préalable au paiement des prélèvements."
+  },
+  {
+    "lettre": "B",
+    "terme": "Bail",
+    "definition": "Aussi appelé contrat de location, document qui définit les conditions (prix et durée) de location d'un bien immobilier."
+  },
+  {
+    "lettre": "B",
+    "terme": "Banque",
+    "definition": "Catégorie d'établissements de crédit autorisée par la loi à réaliser toutes les opérations de banque : collecte de fonds auprès du public, opérations de crédit, offre de services bancaires de paiement (dont la délivrance de chéquiers)."
+  },
+  {
+    "lettre": "B",
+    "terme": "Banque Centrale Européenne",
+    "definition": "Créée le 1er janvier 1999, indépendante des gouvernements nationaux et des institutions européennes, elle définit la politique monétaire européenne et veille à son application par les Banques Centrales Nationales."
+  },
+  {
+    "lettre": "B",
+    "terme": "Banque de France",
+    "definition": "Au-dela de la mise en oeuvre de la politique monetaire et du contrôle des banques, exerce des missions de service public : gestion des fichiers d'incidents de paiement (FICP, FCC, FNCI), secrétariat des commissions de surendettement, traitement des demandes de droit au compte, information des particuliers sur la réglementation bancaire."
+  },
+  {
+    "lettre": "B",
+    "terme": "Bonus - Malus",
+    "definition": "Système permettant à un assureur de faire varier la cotisation annuelle d'un assuré selon le nombre d'accidents déclarés l'année précédente. Réduction (bonus) en l'absence d'accident, augmentation (malus) en cas d'accident(s). Régi par arrêté ministériel."
+  },
+  {
+    "lettre": "B",
+    "terme": "Broker",
+    "definition": "Terme anglo-saxon désignant un intermédiaire de Bourse qui achète et vend pour le compte de ses clients."
+  },
+  {
+    "lettre": "B",
+    "terme": "Butoir de Taux",
+    "definition": "Aussi appelé cap de taux ou taux plafond : taux d'intérêt d'un prêt dont l'évolution à la hausse est limitée (par exemple plus ou moins 2%), selon les conditions définies par le contrat."
+  },
+  {
+    "lettre": "C",
+    "terme": "Capital emprunté",
+    "definition": "Montant du crédit consenti par le prêteur. Le capital peut être versé en une ou plusieurs fois."
+  },
+  {
+    "lettre": "C",
+    "terme": "Capital restant dû",
+    "definition": "Montant du capital restant à rembourser par l'emprunteur à une date donnée. Il sert de base au calcul des intérêts de l'échéance à venir. Dans un contrat à taux variable, le prêteur doit informer une fois par an l'emprunteur de ce montant."
+  },
+  {
+    "lettre": "C",
+    "terme": "Carrez (loi)",
+    "definition": "Vise à améliorer la protection des acquéreurs de lots en instaurant une garantie de superficie. Oblige le vendeur à informer l'acquéreur sur la superficie du lot vendu par une mention devant apparaître dès le premier acte signé."
+  },
+  {
+    "lettre": "C",
+    "terme": "Catastrophes naturelles (garantie)",
+    "definition": "Couvre les dommages matériels causés à des biens dans les communes déclarées en situation de catastrophe naturelle par arrêté interministériel. Obligatoirement insérée dans les contrats couvrant les dommages aux biens (auto, habitation)."
+  },
+  {
+    "lettre": "C",
+    "terme": "Caution",
+    "definition": "Engagement pris par une personne de se substituer au débiteur si celui-ci ne paie pas sa dette."
+  },
+  {
+    "lettre": "C",
+    "terme": "Caution mutuelle",
+    "definition": "Un organisme se porte caution à votre place. Vous devez dans ce cas verser une participation à un fonds de garantie."
+  },
+  {
+    "lettre": "C",
+    "terme": "CEL",
+    "definition": "Compte épargne logement. Épargne qui donne droit à des prêts immobiliers (prêts épargne logement) à des taux avantageux."
+  },
+  {
+    "lettre": "C",
+    "terme": "Centre National d'Appel des chèques perdus ou volés",
+    "definition": "Service de la Banque de France permettant de déclarer la perte ou le vol d'un chèque avant la déclaration écrite d'opposition auprès de sa banque. Ne dispense pas de faire opposition, l'opposition n'étant conservée que 48h ouvrées."
+  },
+  {
+    "lettre": "C",
+    "terme": "Charges courantes",
+    "definition": "Charges récurrentes : électricité, gaz, eau, assurance(s), abonnement(s) et dépenses alimentaires."
+  },
+  {
+    "lettre": "C",
+    "terme": "Chèque",
+    "definition": "Moyen de paiement par lequel le titulaire d'un compte (tireur) donne l'ordre à son banquier (tiré) de payer au bénéficiaire la somme inscrite. La provision doit être disponible à l'émission et maintenue jusqu'à présentation. Validité d'un chèque : 1 an et 8 jours."
+  },
+  {
+    "lettre": "C",
+    "terme": "Chèque sans provision",
+    "definition": "Chèque émis sur un compte dont le solde disponible ou le découvert autorisé est insuffisant. Sans régularisation, l'émetteur se voit interdit d'émettre des chèques. Aussi appelé chèque impayé."
+  },
+  {
+    "lettre": "C",
+    "terme": "Commissions de surendettement",
+    "definition": "Organisées régionalement et rattachées à la Banque de France, elles étudient les dossiers des emprunteurs en difficulté de remboursement et peuvent élaborer des plans conventionnels de redressement ou des recommandations."
+  },
+  {
+    "lettre": "C",
+    "terme": "Coût total du crédit",
+    "definition": "Ensemble des coûts dus par l'emprunteur (intérêts, commissions, taxes, frais) pour la conclusion et l'exécution du contrat de crédit, y compris les primes d'assurance exigées, à l'exception des frais d'acte notarié."
+  },
+  {
+    "lettre": "C",
+    "terme": "Crédit",
+    "definition": "Opération par laquelle un établissement de crédit met ou promet de mettre à disposition d'un client une somme d'argent, moyennant intérêts et frais, pour une durée déterminée ou indéterminée, que le client doit rembourser."
+  },
+  {
+    "lettre": "C",
+    "terme": "Crédit amortissable",
+    "definition": "Prêt dont le montant, la durée et les remboursements périodiques (capital et intérêts) sont déterminés dès la mise en place, selon un échéancier fixe ou révisable selon des clauses définies."
+  },
+  {
+    "lettre": "C",
+    "terme": "Crédit in fine",
+    "definition": "Crédit dont le capital se rembourse en une seule fois à l'échéance. Les intérêts sont généralement payés périodiquement sur la durée du prêt."
+  },
+  {
+    "lettre": "D",
+    "terme": "Déchéance",
+    "definition": "Perte du droit à obtenir une indemnisation prévue dans le contrat, par exemple lorsque l'assuré n'a pas respecté ses obligations après un sinistre (déclaration trop tardive ayant causé un préjudice à l'assureur)."
+  },
+  {
+    "lettre": "D",
+    "terme": "Déchéance du terme",
+    "definition": "Perte de la possibilité de continuer à rembourser un prêt par échéances, suite au non-paiement de mensualités par l'emprunteur. Le créancier exige alors le paiement immédiat de toutes les sommes dues (capital et intérêts majorés des indemnités)."
+  },
+  {
+    "lettre": "D",
+    "terme": "Déclaration de sinistre",
+    "definition": "Obligation pour l'assuré de déclarer à l'assureur tout sinistre pouvant entraîner une indemnisation. Délai général de 5 jours à partir de la connaissance du sinistre (2 jours pour le vol, 10 jours pour les catastrophes naturelles)."
+  },
+  {
+    "lettre": "D",
+    "terme": "Découvert du compte",
+    "definition": "Position d'un compte de dépôt lorsque son solde est négatif, contractualisée ou non au préalable avec le banquier (autorisation de découvert)."
+  },
+  {
+    "lettre": "D",
+    "terme": "Déduction fiscale",
+    "definition": "Mécanisme permettant de déduire une somme du montant du revenu imposable."
+  },
+  {
+    "lettre": "D",
+    "terme": "Délégation d'assurance",
+    "definition": "Possibilité pour l'emprunteur (prêt immobilier ou crédit à la consommation) de souscrire une assurance emprunteur auprès de l'assureur de son choix, plutôt que celle proposée par la banque."
+  },
+  {
+    "lettre": "D",
+    "terme": "Dépassement",
+    "definition": "Découvert tacitement accepté par lequel un prêteur autorise l'emprunteur à disposer de fonds dépassant le solde de son compte de dépôt ou l'autorisation de découvert convenue."
+  },
+  {
+    "lettre": "D",
+    "terme": "Désolidarisation",
+    "definition": "Rupture d'une solidarité entre deux personnes concernant un engagement financier, par exemple entre époux en cas de divorce ou entre cautions."
+  },
+  {
+    "lettre": "D",
+    "terme": "Droits de succession",
+    "definition": "Impôt dû sur la transmission d'un patrimoine au décès d'une personne, calculé selon le lien de parenté avec le défunt et la valeur du patrimoine transmis. [À FAIRE VALIDER : la définition source du site actuel était erronée - dupliquée par erreur depuis la fiche « Délégation d'assurance ». Définition correcte à confirmer avant publication.]"
+  },
+  {
+    "lettre": "E",
+    "terme": "Échéance",
+    "definition": "Date à laquelle une mensualité doit être prélevée, ou désigne aussi le montant de cette dernière."
+  },
+  {
+    "lettre": "E",
+    "terme": "Éco-prêt à taux zéro",
+    "definition": "Prêt sans intérêt destiné aux particuliers souhaitant financer la rénovation thermique de leur logement principal. [À FAIRE VALIDER : montants, durées et critères d'éligibilité (dont la date de construction du logement) ont évolué depuis la rédaction initiale - à mettre à jour avec les conditions en vigueur.]"
+  },
+  {
+    "lettre": "E",
+    "terme": "Effet de levier",
+    "definition": "Mécanisme permettant de prendre une position (en Bourse par exemple) bien plus importante que les fonds dont on dispose, pouvant dégager des profits importants mais aussi des pertes importantes. En immobilier, consiste à utiliser sa capacité d'endettement pour se constituer un capital."
+  },
+  {
+    "lettre": "E",
+    "terme": "Encadrement du crédit",
+    "definition": "Ensemble de mesures prises par les autorités monétaires d'un pays pour limiter la somme des crédits accordés aux entreprises et particuliers par les établissements de crédit, aujourd'hui géré essentiellement via les taux directeurs."
+  },
+  {
+    "lettre": "E",
+    "terme": "Endossement",
+    "definition": "Opération consistant à transmettre un effet de commerce en apposant sa signature au dos. L'endos peut être nominatif, au porteur, ou en blanc."
+  },
+  {
+    "lettre": "E",
+    "terme": "Épargne logement",
+    "definition": "Formule de placement permettant, au terme d'une période d'épargne, d'obtenir un crédit dans des conditions privilégiées pour financer une résidence principale ou secondaire. Deux formules existent : le compte épargne-logement (CEL) et le plan épargne-logement (PEL)."
+  },
+  {
+    "lettre": "E",
+    "terme": "Établissement de crédit",
+    "definition": "Institutions habilitées à proposer des crédits, recouvrant notamment les banques et les établissements de crédit spécialisés. On parle aussi d'établissements bancaires."
+  },
+  {
+    "lettre": "E",
+    "terme": "EURIBOR",
+    "definition": "Taux auquel les banques se prêtent de l'argent dans la zone euro, publié chaque jour à des échéances variables (1, 3, 6 mois et 1 an). Sert d'indice de référence pour les prêts à taux variable proposés par certaines banques."
+  },
+  {
+    "lettre": "F",
+    "terme": "Facilité de découvert",
+    "definition": "Contrat de crédit en vertu duquel le prêteur autorise expressément l'emprunteur à disposer de fonds qui dépassent le solde de son compte de dépôt."
+  },
+  {
+    "lettre": "F",
+    "terme": "FICP",
+    "definition": "Fichier géré par la Banque de France qui recense les incidents de remboursement de crédits (y compris découverts) accordés à des particuliers, ainsi que les inscriptions dans le cadre d'une procédure de surendettement."
+  },
+  {
+    "lettre": "F",
+    "terme": "FNAIM",
+    "definition": "Syndicat professionnel auquel adhèrent des associations d'agents immobiliers, administrateurs de biens, marchands de biens, experts, promoteurs."
+  },
+  {
+    "lettre": "F",
+    "terme": "Foyer fiscal",
+    "definition": "Lieu où un contribuable a sa résidence habituelle et permanente en France. Constitue l'entité familiale de base retenue pour le calcul de l'impôt sur le revenu."
+  },
+  {
+    "lettre": "F",
+    "terme": "Frais de notaire",
+    "definition": "Frais dont le notaire assure le recouvrement : principalement des taxes et frais au profit des collectivités publiques et de l'État, ainsi que la rémunération du notaire lui-même.",
+    "lien_interne": "/credit-immobilier/calcul-frais-de-notaire"
+  },
+  {
+    "lettre": "G",
+    "terme": "Garantie",
+    "definition": "Protection permettant à la banque de se faire rembourser le montant restant dû en cas de défaut de paiement de l'emprunteur. Plusieurs types existent : l'hypothèque, le Privilège de Prêteur de Deniers (PPD), la caution, le nantissement."
+  },
+  {
+    "lettre": "G",
+    "terme": "Garantie bancaire",
+    "definition": "Émise par la banque du débiteur ou acheteur, destinée à payer le vendeur à une date et pour un montant donnés, uniquement en cas de défaut de règlement du débiteur."
+  },
+  {
+    "lettre": "G",
+    "terme": "Garantie d'achèvement",
+    "definition": "Garantie fournie par un entrepreneur, par laquelle il s'engage à ce que le projet ou le contrat soit exécuté à une date donnée."
+  },
+  {
+    "lettre": "G",
+    "terme": "Garantie de parfait achèvement",
+    "definition": "Garantie à laquelle l'entrepreneur est tenu pendant un an à compter de la réception des travaux, couvrant tous les désordres signalés par le maître d'ouvrage."
+  },
+  {
+    "lettre": "G",
+    "terme": "Gestion de patrimoine",
+    "definition": "Ensemble de services assurés par les banques ou gestionnaires de patrimoine indépendants pour des personnes possédant un patrimoine important, du simple bilan patrimonial à la prise en charge globale."
+  },
+  {
+    "lettre": "H",
+    "terme": "Héritiers réservataires",
+    "definition": "Héritiers auxquels la loi accorde une part dans la succession, dont ils ne peuvent pas être privés."
+  },
+  {
+    "lettre": "H",
+    "terme": "Hypothèque",
+    "definition": "Garantie portant sur un bien immobilier. Si le créancier n'est pas payé dans les délais prévus, il pourra obtenir la saisie de l'immeuble pour se rembourser."
+  },
+  {
+    "lettre": "H",
+    "terme": "Hypothèque rechargeable",
+    "definition": "Hypothèque conventionnelle permettant à l'emprunteur de ne pas avoir à en constituer une nouvelle pour garantir un nouveau crédit, dans la limite d'un montant maximal fixé à l'origine. Ne peut pas garantir un crédit renouvelable."
+  },
+  {
+    "lettre": "I",
+    "terme": "IRA (Indemnités de Remboursement Anticipé)",
+    "definition": "Indemnités versées au prêteur lorsque le crédit est remboursé par l'emprunteur avant la date prévue au contrat. Plafonnées légalement (6 mois d'intérêts dans la limite de 3% du capital restant dû pour un crédit immobilier, sauf cas d'exonération ; 0,5% à 1% pour un crédit à la consommation au-delà de 10 000 euros remboursés). [À FAIRE VALIDER : seuils réglementaires à reconfirmer.]"
+  },
+  {
+    "lettre": "I",
+    "terme": "Interdit bancaire",
+    "definition": "S'applique aux personnes ayant émis des chèques sans provision sans régulariser leur situation. Interdiction de 5 ans, enregistrée au Fichier Central des Chèques (FCC) de la Banque de France."
+  },
+  {
+    "lettre": "I",
+    "terme": "Intérêts",
+    "definition": "Somme versée par l'emprunteur au prêteur en rémunération du prêt consenti."
+  },
+  {
+    "lettre": "I",
+    "terme": "Intérêts intercalaires",
+    "definition": "Intérêts que l'emprunteur commence à payer entre le déblocage des fonds par la banque et le remboursement effectif de l'emprunt. S'applique notamment au financement d'une construction, où les fonds sont débloqués par tranches selon l'avancement des travaux."
+  },
+  {
+    "lettre": "I",
+    "terme": "IOBSP",
+    "definition": "Intermédiaire en Opérations de Banque et en Services de Paiement : personne qui, à titre de profession habituelle, met en rapport un client avec un établissement de crédit, une société de financement ou un établissement de paiement en vue d'une opération de banque (le plus souvent un crédit). Doit être inscrit sur la liste tenue par l'ORIAS."
+  },
+  {
+    "lettre": "J",
+    "terme": "Jouissance",
+    "definition": "Droit d'user un bien et d'en percevoir les fruits. Exemple : louer un appartement et en retirer des loyers. Voir aussi Usufruit."
+  },
+  {
+    "lettre": "J",
+    "terme": "Juge des tutelles",
+    "definition": "Juge chargé d'organiser et de faire fonctionner les régimes de protection aménagés en faveur des mineurs et des incapables majeurs."
+  },
+  {
+    "lettre": "K",
+    "terme": "Krach",
+    "definition": "Effondrement des cours boursiers."
+  },
+  {
+    "lettre": "L",
+    "terme": "Ligne de crédit",
+    "definition": "Forme de crédit dans laquelle la banque met à disposition de son client un montant maximum sous forme de prêt, servant à financer différentes opérations ou contrats conclus ultérieurement."
+  },
+  {
+    "lettre": "L",
+    "terme": "Location avec Option d'Achat (LOA)",
+    "definition": "Aussi appelée leasing : permet d'utiliser un bien en tant que locataire pendant une durée déterminée et de décider d'en devenir propriétaire ou non à la fin de la location, sous réserve d'avoir payé les loyers et le montant de l'option d'achat."
+  },
+  {
+    "lettre": "M",
+    "terme": "Mensualité",
+    "definition": "Somme d'argent, le plus souvent fixe, versée chaque mois pour rembourser un prêt ou une facilité de paiement. Inclut presque toujours des intérêts ou des frais : la somme remboursée est donc supérieure à la somme empruntée.",
+    "lien_interne": "/calculette/mensualite-credit-immobilier"
+  },
+  {
+    "lettre": "M",
+    "terme": "MIOBSP",
+    "definition": "Mandataire exclusif en opérations de banque et en services de paiement. Doit être immatriculé à l'ORIAS."
+  },
+  {
+    "lettre": "M",
+    "terme": "Montant total du crédit",
+    "definition": "Plafond ou total des sommes rendues disponibles en vertu d'un contrat ou d'une opération de crédit."
+  },
+  {
+    "lettre": "M",
+    "terme": "Montant total dû par l'emprunteur",
+    "definition": "Somme du montant total du crédit et du coût total du crédit dû par l'emprunteur."
+  },
+  {
+    "lettre": "M",
+    "terme": "Moratoire",
+    "definition": "Délai ayant pour but de suspendre les poursuites contre le débiteur en vue d'un rééchelonnement ou d'un effacement partiel ou total de ses dettes, dans le cadre ou non d'une procédure de surendettement."
+  },
+  {
+    "lettre": "N",
+    "terme": "Neiertz (loi)",
+    "definition": "Loi qui complète la loi Scrivener de 1978 sur le crédit à la consommation : suppression des indemnités sur remboursements anticipés, obligation de conserver l'offre préalable de crédit, encadrement des taux pratiqués (taux de référence et taux d'usure de la Banque de France), prévention du surendettement des ménages. Crée également les commissions de surendettement."
+  },
+  {
+    "lettre": "O",
+    "terme": "OAT (Obligations Assimilables du Trésor)",
+    "definition": "Titres de dettes émis par l'État français pour une période de sept à trente ans. Le taux d'intérêt des OAT sert généralement de référence pour calculer le taux des crédits à taux fixe."
+  },
+  {
+    "lettre": "O",
+    "terme": "Offre de prêt",
+    "definition": "Contrat de prêt adressé gratuitement par voie postale, dont le contenu est réglementé. Engage l'établissement de crédit pendant trente jours minimum à compter de sa réception."
+  },
+  {
+    "lettre": "O",
+    "terme": "OPCVM",
+    "definition": "Organismes de Placement Collectif en Valeurs Mobilières : gèrent des portefeuilles de valeurs mobilières détenus collectivement par des investisseurs particuliers ou institutionnels (SICAV, FCP, FCPE, FCPR, FCPI, FCIMT)."
+  },
+  {
+    "lettre": "O",
+    "terme": "ORIAS",
+    "definition": "Registre unique des Intermédiaires en Assurance, Banque et Finance. Recense l'ensemble des intermédiaires autorisés à commercialiser des contrats d'assurance, des opérations de banque (dont les crédits), des services de paiement et des instruments financiers, et/ou à conseiller sur ces produits."
+  },
+  {
+    "lettre": "P",
+    "terme": "PAS (Prêt à l'Accession Sociale)",
+    "definition": "Prêt immobilier réservé aux personnes qui achètent ou améliorent leur résidence principale et dont les ressources sont inférieures à un plafond défini."
+  },
+  {
+    "lettre": "P",
+    "terme": "Plan conventionnel de redressement",
+    "definition": "Décision rendue par la commission de surendettement, permettant à l'emprunteur de rééchelonner l'ensemble des dettes contractées auprès du ou des organismes prêteurs."
+  },
+  {
+    "lettre": "P",
+    "terme": "PPD (Privilège de Prêteur de Deniers)",
+    "definition": "Garantie réelle, alternative à l'hypothèque conventionnelle. Ne peut s'appliquer qu'aux biens existants : ne peut donc pas être utilisé pour les ventes sur plan (VEFA) ni pour la construction d'une maison individuelle."
+  },
+  {
+    "lettre": "P",
+    "terme": "PTIA (Perte Totale et Irréversible d'Autonomie)",
+    "definition": "Invalidité physique ou mentale constatée avant l'âge de 65 ans, mettant l'assuré dans l'incapacité définitive d'exercer toute activité rémunératrice et nécessitant l'assistance d'une tierce personne pour les actes courants de la vie. L'assureur rembourse alors le capital restant dû."
+  },
+  {
+    "lettre": "Q",
+    "terme": "Quotité disponible",
+    "definition": "Part du patrimoine d'une personne dont elle peut disposer librement par donation ou testament, par opposition à la réserve héréditaire dont elle ne peut pas disposer."
+  },
+  {
+    "lettre": "R",
+    "terme": "Rachat de crédit",
+    "definition": "Opération consistant à regrouper tous ses crédits en cours (auto, immobilier, renouvelable, conso, etc.) en un seul crédit ne formant qu'une seule mensualité, ou à faire racheter son crédit immobilier par un autre établissement pour bénéficier d'un meilleur taux. [À FAIRE VALIDER : le chiffre de réduction de mensualité « jusqu'à 60% » mis en avant sur le site actuel est à confirmer avant publication — généraliste et potentiellement trompeur sans contexte.]",
+    "lien_interne": "/rachat-de-credit-immobilier"
+  },
+  {
+    "lettre": "R",
+    "terme": "Remboursement anticipé",
+    "definition": "Faculté pour le client de rembourser partiellement ou totalement un crédit avant la fin initialement prévue du contrat. Peut donner lieu à une indemnité de remboursement anticipé (IRA) dans les limites légalement fixées."
+  },
+  {
+    "lettre": "S",
+    "terme": "Saisie sur salaire",
+    "definition": "Si une saisie sur salaire apparaît sur la fiche de paie d'un emprunteur, des explications et l'historique de la situation devront être fournis pour que la banque puisse se prononcer sur le dossier de rachat de crédit."
+  },
+  {
+    "lettre": "S",
+    "terme": "SCI (Société Civile Immobilière)",
+    "definition": "Société non commerciale constituée pour l'acquisition, la construction, la gestion ou la vente d'un patrimoine immobilier."
+  },
+  {
+    "lettre": "S",
+    "terme": "Scrivener (loi) - historique",
+    "definition": "Ancienne loi encadrant les crédits à la consommation (offre préalable réglementée, délai de réflexion, droit de rétractation). Remplacée depuis 2010 par la loi Lagarde, qui prévoit un délai de réflexion de 10 jours et un délai de rétractation de 14 jours. [À FAIRE VALIDER : conserver uniquement à titre historique/pédagogique, ou remplacer entièrement par une entrée 'Loi Lagarde' à jour - la loi Scrivener n'est plus en vigueur.]"
+  },
+  {
+    "lettre": "S",
+    "terme": "Solutions de rachat de crédits pour un propriétaire",
+    "definition": "Un propriétaire qui demande un rachat de crédits à la consommation a le choix entre deux typologies : avec ou sans garantie, pour une durée pouvant aller jusqu'à 12 ou 35 ans selon la formule. [À FAIRE VALIDER : durées maximales à reconfirmer selon l'offre actuelle des partenaires bancaires.]"
+  },
+  {
+    "lettre": "S",
+    "terme": "Surendettement",
+    "definition": "Situation dans laquelle les dettes d'un ménage sont supérieures à sa capacité de remboursement. La commission de surendettement départementale, rattachée à la Banque de France, peut être saisie pour rechercher des solutions amiables ou judiciaires (échelonnement, réduction ou effacement de la dette)."
+  },
+  {
+    "lettre": "T",
+    "terme": "TAEG (Taux Annuel Effectif Global)",
+    "definition": "Taux annuel englobant les intérêts et l'ensemble des frais liés à l'octroi d'un crédit (frais de dossier, d'assurance, de garantie, d'hypothèque...). Permet de mesurer le coût total du crédit. Ne doit jamais dépasser le seuil de l'usure, publié trimestriellement."
+  },
+  {
+    "lettre": "T",
+    "terme": "Taux capé",
+    "definition": "Taux bénéficiant d'un mécanisme de plafonnement de son évolution."
+  },
+  {
+    "lettre": "T",
+    "terme": "Taux d'endettement",
+    "definition": "Montant des charges de crédit et de loyer supportées par un ménage, exprimé en pourcentage de ses revenus. Généralement plafonné autour d'un tiers des revenus par les établissements de crédit, avec des exceptions possibles selon le reste à vivre."
+  },
+  {
+    "lettre": "T",
+    "terme": "Taux d'usure",
+    "definition": "Publié chaque trimestre par la Banque de France, il correspond au TAEG maximum que les prêteurs sont en droit de pratiquer. Ce taux varie selon la catégorie du prêt."
+  },
+  {
+    "lettre": "T",
+    "terme": "Taux de base bancaire",
+    "definition": "Taux librement fixé par chaque établissement de crédit, auquel s'ajoute une majoration personnalisée. Concerne le plus souvent les découverts en compte et/ou les crédits renouvelables pour les particuliers."
+  },
+  {
+    "lettre": "T",
+    "terme": "Taux débiteur",
+    "definition": "Taux d'intérêt, fixe ou variable, appliqué au capital emprunté ou au montant de crédit utilisé sur une base annuelle. Fixe lorsque le contrat prévoit un taux constant (sur toute la durée ou par périodes prédéterminées), variable ou révisable dans les autres cas."
+  },
+  {
+    "lettre": "T",
+    "terme": "Taux d'intérêt",
+    "definition": "Pourcentage annuel du coût du crédit, rémunérant le prêteur pour le service rendu et le risque pris. Dépend de la durée du crédit, du profil de l'emprunteur, et des taux directeurs fixés par la Banque centrale européenne."
+  },
+  {
+    "lettre": "T",
+    "terme": "Taux fixe",
+    "definition": "Taux qui reste inchangé pendant toute la durée du crédit."
+  },
+  {
+    "lettre": "T",
+    "terme": "Taux nominal",
+    "definition": "Taux d'intérêt, fixe ou variable, appliqué au capital emprunté ou au montant de crédit utilisé sur une base annuelle. C'est à partir de ce taux que sont calculés les intérêts des mensualités."
+  },
+  {
+    "lettre": "T",
+    "terme": "Taux révisable",
+    "definition": "Aussi appelé taux variable : taux pouvant évoluer à la hausse ou à la baisse sur la durée du prêt, selon les modalités du contrat et la variation d'un ou plusieurs indices. Peut comprendre une période à taux fixe et des limites de variation."
+  },
+  {
+    "lettre": "T",
+    "terme": "TRACFIN",
+    "definition": "Service de renseignement placé sous l'autorité du PLACEHOLDER, des Finances et de la Relance, chargé de lutter contre les circuits financiers clandestins, le blanchiment d'argent et le financement du terrorisme. N'est pas habilité à recevoir et traiter les informations transmises par des particuliers."
+  },
+  {
+    "lettre": "T",
+    "terme": "Trésorerie",
+    "definition": "Montant des disponibilités à vue sur un compte bancaire."
+  },
+  {
+    "lettre": "U",
+    "terme": "Union libre",
+    "definition": "Aussi appelée concubinage : vie commune de deux personnes, du même sexe ou de sexe différent, sans aucun lien familial ni juridique."
+  },
+  {
+    "lettre": "U",
+    "terme": "Usufruit",
+    "definition": "Droit de jouir d'une chose appartenant à autrui, à la condition de la conserver. Le bénéficiaire est l'usufruitier, le propriétaire du bien est le nu-propriétaire. Peut être consenti pour une durée déterminée ou à vie."
+  },
+  {
+    "lettre": "U",
+    "terme": "Usure (taux de l')",
+    "definition": "Taux maximum (TEG ou TAEG) auquel un prêt peut être accordé. Défini par la loi, calculé trimestriellement par la Banque de France."
+  },
+  {
+    "lettre": "V",
+    "terme": "VEFA (Vente en l'État Futur d'Achèvement)",
+    "definition": "Régime de vente d'un immeuble à construire (avec son terrain) par lequel l'acquéreur devient immédiatement propriétaire du sol et des constructions déjà réalisées, et propriétaire des constructions à venir au fur et à mesure de l'avancement des travaux."
+  },
+  {
+    "lettre": "V",
+    "terme": "Viager",
+    "definition": "Vente d'un bien combinée à la constitution d'une rente viagère au profit du vendeur, en paiement de tout ou partie du prix. La rente prend fin au décès du vendeur, l'acquéreur prenant alors possession du bien."
+  },
+  {
+    "lettre": "W",
+    "terme": "Warrant",
+    "definition": "Bon de souscription d'action ou d'obligation donnant le droit d'acheter, à un prix déterminé et à une échéance donnée, un certain nombre de titres, actions ou obligations de la société émettrice du bon."
+  },
+  {
+    "lettre": "Z",
+    "terme": "ZAC (Zone d'Aménagement Concerté)",
+    "definition": "Zone à l'intérieur de laquelle une collectivité ou un établissement public décide de réaliser l'aménagement et l'équipement de terrains, en vue de les céder ou concéder à des utilisateurs publics ou privés (habitations, commerces, industries, équipements collectifs)."
+  },
+  {
+    "lettre": "Z",
+    "terme": "ZAD (Zone d'Aménagement Différé)",
+    "definition": "Zones pouvant être créées dans des communes, dotées ou non d'un POS, à l'intérieur desquelles un droit de préemption peut être exercé pendant une période donnée, pour mettre en oeuvre une politique locale de l'habitat et constituer des réserves foncières. [À FAIRE VALIDER : la durée du droit de préemption mentionnée sur le site source (14 ans) et le cadre POS/PLU sont à reconfirmer avec la réglementation actuelle.]"
+  },
+  {
+    "lettre": "Z",
+    "terme": "Zone euro",
+    "definition": "Ensemble des pays de l'Union européenne ayant adopté l'euro comme monnaie unique. [À FAIRE VALIDER ET ACTUALISER : la définition source listait 16 pays (situation à fin 2008) - la zone euro compte aujourd'hui davantage de membres. Entrée à réécrire avec la composition actuelle plutôt que de reproduire la liste obsolète.]"
+  }
+]

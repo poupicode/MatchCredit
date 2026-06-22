@@ -56,6 +56,126 @@ function matchcredit_register_cpt_avis() {
 }
 add_action( 'init', 'matchcredit_register_cpt_avis' );
 
+/**
+ * CPT Membre d'équipe — une fiche conseiller (photo, rôle, lien de RDV).
+ * Pas de repeater (ACF Free) : chaque membre est publié/dépublié indépendamment.
+ */
+function matchcredit_register_cpt_membre_equipe() {
+	register_post_type( 'membre_equipe', array(
+		'label'        => __( 'Membres équipe', 'matchcredit' ),
+		'labels'       => array(
+			'name'          => __( 'Membres équipe', 'matchcredit' ),
+			'singular_name' => __( 'Membre équipe', 'matchcredit' ),
+			'add_new_item'  => __( 'Ajouter un membre', 'matchcredit' ),
+			'edit_item'     => __( 'Modifier le membre', 'matchcredit' ),
+		),
+		'public'       => false,
+		'show_ui'      => true,
+		'show_in_menu' => true,
+		'menu_icon'    => 'dashicons-groups',
+		'supports'     => array( 'title' ),
+		'has_archive'  => false,
+	) );
+}
+add_action( 'init', 'matchcredit_register_cpt_membre_equipe' );
+
+/**
+ * CPT Terme de lexique — une entrée du glossaire (terme + définition + lettre).
+ */
+function matchcredit_register_cpt_lexique_terme() {
+	register_post_type( 'lexique_terme', array(
+		'label'        => __( 'Termes de lexique', 'matchcredit' ),
+		'labels'       => array(
+			'name'          => __( 'Termes de lexique', 'matchcredit' ),
+			'singular_name' => __( 'Terme de lexique', 'matchcredit' ),
+			'add_new_item'  => __( 'Ajouter un terme', 'matchcredit' ),
+			'edit_item'     => __( 'Modifier le terme', 'matchcredit' ),
+		),
+		'public'       => false,
+		'show_ui'      => true,
+		'show_in_menu' => true,
+		'menu_icon'    => 'dashicons-book-alt',
+		'supports'     => array( 'title' ),
+		'has_archive'  => false,
+	) );
+}
+add_action( 'init', 'matchcredit_register_cpt_lexique_terme' );
+
+/**
+ * Import unique des termes du lexique depuis data/lexique-matchcredit.json.
+ * Bouton dans l'écran d'admin du CPT — idempotent (skip par titre déjà existant).
+ */
+function matchcredit_lexique_import_notice() {
+	$screen = get_current_screen();
+
+	if ( ! $screen || 'edit-lexique_terme' !== $screen->id ) {
+		return;
+	}
+
+	if ( isset( $_GET['matchcredit_lexique_imported'] ) ) {
+		printf( '<div class="notice notice-success"><p>%s</p></div>', esc_html__( 'Import du lexique terminé.', 'matchcredit' ) );
+		return;
+	}
+
+	$url = wp_nonce_url( admin_url( 'edit.php?post_type=lexique_terme&matchcredit_lexique_import=1' ), 'matchcredit_lexique_import' );
+	printf(
+		'<div class="notice notice-info"><p>%s <a href="%s" class="button">%s</a></p></div>',
+		esc_html__( 'Importer les termes depuis data/lexique-matchcredit.json :', 'matchcredit' ),
+		esc_url( $url ),
+		esc_html__( 'Importer le lexique', 'matchcredit' )
+	);
+}
+add_action( 'admin_notices', 'matchcredit_lexique_import_notice' );
+
+function matchcredit_lexique_handle_import() {
+	if ( empty( $_GET['matchcredit_lexique_import'] ) || ! current_user_can( 'manage_options' ) ) {
+		return;
+	}
+
+	check_admin_referer( 'matchcredit_lexique_import' );
+
+	$path = get_template_directory() . '/data/lexique-matchcredit.json';
+
+	if ( ! file_exists( $path ) ) {
+		wp_die( esc_html__( 'Fichier lexique-matchcredit.json introuvable.', 'matchcredit' ) );
+	}
+
+	$entries = json_decode( file_get_contents( $path ), true );
+
+	if ( ! is_array( $entries ) ) {
+		wp_die( esc_html__( 'Fichier JSON invalide.', 'matchcredit' ) );
+	}
+
+	foreach ( $entries as $entry ) {
+		$existing = get_page_by_title( $entry['terme'], OBJECT, 'lexique_terme' );
+
+		if ( $existing ) {
+			continue;
+		}
+
+		$post_id = wp_insert_post( array(
+			'post_type'   => 'lexique_terme',
+			'post_title'  => $entry['terme'],
+			'post_status' => 'publish',
+		) );
+
+		if ( is_wp_error( $post_id ) || ! $post_id ) {
+			continue;
+		}
+
+		update_field( 'lettre', $entry['lettre'], $post_id );
+		update_field( 'definition', $entry['definition'], $post_id );
+
+		if ( ! empty( $entry['lien_interne'] ) ) {
+			update_field( 'lien_interne', $entry['lien_interne'], $post_id );
+		}
+	}
+
+	wp_safe_redirect( admin_url( 'edit.php?post_type=lexique_terme&matchcredit_lexique_imported=1' ) );
+	exit;
+}
+add_action( 'admin_init', 'matchcredit_lexique_handle_import' );
+
 function matchcredit_enqueue_fonts() {
 	wp_enqueue_style(
 		'matchcredit-fonts',

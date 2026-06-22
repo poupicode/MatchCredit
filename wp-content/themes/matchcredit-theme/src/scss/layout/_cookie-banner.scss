@@ -1,0 +1,67 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.cookie-banner {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	background: $purple-ink;
+	border-top: 1px solid $purple-dark;
+
+	&[hidden] {
+		display: none;
+	}
+}
+
+.cookie-banner-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: mixins.to-dvw(32);
+	padding-top: mixins.to-dvw(24);
+	padding-bottom: mixins.to-dvw(24);
+}
+
+.cookie-banner-text {
+	font-family: $font-body;
+	font-size: mixins.to-dvw(15);
+	color: $cream;
+	margin: 0;
+	max-width: mixins.to-dvw(720);
+}
+
+.cookie-banner-actions {
+	display: flex;
+	align-items: center;
+	gap: mixins.to-dvw(24);
+	flex-shrink: 0;
+}
+
+.cookie-banner-actions .btn-text {
+	color: $cream;
+
+	&:hover {
+		color: $yellow;
+	}
+}
+
+@media (max-width: 700px) {
+	.cookie-banner-row {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: mixins.to-dvw(16, 390);
+		padding-top: mixins.to-dvw(20, 390);
+		padding-bottom: mixins.to-dvw(20, 390);
+	}
+
+	.cookie-banner-text {
+		font-size: mixins.to-dvw(14, 390);
+		max-width: none;
+	}
+
+	.cookie-banner-actions {
+		gap: mixins.to-dvw(20, 390);
+	}
+}

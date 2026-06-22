@@ -1,0 +1,65 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.section-infos {
+	background: $cream;
+	padding: mixins.to-dvw(100) 0;
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(48, 390) 0;
+	}
+}
+
+.infos-grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+	gap: mixins.to-dvw(56);
+	align-items: start;
+
+	@media (max-width: 800px) {
+		grid-template-columns: 1fr;
+		gap: mixins.to-dvw(28, 390);
+	}
+}
+
+.infos-ligne {
+	font-size: mixins.to-dvw(16);
+	line-height: 1.7;
+	color: $text;
+	margin-bottom: mixins.to-dvw(16);
+
+	strong {
+		color: $purple-ink;
+		font-variant-numeric: tabular-nums;
+	}
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(14, 390);
+	}
+}
+
+.infos-acces {
+	color: $text-mid;
+}
+
+.infos-carte {
+	border-radius: 12px;
+	overflow: hidden;
+
+	iframe {
+		width: 100%;
+		height: mixins.to-dvw(360);
+		border: 0;
+		display: block;
+
+		@media (max-width: 600px) {
+			height: mixins.to-dvw(280, 390);
+		}
+	}
+
+	.sub {
+		color: $text-mid;
+		font-size: mixins.to-dvw(14);
+		line-height: 1.6;
+	}
+}

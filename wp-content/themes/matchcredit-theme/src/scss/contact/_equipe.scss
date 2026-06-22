@@ -1,0 +1,60 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.section-equipe {
+	background: $white;
+	padding: mixins.to-dvw(100) 0;
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(48, 390) 0;
+	}
+}
+
+.equipe-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: mixins.to-dvw(32);
+	margin-top: mixins.to-dvw(48);
+
+	@media (max-width: 600px) {
+		gap: mixins.to-dvw(24, 390);
+		margin-top: mixins.to-dvw(28, 390);
+	}
+}
+
+.equipe-card {
+	text-align: center;
+
+	.equipe-photo {
+		width: 100%;
+		aspect-ratio: 1;
+		object-fit: cover;
+		border-radius: 12px;
+		margin-bottom: mixins.to-dvw(20);
+	}
+
+	h3 {
+		font-size: mixins.to-dvw(20);
+		font-weight: 700;
+		color: $purple-ink;
+		margin: 0 0 mixins.to-dvw(4);
+	}
+
+	@media (max-width: 600px) {
+		h3 {
+			font-size: mixins.to-dvw(17, 390);
+		}
+	}
+}
+
+.equipe-role {
+	font-family: $font-serif;
+	font-style: italic;
+	color: $purple-deep;
+	font-size: mixins.to-dvw(15);
+	margin-bottom: mixins.to-dvw(20);
+}
+
+.equipe-cta {
+	display: inline-flex;
+}

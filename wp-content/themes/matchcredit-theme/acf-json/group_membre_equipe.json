@@ -1,0 +1,42 @@
+{
+    "key": "group_membre_equipe",
+    "title": "Membre équipe — détails",
+    "fields": [
+        {
+            "key": "field_membre_photo",
+            "label": "Photo",
+            "name": "photo",
+            "type": "image",
+            "return_format": "url"
+        },
+        {
+            "key": "field_membre_role",
+            "label": "Rôle",
+            "name": "role",
+            "type": "text",
+            "instructions": "Ex. \"Courtier en crédit immobilier\"."
+        },
+        {
+            "key": "field_membre_lien_rdv",
+            "label": "Lien de prise de RDV",
+            "name": "lien_rdv",
+            "type": "url",
+            "instructions": "Optionnel. URL vers laquelle pointe le bouton \"Prendre rendez-vous avec [prénom]\"."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "membre_equipe"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782064500
+}

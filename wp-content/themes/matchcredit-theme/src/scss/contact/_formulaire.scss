@@ -1,0 +1,49 @@
+@use "../base/variables" as *;
+@use "../base/mixins";
+
+.section-formulaire {
+	background: $white;
+	padding: mixins.to-dvw(100) 0;
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(48, 390) 0;
+	}
+}
+
+.formulaire-grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+	gap: mixins.to-dvw(64);
+	align-items: start;
+
+	@media (max-width: 800px) {
+		grid-template-columns: 1fr;
+		gap: mixins.to-dvw(32, 390);
+	}
+}
+
+.section-intro--formulaire {
+	font-size: mixins.to-dvw(18);
+	color: $text-mid;
+	line-height: 1.6;
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(15, 390);
+	}
+}
+
+.formulaire-card {
+	background: $purple-bg;
+	border-radius: 12px;
+	padding: mixins.to-dvw(40);
+
+	.sub {
+		color: $text-mid;
+		font-size: mixins.to-dvw(14);
+		line-height: 1.6;
+	}
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(24, 390);
+	}
+}
