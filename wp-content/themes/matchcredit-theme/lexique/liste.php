@@ -31,28 +31,22 @@ if ( empty( $groups ) ) {
 ?>
 
 <section class="lexique-liste">
-	<div class="container lexique-layout">
-		<nav class="lexique-az" aria-label="Aller à la lettre">
-			<ul class="lexique-az-list">
-				<?php foreach ( array_keys( $groups ) as $lettre ) : ?>
-					<li><a href="#lettre-<?php echo esc_attr( $lettre ); ?>" data-letter="<?php echo esc_attr( $lettre ); ?>"><?php echo esc_html( $lettre ); ?></a></li>
-				<?php endforeach; ?>
-			</ul>
+	<nav class="lexique-az-bar" aria-label="Aller à la lettre">
+		<ul class="lexique-az-bar-list">
+			<?php foreach ( array_keys( $groups ) as $lettre ) : ?>
+				<li><a href="#lettre-<?php echo esc_attr( $lettre ); ?>" data-letter="<?php echo esc_attr( $lettre ); ?>"><?php echo esc_html( $lettre ); ?></a></li>
+			<?php endforeach; ?>
+		</ul>
+	</nav>
 
-			<select class="lexique-az-select" aria-label="Aller à la lettre">
-				<?php foreach ( array_keys( $groups ) as $lettre ) : ?>
-					<option value="lettre-<?php echo esc_attr( $lettre ); ?>"><?php echo esc_html( $lettre ); ?></option>
-				<?php endforeach; ?>
-			</select>
-		</nav>
-
-		<div class="lexique-content">
-			<div class="lexique-sticky-letter" data-current-letter></div>
-
+	<div class="container">
+		<div class="lexique-layout">
 			<?php foreach ( $groups as $lettre => $terms ) : ?>
-				<div class="lexique-group" id="lettre-<?php echo esc_attr( $lettre ); ?>" data-letter="<?php echo esc_attr( $lettre ); ?>">
-					<h2 class="lexique-group-letter"><?php echo esc_html( $lettre ); ?></h2>
+				<div class="lexique-row-letter" id="lettre-<?php echo esc_attr( $lettre ); ?>" data-letter="<?php echo esc_attr( $lettre ); ?>">
+					<?php echo esc_html( $lettre ); ?>
+				</div>
 
+				<div class="lexique-row-content">
 					<dl class="lexique-terms">
 						<?php foreach ( $terms as $term_post ) : ?>
 							<div class="lexique-term">

@@ -9,44 +9,84 @@
 	}
 }
 
-.lexique-layout {
-	display: grid;
-	grid-template-columns: mixins.to-dvw(80) 1fr;
-	gap: mixins.to-dvw(48);
-	align-items: flex-start;
+// Barre A-Z horizontale, sticky au-dessus du container lettres/définitions —
+// seule navigation cliquable, commune au mobile et au desktop. Les masques
+// de bord (::before/::after) signalent qu'on peut encore défiler horizontalement,
+// activés/désactivés en JS via les classes has-scroll-left/has-scroll-right.
+.lexique-az-bar {
+	position: sticky;
+	top: var(--header-h, 0px);
+	z-index: 10;
+	background: $cream;
+	border-bottom: 1px solid $rule;
+	margin-bottom: mixins.to-dvw(32);
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 1px;
+		width: mixins.to-dvw(56);
+		pointer-events: none;
+		opacity: 0;
+		z-index: 1;
+		transition: opacity 0.15s $ease;
+	}
+
+	&::before {
+		left: 0;
+		background: linear-gradient(to right, $cream 0%, rgba($cream, 0.85) 50%, rgba($cream, 0) 100%);
+	}
+
+	&::after {
+		right: 0;
+		background: linear-gradient(to left, $cream 0%, rgba($cream, 0.85) 50%, rgba($cream, 0) 100%);
+	}
+
+	&.has-scroll-left::before {
+		opacity: 1;
+	}
+
+	&.has-scroll-right::after {
+		opacity: 1;
+	}
 
 	@media (max-width: 800px) {
-		grid-template-columns: 1fr;
-		gap: mixins.to-dvw(24, 390);
+		margin-bottom: mixins.to-dvw(20, 390);
+
+		&::before,
+		&::after {
+			width: mixins.to-dvw(48, 390);
+		}
 	}
 }
 
-// Colonne sticky desktop — masquée au profit du select mobile en dessous de 800px.
-.lexique-az {
-	position: sticky;
-	top: var(--header-h, 0px);
-	align-self: start;
-	padding-top: mixins.to-dvw(8);
-}
-
-.lexique-az-list {
+.lexique-az-bar-list {
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: mixins.to-dvw(10) mixins.to-dvw(16);
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 	gap: mixins.to-dvw(4);
+	overflow-x: auto;
+	scrollbar-width: none;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
 
 	a {
 		display: block;
+		flex: none;
 		text-align: center;
-		width: mixins.to-dvw(36);
-		height: mixins.to-dvw(36);
-		line-height: mixins.to-dvw(36);
+		width: mixins.to-dvw(32);
+		height: mixins.to-dvw(32);
+		line-height: mixins.to-dvw(32);
 		border-radius: 50%;
 		font-family: $font-sans;
 		font-weight: 600;
-		font-size: mixins.to-dvw(14);
+		font-size: mixins.to-dvw(13);
 		color: $text-mid;
 		text-decoration: none;
 		transition: background 0.15s $ease, color 0.15s $ease;
@@ -59,74 +99,61 @@
 	}
 
 	@media (max-width: 800px) {
-		display: none;
+		padding: mixins.to-dvw(8, 390) mixins.to-dvw(20, 390);
+		gap: mixins.to-dvw(4, 390);
+		justify-content: flex-start;
+
+		a {
+			width: mixins.to-dvw(30, 390);
+			height: mixins.to-dvw(30, 390);
+			line-height: mixins.to-dvw(30, 390);
+			font-size: mixins.to-dvw(13, 390);
+		}
 	}
 }
 
-.lexique-az-select {
-	display: none;
-	width: 100%;
-	padding: mixins.to-dvw(12, 390) mixins.to-dvw(16, 390);
-	border: 1px solid $border;
-	border-radius: 8px;
-	font-family: $font-body;
-	font-size: mixins.to-dvw(15, 390);
-	background: $white;
-	color: $text;
+// Grille de paires (lettre, contenu) — chaque .lexique-row-letter est sticky
+// et ne reste collée que pendant la hauteur de sa propre ligne de grille :
+// dès que la ligne suivante atteint le haut, elle prend naturellement sa place.
+// Desktop : 2 colonnes (5% / 1fr), la lettre reste à gauche.
+// Mobile : 1 colonne, la lettre est au-dessus de son bloc de contenu.
+.lexique-layout {
+	display: grid;
+	grid-template-columns: 5% 1fr;
+	row-gap: 0;
 
 	@media (max-width: 800px) {
-		display: block;
+		grid-template-columns: 1fr;
+		row-gap: mixins.to-dvw(8, 390);
 	}
 }
 
-.lexique-content {
-	position: relative;
-	min-width: 0;
-}
-
-// Repère de lettre sticky en haut du contenu — masqué par défaut, le JS lui
-// donne is-visible + le texte de la lettre courante pendant le scroll.
-.lexique-sticky-letter {
+.lexique-row-letter {
 	position: sticky;
-	top: var(--header-h, 0px);
-	z-index: 5;
-	background: $cream;
+	top: calc(var(--header-h, 0px) + var(--lexique-bar-h, 0px));
+	scroll-margin-top: calc(var(--header-h, 0px) + var(--lexique-bar-h, 0px));
+	align-self: start;
 	font-family: $font-serif;
-	font-size: mixins.to-dvw(24);
+	font-size: mixins.to-dvw(40);
 	font-weight: 600;
 	color: $purple-deep;
-	padding: mixins.to-dvw(8) 0;
-	border-bottom: 1px solid $rule;
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity 0.15s $ease;
+	background: $cream;
+	padding: mixins.to-dvw(8) mixins.to-dvw(24) mixins.to-dvw(12) 0;
 
-	&.is-visible {
-		opacity: 1;
-	}
-
-	@media (max-width: 600px) {
-		font-size: mixins.to-dvw(20, 390);
+	@media (max-width: 800px) {
+		font-size: mixins.to-dvw(32, 390);
+		padding: mixins.to-dvw(8, 390) 0 mixins.to-dvw(8, 390);
+		border-bottom: 1px solid $rule;
 	}
 }
 
-.lexique-group {
-	padding-top: mixins.to-dvw(32);
+.lexique-row-content {
+	padding: mixins.to-dvw(22) 0 mixins.to-dvw(32) mixins.to-dvw(32);
+	border-left: 1px solid $border;
 
-	&:first-child {
-		padding-top: 0;
-	}
-}
-
-.lexique-group-letter {
-	font-family: $font-serif;
-	font-size: mixins.to-dvw(36);
-	color: $purple-deep;
-	margin: 0 0 mixins.to-dvw(20);
-
-	@media (max-width: 600px) {
-		font-size: mixins.to-dvw(28, 390);
-		margin-bottom: mixins.to-dvw(16, 390);
+	@media (max-width: 800px) {
+		padding: 0 0 mixins.to-dvw(32, 390);
+		border-left: none;
 	}
 }
 

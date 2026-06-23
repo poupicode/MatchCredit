@@ -147,7 +147,15 @@ function matchcredit_lexique_handle_import() {
 	}
 
 	foreach ( $entries as $entry ) {
-		$existing = get_page_by_title( $entry['terme'], OBJECT, 'lexique_terme' );
+		$existing = get_posts( array(
+			'post_type'              => 'lexique_terme',
+			'title'                  => $entry['terme'],
+			'posts_per_page'         => 1,
+			'post_status'            => 'any',
+			'ignore_sticky_posts'    => true,
+			'update_post_meta_cache' => false,
+			'update_post_term_cache' => false,
+		) );
 
 		if ( $existing ) {
 			continue;
