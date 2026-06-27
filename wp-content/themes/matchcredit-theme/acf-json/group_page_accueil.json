@@ -1146,7 +1146,7 @@
             "type": "link",
             "default_value": {
                 "title": "Je parraine un proche",
-                "url": "/credit-immobilier/parrainage",
+                "url": "/parrainage",
                 "target": ""
             }
         },

@@ -1,0 +1,217 @@
+{
+    "key": "group_page_parrainage",
+    "title": "Page Parrainage",
+    "fields": [
+        {
+            "key": "field_parr_tab_hero",
+            "label": "01. Hero",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_parr_hero_eyebrow",
+            "label": "Étiquette (eyebrow)",
+            "name": "parr_hero_eyebrow",
+            "type": "text",
+            "default_value": "Parrainage"
+        },
+        {
+            "key": "field_parr_hero_titre",
+            "label": "Titre",
+            "name": "parr_hero_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Recommandez-nous, on vous <em>récompense</em>"
+        },
+        {
+            "key": "field_parr_hero_soustitre",
+            "label": "Sous-titre",
+            "name": "parr_hero_soustitre",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Votre crédit est signé, vous connaissez notre façon de travailler. Si vous recommandez MatchCrédit à un proche qui concrétise son projet, on vous offre un chèque cadeau."
+        },
+        {
+            "key": "field_parr_hero_bouton",
+            "label": "Bouton (ancre vers le formulaire)",
+            "name": "parr_hero_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Je parraine un proche",
+                "url": "#parrainage-form",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_parr_tab_mecanique",
+            "label": "02. Mécanique",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_parr_mecanique_eyebrow",
+            "label": "Étiquette",
+            "name": "parr_mecanique_eyebrow",
+            "type": "text",
+            "default_value": "Comment ça marche"
+        },
+        {
+            "key": "field_parr_mecanique_titre",
+            "label": "Titre",
+            "name": "parr_mecanique_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Trois étapes, <em>aucune complication</em>"
+        },
+        {
+            "key": "field_parr_etape_1",
+            "label": "Étape 1",
+            "name": "parr_etape_1",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_parr_etape_1_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Vous nous recommandez"
+                },
+                {
+                    "key": "field_parr_etape_1_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Vous parlez de MatchCrédit à un proche qui a un projet immobilier — achat, rachat de crédit ou regroupement."
+                }
+            ]
+        },
+        {
+            "key": "field_parr_etape_2",
+            "label": "Étape 2",
+            "name": "parr_etape_2",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_parr_etape_2_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Votre proche concrétise son projet"
+                },
+                {
+                    "key": "field_parr_etape_2_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Il signe l'offre de prêt négociée par son courtier MatchCrédit, en mentionnant votre nom comme parrain."
+                }
+            ]
+        },
+        {
+            "key": "field_parr_etape_3",
+            "label": "Étape 3",
+            "name": "parr_etape_3",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_parr_etape_3_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Vous recevez votre chèque cadeau"
+                },
+                {
+                    "key": "field_parr_etape_3_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Dès la signature de l'offre de prêt de votre filleul, votre récompense vous est envoyée."
+                }
+            ]
+        },
+        {
+            "key": "field_parr_montant_label",
+            "label": "Montant — libellé",
+            "name": "parr_montant_label",
+            "type": "text",
+            "default_value": "Jusqu'à"
+        },
+        {
+            "key": "field_parr_montant",
+            "label": "Montant",
+            "name": "parr_montant",
+            "type": "text",
+            "instructions": "Montant à valider avec le client avant publication.",
+            "default_value": "100 €"
+        },
+        {
+            "key": "field_parr_montant_mention",
+            "label": "Montant — mention",
+            "name": "parr_montant_mention",
+            "type": "text",
+            "default_value": "offerts par parrainage*"
+        },
+        {
+            "key": "field_parr_montant_legale",
+            "label": "Montant — mention légale",
+            "name": "parr_montant_legale",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "*Chèque cadeau versé à la signature de l'offre de prêt du filleul, dans la limite d'un parrainage par foyer. Voir conditions complètes en agence."
+        },
+        {
+            "key": "field_parr_tab_formulaire",
+            "label": "03. Formulaire",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_parr_form_titre",
+            "label": "Titre",
+            "name": "parr_form_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Parrainez <em>dès maintenant</em>"
+        },
+        {
+            "key": "field_parr_form_texte",
+            "label": "Texte d'intro",
+            "name": "parr_form_texte",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Renseignez vos coordonnées et celles de votre proche, on s'occupe du reste."
+        },
+        {
+            "key": "field_parr_form_cf7",
+            "label": "Formulaire — shortcode Contact Form 7",
+            "name": "parr_form_cf7",
+            "type": "text",
+            "instructions": "Coller ici le shortcode du formulaire CF7 (ex : [contact-form-7 id=\"123\" title=\"Parrainage\"]).",
+            "default_value": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-parrainage.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782558850
+}
