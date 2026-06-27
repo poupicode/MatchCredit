@@ -1,0 +1,484 @@
+{
+    "key": "group_page_centre_aide",
+    "title": "Page Centre d'aide",
+    "fields": [
+        {
+            "key": "field_aide_tab_hero",
+            "label": "01. Hero",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_aide_hero_eyebrow",
+            "label": "Étiquette (eyebrow)",
+            "name": "aide_hero_eyebrow",
+            "type": "text",
+            "default_value": "Centre d'aide"
+        },
+        {
+            "key": "field_aide_hero_titre",
+            "label": "Titre",
+            "name": "aide_hero_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Vos outils et vos <em>réponses</em>, au même endroit"
+        },
+        {
+            "key": "field_aide_hero_soustitre",
+            "label": "Sous-titre",
+            "name": "aide_hero_soustitre",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Avant de prendre rendez-vous, faites le point : calculettes pour chiffrer votre projet, réponses aux questions qu'on nous pose le plus souvent sur notre métier."
+        },
+        {
+            "key": "field_aide_tab_outils",
+            "label": "02. Outils",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_aide_outils_eyebrow",
+            "label": "Étiquette",
+            "name": "aide_outils_eyebrow",
+            "type": "text",
+            "default_value": "Calculettes & simulateurs"
+        },
+        {
+            "key": "field_aide_outils_titre",
+            "label": "Titre",
+            "name": "aide_outils_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Chiffrez votre <em>projet</em>"
+        },
+        {
+            "key": "field_aide_outil_1",
+            "label": "Outil 1",
+            "name": "aide_outil_1",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_aide_outil_1_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Capacité d'emprunt"
+                },
+                {
+                    "key": "field_aide_outil_1_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Estimez en quelques minutes le montant que vous pouvez emprunter selon vos revenus."
+                },
+                {
+                    "key": "field_aide_outil_1_lien",
+                    "label": "Lien",
+                    "name": "lien",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Faire le calcul",
+                        "url": "/simu-capacite/",
+                        "target": ""
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_aide_outil_2",
+            "label": "Outil 2",
+            "name": "aide_outil_2",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_aide_outil_2_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Mensualités"
+                },
+                {
+                    "key": "field_aide_outil_2_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Calculez le montant de vos futures mensualités selon le montant et la durée du prêt."
+                },
+                {
+                    "key": "field_aide_outil_2_lien",
+                    "label": "Lien",
+                    "name": "lien",
+                    "type": "link",
+                    "instructions": "Simulateur pas encore construit — laisser \"#\" en attendant.",
+                    "default_value": {
+                        "title": "Bientôt disponible",
+                        "url": "#",
+                        "target": ""
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_aide_outil_3",
+            "label": "Outil 3",
+            "name": "aide_outil_3",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_aide_outil_3_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Frais de garantie"
+                },
+                {
+                    "key": "field_aide_outil_3_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Hypothèque, PPD ou cautionnement : comparez le coût de chaque garantie."
+                },
+                {
+                    "key": "field_aide_outil_3_lien",
+                    "label": "Lien",
+                    "name": "lien",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Comparer",
+                        "url": "/credit-immobilier/frais-de-garantie/",
+                        "target": ""
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_aide_outil_4",
+            "label": "Outil 4",
+            "name": "aide_outil_4",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_aide_outil_4_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Frais de notaire"
+                },
+                {
+                    "key": "field_aide_outil_4_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Estimez la part de taxes, d'émoluments et de débours dans votre projet."
+                },
+                {
+                    "key": "field_aide_outil_4_lien",
+                    "label": "Lien",
+                    "name": "lien",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Estimer",
+                        "url": "/credit-immobilier/frais-de-notaire/",
+                        "target": ""
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_aide_outil_5",
+            "label": "Outil 5",
+            "name": "aide_outil_5",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_aide_outil_5_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Durée de remboursement"
+                },
+                {
+                    "key": "field_aide_outil_5_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Trouvez la durée de prêt qui équilibre le mieux mensualités et coût total."
+                },
+                {
+                    "key": "field_aide_outil_5_lien",
+                    "label": "Lien",
+                    "name": "lien",
+                    "type": "link",
+                    "instructions": "Simulateur pas encore construit — laisser \"#\" en attendant.",
+                    "default_value": {
+                        "title": "Bientôt disponible",
+                        "url": "#",
+                        "target": ""
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_aide_tab_faq",
+            "label": "03. FAQ",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_aide_faq_eyebrow",
+            "label": "Étiquette",
+            "name": "aide_faq_eyebrow",
+            "type": "text",
+            "default_value": "Le métier de courtier"
+        },
+        {
+            "key": "field_aide_faq_titre",
+            "label": "Titre",
+            "name": "aide_faq_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Les questions <em>qu'on nous pose</em> le plus"
+        },
+        {
+            "key": "field_aide_faq_nb",
+            "label": "Nombre de questions à afficher",
+            "name": "aide_faq_nb",
+            "type": "select",
+            "instructions": "Pas de répéteur en ACF Free : les questions sont des champs fixes.",
+            "choices": {
+                "1": "1",
+                "2": "2",
+                "3": "3",
+                "4": "4",
+                "5": "5",
+                "6": "6"
+            },
+            "default_value": "6",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_aide_question_1",
+            "label": "Question 1",
+            "name": "aide_question_1",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_aide_question_1_q",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Qu'est-ce qu'un courtier en prêt immobilier ?"
+                },
+                {
+                    "key": "field_aide_question_1_r",
+                    "label": "Réponse",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Un courtier est un intermédiaire entre vous et les banques. Il étudie votre dossier, le présente à plusieurs établissements et négocie pour vous les meilleures conditions de financement — taux, assurance, frais de dossier."
+                }
+            ]
+        },
+        {
+            "key": "field_aide_question_2",
+            "label": "Question 2",
+            "name": "aide_question_2",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_aide_question_2_q",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Quelles sont les obligations d'un courtier envers moi ?"
+                },
+                {
+                    "key": "field_aide_question_2_r",
+                    "label": "Réponse",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Le courtier a un devoir de conseil : il doit vous proposer le contrat le plus adapté à votre situation et vous expliquer clairement vos engagements en tant qu'emprunteur, pas seulement vous présenter une offre."
+                }
+            ]
+        },
+        {
+            "key": "field_aide_question_3",
+            "label": "Question 3",
+            "name": "aide_question_3",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_aide_question_3_q",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Quelles qualifications doit avoir un courtier ?"
+                },
+                {
+                    "key": "field_aide_question_3_r",
+                    "label": "Réponse",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Il doit être immatriculé à l'ORIAS, suivre une formation professionnelle continue (IOBSP), justifier d'un casier judiciaire vierge et être couvert par une assurance responsabilité civile professionnelle."
+                }
+            ]
+        },
+        {
+            "key": "field_aide_question_4",
+            "label": "Question 4",
+            "name": "aide_question_4",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_aide_question_4_q",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Le premier rendez-vous est-il payant ?"
+                },
+                {
+                    "key": "field_aide_question_4_r",
+                    "label": "Réponse",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Non, l'échange avec un courtier MatchCrédit est gratuit et sans engagement. Vous repartez avec une vision claire de votre dossier, que vous décidiez de continuer avec nous ou non."
+                }
+            ]
+        },
+        {
+            "key": "field_aide_question_5",
+            "label": "Question 5",
+            "name": "aide_question_5",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_aide_question_5_q",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Quels sont les frais de courtage ?"
+                },
+                {
+                    "key": "field_aide_question_5_r",
+                    "label": "Réponse",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Nos honoraires représentent généralement 1 à 4 % du montant emprunté, avec un minimum forfaitaire, et sont intégrés au calcul du TAEG. À titre de comparaison, ils restent nettement inférieurs aux frais de notaire ou d'agence immobilière."
+                }
+            ]
+        },
+        {
+            "key": "field_aide_question_6",
+            "label": "Question 6",
+            "name": "aide_question_6",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_aide_question_6_q",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "default_value": "Dois-je signer un mandat de recherche de capitaux ?"
+                },
+                {
+                    "key": "field_aide_question_6_r",
+                    "label": "Réponse",
+                    "name": "reponse",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Oui, ce mandat nous autorise à analyser votre situation financière et à vous représenter auprès des banques. Il précise clairement nos honoraires avant toute démarche."
+                }
+            ]
+        },
+        {
+            "key": "field_aide_tab_liens",
+            "label": "04. Liens utiles",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_aide_liens_eyebrow",
+            "label": "Étiquette",
+            "name": "aide_liens_eyebrow",
+            "type": "text",
+            "default_value": "Pour aller plus loin"
+        },
+        {
+            "key": "field_aide_liens_titre",
+            "label": "Titre",
+            "name": "aide_liens_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Encore une <em>question</em> ?"
+        },
+        {
+            "key": "field_aide_lien_1",
+            "label": "Lien 1",
+            "name": "aide_lien_1",
+            "type": "link",
+            "default_value": {
+                "title": "Consulter le lexique des termes du crédit",
+                "url": "/lexique/",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_aide_lien_2",
+            "label": "Lien 2",
+            "name": "aide_lien_2",
+            "type": "link",
+            "default_value": {
+                "title": "Parrainer un proche",
+                "url": "/parrainage/",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_aide_lien_3",
+            "label": "Lien 3",
+            "name": "aide_lien_3",
+            "type": "link",
+            "default_value": {
+                "title": "Contacter un courtier",
+                "url": "/contact/",
+                "target": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-centre-aide.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782558850
+}
