@@ -1,0 +1,233 @@
+{
+    "key": "group_page_ci_capacite_emprunt",
+    "title": "CI — Capacité d'emprunt",
+    "fields": [
+        {
+            "key": "field_cap_hero_eyebrow",
+            "label": "Hero — fil d'ariane",
+            "name": "cap_hero_eyebrow",
+            "type": "text",
+            "default_value": "Capacité d'emprunt"
+        },
+        {
+            "key": "field_cap_hero_titre",
+            "label": "Hero — titre",
+            "name": "cap_hero_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Quelle est votre <em>capacité</em> d'emprunt ?"
+        },
+        {
+            "key": "field_cap_hero_soustitre",
+            "label": "Hero — sous-titre",
+            "name": "cap_hero_soustitre",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Le calcul s'appuie sur deux notions à ne pas confondre : votre taux d'endettement et votre reste à vivre."
+        },
+        {
+            "key": "field_cap_hero_bouton",
+            "label": "Hero — bouton",
+            "name": "cap_hero_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Étudier ma capacité d'emprunt",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_cap_definition_eyebrow",
+            "label": "Définition — étiquette",
+            "name": "cap_definition_eyebrow",
+            "type": "text",
+            "default_value": "La définition"
+        },
+        {
+            "key": "field_cap_definition_texte",
+            "label": "Définition — texte",
+            "name": "cap_definition_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "La capacité d'emprunt désigne le montant qu'une banque est prête à vous prêter pour financer votre projet immobilier. Elle s'évalue à partir de deux critères complémentaires : le taux d'endettement, qui plafonne la part de vos revenus consacrée au remboursement, et le reste à vivre, qui garantit qu'il vous reste assez pour vivre une fois le crédit remboursé."
+        },
+        {
+            "key": "field_cap_reste_eyebrow",
+            "label": "Reste à vivre — étiquette",
+            "name": "cap_reste_eyebrow",
+            "type": "text",
+            "default_value": "Le second critère"
+        },
+        {
+            "key": "field_cap_reste_titre",
+            "label": "Reste à vivre — titre",
+            "name": "cap_reste_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Le <em>reste à vivre</em>, le critère qu'on oublie"
+        },
+        {
+            "key": "field_cap_reste_texte",
+            "label": "Reste à vivre — texte",
+            "name": "cap_reste_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Un crédit immobilier s'étale sur de nombreuses années : la banque veut s'assurer qu'il vous reste, une fois toutes vos charges payées, assez d'argent pour vivre décemment. C'est le reste à vivre. Il se calcule en soustrayant de vos revenus l'ensemble de vos charges récurrentes :"
+        },
+        {
+            "key": "field_cap_reste_charges",
+            "label": "Reste à vivre — charges prises en compte (une par ligne)",
+            "name": "cap_reste_charges",
+            "type": "textarea",
+            "rows": 5,
+            "new_lines": "",
+            "default_value": "Mensualités de remboursement en cours (crédit auto, conso...)\nLoyer mensuel, si vous êtes encore locataire\nPension alimentaire versée\nAutres charges récurrentes déclarées"
+        },
+        {
+            "key": "field_cap_reste_note_label",
+            "label": "Reste à vivre — note, étiquette",
+            "name": "cap_reste_note_label",
+            "type": "text",
+            "default_value": "À retenir :"
+        },
+        {
+            "key": "field_cap_reste_note_texte",
+            "label": "Reste à vivre — note, texte",
+            "name": "cap_reste_note_texte",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Si le reste à vivre est jugé insuffisant pour assurer vos dépenses courantes, le prêt peut être refusé même si votre taux d'endettement respecte la limite légale."
+        },
+        {
+            "key": "field_cap_hcsf_eyebrow",
+            "label": "HCSF — étiquette",
+            "name": "cap_hcsf_eyebrow",
+            "type": "text",
+            "default_value": "Le cadre réglementaire"
+        },
+        {
+            "key": "field_cap_hcsf_titre",
+            "label": "HCSF — titre",
+            "name": "cap_hcsf_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Des règles <em>encadrées</em>, et qui évoluent"
+        },
+        {
+            "key": "field_cap_hcsf_chiffre_1",
+            "label": "HCSF — chiffre 1",
+            "name": "cap_hcsf_chiffre_1",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_cap_hcsf_c1_label", "label": "Label (au-dessus)", "name": "label", "type": "text", "default_value": "Taux d'endettement maximum" },
+                { "key": "field_cap_hcsf_c1_valeur", "label": "Valeur", "name": "valeur", "type": "text", "default_value": "35" },
+                { "key": "field_cap_hcsf_c1_unite", "label": "Unité", "name": "unite", "type": "text", "default_value": "%" },
+                { "key": "field_cap_hcsf_c1_sous", "label": "Sous-texte", "name": "sous_label", "type": "text", "default_value": "recommandation HCSF" }
+            ]
+        },
+        {
+            "key": "field_cap_hcsf_chiffre_2",
+            "label": "HCSF — chiffre 2",
+            "name": "cap_hcsf_chiffre_2",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_cap_hcsf_c2_label", "label": "Label (au-dessus)", "name": "label", "type": "text", "default_value": "Durée maximum" },
+                { "key": "field_cap_hcsf_c2_valeur", "label": "Valeur", "name": "valeur", "type": "text", "default_value": "27" },
+                { "key": "field_cap_hcsf_c2_unite", "label": "Unité", "name": "unite", "type": "text", "default_value": "ans" },
+                { "key": "field_cap_hcsf_c2_sous", "label": "Sous-texte", "name": "sous_label", "type": "text", "default_value": "pour les primo-accédants" }
+            ]
+        },
+        {
+            "key": "field_cap_hcsf_chiffre_3",
+            "label": "HCSF — chiffre 3",
+            "name": "cap_hcsf_chiffre_3",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_cap_hcsf_c3_label", "label": "Label (au-dessus)", "name": "label", "type": "text", "default_value": "Pour le savoir" },
+                { "key": "field_cap_hcsf_c3_valeur", "label": "Valeur", "name": "valeur", "type": "text", "default_value": "1" },
+                { "key": "field_cap_hcsf_c3_unite", "label": "Unité", "name": "unite", "type": "text", "default_value": "RDV" },
+                { "key": "field_cap_hcsf_c3_sous", "label": "Sous-texte", "name": "sous_label", "type": "text", "default_value": "avec votre courtier" }
+            ]
+        },
+        {
+            "key": "field_cap_hcsf_texte",
+            "label": "HCSF — texte de clôture",
+            "name": "cap_hcsf_texte",
+            "type": "textarea",
+            "rows": 4,
+            "default_value": "Le Haut Conseil de Stabilité Financière (HCSF) a assoupli ses recommandations afin de limiter le surendettement des ménages tout en facilitant l'accès au crédit des primo-accédants. Ces règles sont surveillées par l'Autorité de Contrôle Prudentiel et de Résolution (ACPR), qui veille à la stabilité du système financier et à la protection des emprunteurs — mais chaque banque conserve une marge d'appréciation au cas par cas."
+        },
+        {
+            "key": "field_cap_etapes_eyebrow",
+            "label": "Étapes — étiquette",
+            "name": "cap_etapes_eyebrow",
+            "type": "text",
+            "default_value": "En pratique"
+        },
+        {
+            "key": "field_cap_etapes_titre",
+            "label": "Étapes — titre",
+            "name": "cap_etapes_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Comment évaluer la <em>vôtre</em>"
+        },
+        {
+            "key": "field_cap_etape_1",
+            "label": "Étape 1",
+            "name": "cap_etape_1",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_cap_etape_1_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "Listez vos revenus et charges" },
+                { "key": "field_cap_etape_1_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "Salaires, revenus locatifs, charges récurrentes et crédits en cours : tout ce qui entre dans le calcul du taux d'endettement et du reste à vivre." }
+            ]
+        },
+        {
+            "key": "field_cap_etape_2",
+            "label": "Étape 2",
+            "name": "cap_etape_2",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_cap_etape_2_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "Intégrez votre apport personnel" },
+                { "key": "field_cap_etape_2_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "Épargne disponible, plan épargne entreprise, donation : l'apport pèse directement sur le montant que vous pourrez emprunter et sur les conditions négociées." }
+            ]
+        },
+        {
+            "key": "field_cap_etape_3",
+            "label": "Étape 3",
+            "name": "cap_etape_3",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_cap_etape_3_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "Faites chiffrer votre dossier" },
+                { "key": "field_cap_etape_3_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "Un rendez-vous avec votre courtier suffit pour transformer ces éléments en un montant précis — et savoir, avant de visiter, ce que vous pouvez réellement viser." }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-ci-capacite-emprunt.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782590400
+}

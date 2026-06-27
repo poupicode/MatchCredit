@@ -1,0 +1,198 @@
+{
+    "key": "group_page_ci_coup_de_coeur",
+    "title": "CI — Coup de cœur immobilier",
+    "fields": [
+        {
+            "key": "field_cdc_hero_eyebrow",
+            "label": "Hero — fil d'ariane",
+            "name": "cdc_hero_eyebrow",
+            "type": "text",
+            "default_value": "Coup de cœur immobilier"
+        },
+        {
+            "key": "field_cdc_hero_titre",
+            "label": "Hero — titre",
+            "name": "cdc_hero_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Coup de cœur immobilier : comment le <em>financer</em> ?"
+        },
+        {
+            "key": "field_cdc_hero_soustitre",
+            "label": "Hero — sous-titre",
+            "name": "cdc_hero_soustitre",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Un coup de cœur ne se refuse pas — mais il se vérifie. Avant de vous décider, assurez-vous que le financement suit."
+        },
+        {
+            "key": "field_cdc_hero_bouton",
+            "label": "Hero — bouton",
+            "name": "cdc_hero_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Vérifier mon financement",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_cdc_facteurs_eyebrow",
+            "label": "Facteurs — étiquette",
+            "name": "cdc_facteurs_eyebrow",
+            "type": "text",
+            "default_value": "Ce qui déclenche le coup de cœur"
+        },
+        {
+            "key": "field_cdc_facteurs_titre",
+            "label": "Facteurs — titre",
+            "name": "cdc_facteurs_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Trois facteurs reviennent <em>presque toujours</em>"
+        },
+        {
+            "key": "field_cdc_facteur_1",
+            "label": "Facteur 1",
+            "name": "cdc_facteur_1",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_cdc_f1_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "L'environnement" },
+                { "key": "field_cdc_f1_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "Le quartier, la vue, le calme ou l'animation : c'est souvent ce qui emporte la décision avant même de regarder le prix au mètre carré." }
+            ]
+        },
+        {
+            "key": "field_cdc_facteur_2",
+            "label": "Facteur 2",
+            "name": "cdc_facteur_2",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_cdc_f2_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "La surface" },
+                { "key": "field_cdc_f2_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "Une pièce en plus, un espace extérieur, une luminosité particulière : la surface réelle pèse souvent plus que la surface annoncée." }
+            ]
+        },
+        {
+            "key": "field_cdc_facteur_3",
+            "label": "Facteur 3",
+            "name": "cdc_facteur_3",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_cdc_f3_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "Le budget" },
+                { "key": "field_cdc_f3_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "Le seul facteur réversible : on peut négocier un prix, allonger une durée ou revoir un apport. C'est lui qui doit être vérifié en premier." }
+            ]
+        },
+        {
+            "key": "field_cdc_stats_eyebrow",
+            "label": "Stats — étiquette",
+            "name": "cdc_stats_eyebrow",
+            "type": "text",
+            "default_value": "Ce que montrent les chiffres"
+        },
+        {
+            "key": "field_cdc_stats_texte",
+            "label": "Stats — texte",
+            "name": "cdc_stats_texte",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Les Français sous-estiment souvent leur marge de négociation sur le financement d'un achat coup de cœur."
+        },
+        {
+            "key": "field_cdc_stat_1",
+            "label": "Stat 1",
+            "name": "cdc_stat_1",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_cdc_s1_label", "label": "Label", "name": "label", "type": "text", "default_value": "Ont joué la concurrence" },
+                { "key": "field_cdc_s1_valeur", "label": "Valeur", "name": "valeur", "type": "text", "default_value": "38" },
+                { "key": "field_cdc_s1_unite", "label": "Unité", "name": "unite", "type": "text", "default_value": "%" },
+                { "key": "field_cdc_s1_sous", "label": "Sous-texte", "name": "sous_label", "type": "text", "default_value": "pour obtenir un meilleur taux" }
+            ]
+        },
+        {
+            "key": "field_cdc_stat_2",
+            "label": "Stat 2",
+            "name": "cdc_stat_2",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_cdc_s2_label", "label": "Label", "name": "label", "type": "text", "default_value": "Se sentent informés" },
+                { "key": "field_cdc_s2_valeur", "label": "Valeur", "name": "valeur", "type": "text", "default_value": "32" },
+                { "key": "field_cdc_s2_unite", "label": "Unité", "name": "unite", "type": "text", "default_value": "%" },
+                { "key": "field_cdc_s2_sous", "label": "Sous-texte", "name": "sous_label", "type": "text", "default_value": "sur les conditions du marché" }
+            ]
+        },
+        {
+            "key": "field_cdc_stat_3",
+            "label": "Stat 3",
+            "name": "cdc_stat_3",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_cdc_s3_label", "label": "Label", "name": "label", "type": "text", "default_value": "Ont simulé leur emprunt" },
+                { "key": "field_cdc_s3_valeur", "label": "Valeur", "name": "valeur", "type": "text", "default_value": "29" },
+                { "key": "field_cdc_s3_unite", "label": "Unité", "name": "unite", "type": "text", "default_value": "%" },
+                { "key": "field_cdc_s3_sous", "label": "Sous-texte", "name": "sous_label", "type": "text", "default_value": "avant de se décider" }
+            ]
+        },
+        {
+            "key": "field_cdc_stats_source",
+            "label": "Stats — source",
+            "name": "cdc_stats_source",
+            "type": "text",
+            "default_value": "Source : enquête YouGov, mai 2019"
+        },
+        {
+            "key": "field_cdc_financer_eyebrow",
+            "label": "Financer — étiquette",
+            "name": "cdc_financer_eyebrow",
+            "type": "text",
+            "default_value": "Avant de signer"
+        },
+        {
+            "key": "field_cdc_financer_titre",
+            "label": "Financer — titre",
+            "name": "cdc_financer_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Convaincre la <em>banque</em>, pas seulement vous-même"
+        },
+        {
+            "key": "field_cdc_financer_texte",
+            "label": "Financer — texte",
+            "name": "cdc_financer_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Un achat immobilier se fait rarement sans recours à un prêt. Avant de présenter votre dossier, l'établissement bancaire regarde votre capacité à rembourser dans la durée — pas seulement votre envie d'acheter ce bien précis."
+        },
+        {
+            "key": "field_cdc_financer_liste",
+            "label": "Financer — points vérifiés par la banque (un par ligne)",
+            "name": "cdc_financer_liste",
+            "type": "textarea",
+            "rows": 5,
+            "new_lines": "",
+            "default_value": "Une gestion de comptes sans incident sur les derniers relevés\nVotre éligibilité aux aides de l'État (PTZ, prêt employeur...)\nUn reste à vivre suffisant une fois le crédit en place\nLa cohérence entre le prix du bien et votre capacité réelle"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-ci-coup-de-coeur.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782590400
+}

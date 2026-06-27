@@ -1,0 +1,217 @@
+{
+    "key": "group_page_ci_frais_notaire",
+    "title": "CI — Frais de notaire",
+    "fields": [
+        {
+            "key": "field_fn_hero_eyebrow",
+            "label": "Hero — fil d'ariane",
+            "name": "fn_hero_eyebrow",
+            "type": "text",
+            "default_value": "Frais de notaire"
+        },
+        {
+            "key": "field_fn_hero_titre",
+            "label": "Hero — titre",
+            "name": "fn_hero_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Comment calculer ses frais de <em>notaire</em>"
+        },
+        {
+            "key": "field_fn_hero_soustitre",
+            "label": "Hero — sous-titre",
+            "name": "fn_hero_soustitre",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Malgré leur nom, ce sont surtout des frais pour l'État. Voici ce qu'ils financent réellement, et comment ils varient."
+        },
+        {
+            "key": "field_fn_hero_bouton",
+            "label": "Hero — bouton",
+            "name": "fn_hero_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Estimer mon budget",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_fn_composition_eyebrow",
+            "label": "Composition — étiquette",
+            "name": "fn_composition_eyebrow",
+            "type": "text",
+            "default_value": "Un nom trompeur"
+        },
+        {
+            "key": "field_fn_composition_texte",
+            "label": "Composition — texte",
+            "name": "fn_composition_texte",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Les « frais de notaire » sont en réalité des frais d'acquisition : le notaire les collecte, mais c'est l'État qui en perçoit l'essentiel sous forme de droits et taxes. Sa propre rémunération n'en représente qu'une fraction."
+        },
+        {
+            "key": "field_fn_composition_part_1",
+            "label": "Composition — part 1",
+            "name": "fn_composition_part_1",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_fn_p1_label", "label": "Label", "name": "label", "type": "text", "default_value": "Droits et taxes" },
+                { "key": "field_fn_p1_valeur", "label": "Valeur", "name": "valeur", "type": "text", "default_value": "≈ 80" },
+                { "key": "field_fn_p1_unite", "label": "Unité", "name": "unite", "type": "text", "default_value": "%" },
+                { "key": "field_fn_p1_sous", "label": "Sous-texte", "name": "sous_label", "type": "text", "default_value": "reversés à l'État et aux collectivités" }
+            ]
+        },
+        {
+            "key": "field_fn_composition_part_2",
+            "label": "Composition — part 2",
+            "name": "fn_composition_part_2",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_fn_p2_label", "label": "Label", "name": "label", "type": "text", "default_value": "Émoluments du notaire" },
+                { "key": "field_fn_p2_valeur", "label": "Valeur", "name": "valeur", "type": "text", "default_value": "≈ 10" },
+                { "key": "field_fn_p2_unite", "label": "Unité", "name": "unite", "type": "text", "default_value": "%" },
+                { "key": "field_fn_p2_sous", "label": "Sous-texte", "name": "sous_label", "type": "text", "default_value": "rémunération encadrée par décret" }
+            ]
+        },
+        {
+            "key": "field_fn_composition_part_3",
+            "label": "Composition — part 3",
+            "name": "fn_composition_part_3",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_fn_p3_label", "label": "Label", "name": "label", "type": "text", "default_value": "Débours" },
+                { "key": "field_fn_p3_valeur", "label": "Valeur", "name": "valeur", "type": "text", "default_value": "≈ 10" },
+                { "key": "field_fn_p3_unite", "label": "Unité", "name": "unite", "type": "text", "default_value": "%" },
+                { "key": "field_fn_p3_sous", "label": "Sous-texte", "name": "sous_label", "type": "text", "default_value": "frais avancés pour les formalités" }
+            ]
+        },
+        {
+            "key": "field_fn_composition_source",
+            "label": "Composition — source",
+            "name": "fn_composition_source",
+            "type": "text",
+            "default_value": "Répartition indicative, hors cas particuliers — un chiffrage précis dépend de votre département et de votre projet."
+        },
+        {
+            "key": "field_fn_neufancien_eyebrow",
+            "label": "Neuf/ancien — étiquette",
+            "name": "fn_neufancien_eyebrow",
+            "type": "text",
+            "default_value": "Ce qui fait varier le montant"
+        },
+        {
+            "key": "field_fn_neufancien_titre",
+            "label": "Neuf/ancien — titre",
+            "name": "fn_neufancien_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Neuf ou ancien, l'<em>écart</em> est réel"
+        },
+        {
+            "key": "field_fn_neufancien_col1",
+            "label": "Neuf/ancien — en-tête colonne 1",
+            "name": "fn_neufancien_col1",
+            "type": "text",
+            "default_value": "Type de bien"
+        },
+        {
+            "key": "field_fn_neufancien_col2",
+            "label": "Neuf/ancien — en-tête colonne 2",
+            "name": "fn_neufancien_col2",
+            "type": "text",
+            "default_value": "Ordre de grandeur"
+        },
+        {
+            "key": "field_fn_neufancien_ligne_1",
+            "label": "Neuf/ancien — ligne 1",
+            "name": "fn_neufancien_ligne_1",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_fn_na_l1_c1", "label": "Colonne 1", "name": "col1", "type": "text", "default_value": "Logement ancien" },
+                { "key": "field_fn_na_l1_c2", "label": "Colonne 2", "name": "col2", "type": "textarea", "rows": 2, "default_value": "Environ 7 à 8% du prix de vente : les droits de mutation y sont sensiblement plus élevés que dans le neuf." }
+            ]
+        },
+        {
+            "key": "field_fn_neufancien_ligne_2",
+            "label": "Neuf/ancien — ligne 2",
+            "name": "fn_neufancien_ligne_2",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_fn_na_l2_c1", "label": "Colonne 1", "name": "col1", "type": "text", "default_value": "Logement neuf ou VEFA" },
+                { "key": "field_fn_na_l2_c2", "label": "Colonne 2", "name": "col2", "type": "textarea", "rows": 2, "default_value": "Environ 2 à 3% du prix de vente, grâce à un taux de taxe de publicité foncière réduit." }
+            ]
+        },
+        {
+            "key": "field_fn_neufancien_ligne_3",
+            "label": "Neuf/ancien — ligne 3",
+            "name": "fn_neufancien_ligne_3",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_fn_na_l3_c1", "label": "Colonne 1", "name": "col1", "type": "text", "default_value": "Terrain + construction" },
+                { "key": "field_fn_na_l3_c2", "label": "Colonne 2", "name": "col2", "type": "textarea", "rows": 2, "default_value": "Les frais portent uniquement sur le prix du terrain : le coût de construction n'est pas soumis aux droits de mutation." }
+            ]
+        },
+        {
+            "key": "field_fn_neufancien_note_label",
+            "label": "Note — étiquette",
+            "name": "fn_neufancien_note_label",
+            "type": "text",
+            "default_value": "À vérifier au cas par cas :"
+        },
+        {
+            "key": "field_fn_neufancien_note_texte",
+            "label": "Note — texte",
+            "name": "fn_neufancien_note_texte",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Ces ordres de grandeur varient selon le département et peuvent évoluer avec la réglementation. Seule une simulation tenant compte de votre projet donne un chiffre fiable."
+        },
+        {
+            "key": "field_fn_calculette_titre",
+            "label": "Calculette — titre",
+            "name": "fn_calculette_titre",
+            "type": "text",
+            "default_value": "Calculez vos frais de notaire"
+        },
+        {
+            "key": "field_fn_calculette_texte",
+            "label": "Calculette — texte",
+            "name": "fn_calculette_texte",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Indiquez votre type de projet, le département et le prix du bien pour obtenir une estimation chiffrée en quelques secondes."
+        },
+        {
+            "key": "field_fn_calculette_bouton",
+            "label": "Calculette — bouton",
+            "name": "fn_calculette_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Lancer la calculette",
+                "url": "/simu-frais-notaire-garantie/",
+                "target": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-ci-frais-notaire.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782590400
+}

@@ -1,0 +1,583 @@
+{
+    "key": "group_page_credit_immobilier",
+    "title": "Page Crédit immobilier",
+    "fields": [
+        {
+            "key": "field_cri_tab_hero",
+            "label": "01. Hero",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_cri_hero_eyebrow",
+            "label": "Étiquette (eyebrow)",
+            "name": "cri_hero_eyebrow",
+            "type": "text",
+            "default_value": "Crédit immobilier"
+        },
+        {
+            "key": "field_cri_hero_titre",
+            "label": "Titre",
+            "name": "cri_hero_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Quelle est la <em>meilleure</em> solution financière pour votre achat immobilier ?"
+        },
+        {
+            "key": "field_cri_hero_soustitre",
+            "label": "Sous-titre",
+            "name": "cri_hero_soustitre",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Il est aujourd'hui rare d'autofinancer une acquisition immobilière. Taux, assurance emprunteur, profil emprunteur : un crédit immobilier ne se résume jamais à un seul chiffre."
+        },
+        {
+            "key": "field_cri_hero_bouton",
+            "label": "Bouton",
+            "name": "cri_hero_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Étudier mon projet",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_cri_hero_carte_titre",
+            "label": "Carte rappel — titre",
+            "name": "cri_hero_carte_titre",
+            "type": "text",
+            "default_value": "Étudier ma capacité d'emprunt"
+        },
+        {
+            "key": "field_cri_hero_carte_cf7",
+            "label": "Carte rappel — shortcode Contact Form 7",
+            "name": "cri_hero_carte_cf7",
+            "type": "text",
+            "instructions": "Coller ici le shortcode du formulaire CF7 (ex : [contact-form-7 id=\"123\" title=\"Demande de rappel\"]).",
+            "default_value": ""
+        },
+        {
+            "key": "field_cri_tab_intro",
+            "label": "02. Au début du projet",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_cri_intro_eyebrow",
+            "label": "Étiquette",
+            "name": "cri_intro_eyebrow",
+            "type": "text",
+            "default_value": "Au début du projet"
+        },
+        {
+            "key": "field_cri_intro_titre",
+            "label": "Titre (repère colonne gauche)",
+            "name": "cri_intro_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Connaître sa <em>capacité</em> d'emprunt"
+        },
+        {
+            "key": "field_cri_intro_texte",
+            "label": "Paragraphe",
+            "name": "cri_intro_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Avant de chercher un bien, il est important de connaître sa capacité d'emprunt en tenant compte de ses revenus et de son apport personnel (épargne, plan épargne entreprise). C'est ce chiffre qui cadre toute la suite du projet."
+        },
+        {
+            "key": "field_cri_intro_note_label",
+            "label": "Note — étiquette",
+            "name": "cri_intro_note_label",
+            "type": "text",
+            "default_value": "Bon à savoir :"
+        },
+        {
+            "key": "field_cri_intro_note_texte",
+            "label": "Note — texte",
+            "name": "cri_intro_note_texte",
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Votre capacité de remboursement mensuel ne doit pas dépasser 33% de taux d'endettement. Il se calcule en additionnant toutes les mensualités de remboursement de prêt, divisées par le revenu net mensuel du foyer."
+        },
+        {
+            "key": "field_cri_tab_financement",
+            "label": "03. Financer son achat",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_cri_financement_eyebrow",
+            "label": "Étiquette",
+            "name": "cri_financement_eyebrow",
+            "type": "text",
+            "default_value": "L'accompagnement"
+        },
+        {
+            "key": "field_cri_financement_titre",
+            "label": "Titre",
+            "name": "cri_financement_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Financer son achat <em>immobilier</em>"
+        },
+        {
+            "key": "field_cri_financement_texte_1",
+            "label": "Paragraphe 1",
+            "name": "cri_financement_texte_1",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Un crédit immobilier, ce n'est pas que l'affaire du taux d'emprunt. D'autres paramètres entrent en compte : l'assurance emprunteur, votre profil emprunteur, le TAEG, les frais de dossier."
+        },
+        {
+            "key": "field_cri_financement_texte_2",
+            "label": "Paragraphe 2",
+            "name": "cri_financement_texte_2",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "La recherche d'un financement est chronophage et complexe. MatchCrédit facilite l'accès à la propriété dans les meilleures conditions, en négociant pour vous auprès des établissements bancaires."
+        },
+        {
+            "key": "field_cri_tab_services",
+            "label": "04. Services",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_cri_services_eyebrow",
+            "label": "Étiquette",
+            "name": "cri_services_eyebrow",
+            "type": "text",
+            "default_value": "Ce qu'on vous apporte"
+        },
+        {
+            "key": "field_cri_services_titre",
+            "label": "Titre",
+            "name": "cri_services_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Un accompagnement <em>complet</em>"
+        },
+        {
+            "key": "field_cri_service_1",
+            "label": "Service 1",
+            "name": "cri_service_1",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_cri_service_1_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Simulation"
+                },
+                {
+                    "key": "field_cri_service_1_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Visualisez le montant du prêt accessible par rapport à votre revenu et votre apport."
+                }
+            ]
+        },
+        {
+            "key": "field_cri_service_2",
+            "label": "Service 2",
+            "name": "cri_service_2",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_cri_service_2_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Conseils"
+                },
+                {
+                    "key": "field_cri_service_2_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Un courtier expérimenté dédié tout au long de votre projet, du premier rendez-vous au déblocage des fonds."
+                }
+            ]
+        },
+        {
+            "key": "field_cri_service_3",
+            "label": "Service 3",
+            "name": "cri_service_3",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_cri_service_3_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Gagnez du temps"
+                },
+                {
+                    "key": "field_cri_service_3_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Un seul rendez-vous suffit pour évaluer la faisabilité financière de votre projet."
+                }
+            ]
+        },
+        {
+            "key": "field_cri_tab_profils",
+            "label": "05. Profils",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_cri_profil_1",
+            "label": "Profil 1 — Premier achat",
+            "name": "cri_profil_1",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_cri_profil_1_numero",
+                    "label": "Numéro",
+                    "name": "numero",
+                    "type": "text",
+                    "default_value": "01"
+                },
+                {
+                    "key": "field_cri_profil_1_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "wysiwyg",
+                    "tabs": "text",
+                    "media_upload": 0,
+                    "toolbar": "basic",
+                    "default_value": "Premier achat <em>immobilier</em>"
+                },
+                {
+                    "key": "field_cri_profil_1_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Tout ce qu'il faut savoir avant de signer votre premier crédit immobilier."
+                },
+                {
+                    "key": "field_cri_profil_1_lien_1",
+                    "label": "Lien 1",
+                    "name": "lien_1",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Quelle est votre capacité d'emprunt ?",
+                        "url": "/credit-immobilier/capacite-emprunt/",
+                        "target": ""
+                    }
+                },
+                {
+                    "key": "field_cri_profil_1_lien_2",
+                    "label": "Lien 2",
+                    "name": "lien_2",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Coup de cœur immobilier, comment le financer ?",
+                        "url": "/credit-immobilier/coup-de-coeur-immobilier/",
+                        "target": ""
+                    }
+                },
+                {
+                    "key": "field_cri_profil_1_lien_3",
+                    "label": "Lien 3",
+                    "name": "lien_3",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Que sont les frais de garantie ?",
+                        "url": "/credit-immobilier/frais-de-garantie/",
+                        "target": ""
+                    }
+                },
+                {
+                    "key": "field_cri_profil_1_lien_4",
+                    "label": "Lien 4",
+                    "name": "lien_4",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Comment calculer ses frais de notaire ?",
+                        "url": "/credit-immobilier/frais-de-notaire/",
+                        "target": ""
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_cri_profil_2",
+            "label": "Profil 2 — Déjà propriétaire",
+            "name": "cri_profil_2",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_cri_profil_2_numero",
+                    "label": "Numéro",
+                    "name": "numero",
+                    "type": "text",
+                    "default_value": "02"
+                },
+                {
+                    "key": "field_cri_profil_2_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "wysiwyg",
+                    "tabs": "text",
+                    "media_upload": 0,
+                    "toolbar": "basic",
+                    "default_value": "Déjà <em>propriétaire</em>"
+                },
+                {
+                    "key": "field_cri_profil_2_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Votre projet évolue : renégociation, soulte ou investissement locatif."
+                },
+                {
+                    "key": "field_cri_profil_2_lien_1",
+                    "label": "Lien 1",
+                    "name": "lien_1",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Quand renégocier vos taux d'intérêt ?",
+                        "url": "#",
+                        "target": ""
+                    }
+                },
+                {
+                    "key": "field_cri_profil_2_lien_2",
+                    "label": "Lien 2",
+                    "name": "lien_2",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Comment calculer un rachat de soulte ?",
+                        "url": "#",
+                        "target": ""
+                    }
+                },
+                {
+                    "key": "field_cri_profil_2_lien_3",
+                    "label": "Lien 3",
+                    "name": "lien_3",
+                    "type": "link",
+                    "default_value": {
+                        "title": "Comment réussir son investissement locatif ?",
+                        "url": "/credit-immobilier/investissement-locatif/",
+                        "target": ""
+                    }
+                },
+                {
+                    "key": "field_cri_profil_2_lien_4",
+                    "label": "Lien 4 (optionnel)",
+                    "name": "lien_4",
+                    "type": "link",
+                    "default_value": null
+                }
+            ]
+        },
+        {
+            "key": "field_cri_tab_calculettes",
+            "label": "06. Calculettes",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_cri_calculettes_eyebrow",
+            "label": "Étiquette",
+            "name": "cri_calculettes_eyebrow",
+            "type": "text",
+            "default_value": "Outils"
+        },
+        {
+            "key": "field_cri_calculettes_titre",
+            "label": "Titre",
+            "name": "cri_calculettes_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Les <em>calculettes</em> crédit immobilier"
+        },
+        {
+            "key": "field_cri_calculette_1",
+            "label": "Calculette 1",
+            "name": "cri_calculette_1",
+            "type": "link",
+            "default_value": {
+                "title": "Calculer la capacité d'emprunt",
+                "url": "#",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_cri_calculette_2",
+            "label": "Calculette 2",
+            "name": "cri_calculette_2",
+            "type": "link",
+            "default_value": {
+                "title": "Calculer la durée de remboursement",
+                "url": "#",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_cri_calculette_3",
+            "label": "Calculette 3",
+            "name": "cri_calculette_3",
+            "type": "link",
+            "default_value": {
+                "title": "Calculer la mensualité d'un crédit immobilier",
+                "url": "#",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_cri_calculette_4",
+            "label": "Calculette 4",
+            "name": "cri_calculette_4",
+            "type": "link",
+            "default_value": {
+                "title": "Calculer les frais d'hypothèque",
+                "url": "#",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_cri_calculette_5",
+            "label": "Calculette 5",
+            "name": "cri_calculette_5",
+            "type": "link",
+            "default_value": {
+                "title": "Calculer les frais de notaire",
+                "url": "#",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_cri_tab_citation",
+            "label": "07. Citation",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_cri_citation_texte",
+            "label": "Citation",
+            "name": "cri_citation_texte",
+            "type": "text",
+            "default_value": "Dis-moi ce que tu veux, je te dirai ce que tu peux"
+        },
+        {
+            "key": "field_cri_citation_soustexte",
+            "label": "Sous-texte",
+            "name": "cri_citation_soustexte",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Votre courtier en prêts immobiliers négocie les meilleurs taux auprès des établissements bancaires."
+        },
+        {
+            "key": "field_cri_tab_conseils",
+            "label": "08. Nos conseils",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_cri_conseils_eyebrow",
+            "label": "Étiquette",
+            "name": "cri_conseils_eyebrow",
+            "type": "text",
+            "default_value": "Pour aller plus loin"
+        },
+        {
+            "key": "field_cri_conseils_titre",
+            "label": "Titre",
+            "name": "cri_conseils_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Nos <em>conseils</em>"
+        },
+        {
+            "key": "field_cri_conseil_1",
+            "label": "Conseil 1",
+            "name": "cri_conseil_1",
+            "type": "link",
+            "default_value": {
+                "title": "Devenir propriétaire avec un crédit immobilier",
+                "url": "#",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_cri_conseil_2",
+            "label": "Conseil 2",
+            "name": "cri_conseil_2",
+            "type": "link",
+            "default_value": {
+                "title": "Équilibrez vos mensualités avec le rachat de crédit immobilier",
+                "url": "/rachat-credit/",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_cri_conseil_3",
+            "label": "Conseil 3",
+            "name": "cri_conseil_3",
+            "type": "link",
+            "default_value": {
+                "title": "Défiscalisez avec un investissement locatif",
+                "url": "/credit-immobilier/investissement-locatif/",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_cri_conseil_4",
+            "label": "Conseil 4",
+            "name": "cri_conseil_4",
+            "type": "link",
+            "default_value": {
+                "title": "Foire aux questions",
+                "url": "#",
+                "target": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-credit-immobilier.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782556200
+}

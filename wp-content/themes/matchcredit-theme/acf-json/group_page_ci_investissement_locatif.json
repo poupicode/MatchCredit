@@ -1,0 +1,172 @@
+{
+    "key": "group_page_ci_investissement_locatif",
+    "title": "CI — Investissement locatif",
+    "fields": [
+        {
+            "key": "field_il_hero_eyebrow",
+            "label": "Hero — fil d'ariane",
+            "name": "il_hero_eyebrow",
+            "type": "text",
+            "default_value": "Investissement locatif"
+        },
+        {
+            "key": "field_il_hero_titre",
+            "label": "Hero — titre",
+            "name": "il_hero_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Comment réussir son investissement <em>locatif</em> ?"
+        },
+        {
+            "key": "field_il_hero_soustitre",
+            "label": "Hero — sous-titre",
+            "name": "il_hero_soustitre",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "L'immobilier reste une valeur sûre — à condition d'en maîtriser tous les paramètres financiers avant de signer."
+        },
+        {
+            "key": "field_il_hero_bouton",
+            "label": "Hero — bouton",
+            "name": "il_hero_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Étudier mon projet locatif",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_il_intro_eyebrow",
+            "label": "Intro — étiquette",
+            "name": "il_intro_eyebrow",
+            "type": "text",
+            "default_value": "Pourquoi investir"
+        },
+        {
+            "key": "field_il_intro_texte",
+            "label": "Intro — texte",
+            "name": "il_intro_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Investir dans un bien locatif permet, une fois le crédit remboursé, de dégager une rente complémentaire — un coussin appréciable quand les revenus d'activité baissent. La démarche est sécurisée par l'assurance décès-invalidité attachée au crédit, qui transmet le bien sans dette à vos proches en cas de coup dur."
+        },
+        {
+            "key": "field_il_intro_note_label",
+            "label": "Intro — note, étiquette",
+            "name": "il_intro_note_label",
+            "type": "text",
+            "default_value": "À vérifier avec votre courtier :"
+        },
+        {
+            "key": "field_il_intro_note_texte",
+            "label": "Intro — note, texte",
+            "name": "il_intro_note_texte",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Plusieurs dispositifs de réduction d'impôt existent pour l'investissement locatif neuf, mais leurs conditions et leur calendrier évoluent régulièrement. On vérifie ensemble votre éligibilité au moment de monter le dossier, plutôt que de se fier à une règle figée."
+        },
+        {
+            "key": "field_il_famille_eyebrow",
+            "label": "Famille — étiquette",
+            "name": "il_famille_eyebrow",
+            "type": "text",
+            "default_value": "Cas particulier"
+        },
+        {
+            "key": "field_il_famille_titre",
+            "label": "Famille — titre",
+            "name": "il_famille_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Louer à un <em>proche</em>, c'est possible"
+        },
+        {
+            "key": "field_il_famille_texte",
+            "label": "Famille — texte",
+            "name": "il_famille_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Il est tout à fait possible de louer votre bien locatif à un ascendant ou un descendant (enfant, parent), à condition de respecter trois conditions cumulatives :"
+        },
+        {
+            "key": "field_il_famille_conditions",
+            "label": "Famille — conditions (une par ligne)",
+            "name": "il_famille_conditions",
+            "type": "textarea",
+            "rows": 4,
+            "new_lines": "",
+            "default_value": "Respecter les plafonds de loyer en vigueur pour le dispositif concerné\nRespecter les plafonds de ressources applicables au locataire\nLe locataire ne doit pas être rattaché au foyer fiscal de l'investisseur"
+        },
+        {
+            "key": "field_il_vigilance_eyebrow",
+            "label": "Vigilance — étiquette",
+            "name": "il_vigilance_eyebrow",
+            "type": "text",
+            "default_value": "Avant de signer"
+        },
+        {
+            "key": "field_il_vigilance_titre",
+            "label": "Vigilance — titre",
+            "name": "il_vigilance_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Trois points de <em>vigilance</em>"
+        },
+        {
+            "key": "field_il_vigilance_1",
+            "label": "Vigilance 1",
+            "name": "il_vigilance_1",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_il_v1_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "La localisation avant tout" },
+                { "key": "field_il_v1_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "Transports, commerces, dynamisme du bassin d'emploi : la demande locative doit durablement dépasser l'offre, sous peine de vacance prolongée." }
+            ]
+        },
+        {
+            "key": "field_il_vigilance_2",
+            "label": "Vigilance 2",
+            "name": "il_vigilance_2",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_il_v2_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "Une vision globale du financement" },
+                { "key": "field_il_v2_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "Loyer perçu, charges de copropriété, taxe foncière, vacance locative, mensualité de crédit : c'est l'équation complète qui détermine la rentabilité réelle, pas le loyer seul." }
+            ]
+        },
+        {
+            "key": "field_il_vigilance_3",
+            "label": "Vigilance 3",
+            "name": "il_vigilance_3",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_il_v3_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "Une étude financière chiffrée" },
+                { "key": "field_il_v3_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "Avant toute offre, faites vérifier la faisabilité du projet au regard de votre capacité d'emprunt actuelle — c'est ce qui évite les mauvaises surprises une semaine avant la signature." }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-ci-investissement-locatif.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782590400
+}

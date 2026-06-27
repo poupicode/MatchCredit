@@ -1,0 +1,176 @@
+{
+    "key": "group_page_ci_frais_garantie",
+    "title": "CI — Frais de garantie",
+    "fields": [
+        {
+            "key": "field_fg_hero_eyebrow",
+            "label": "Hero — fil d'ariane",
+            "name": "fg_hero_eyebrow",
+            "type": "text",
+            "default_value": "Frais de garantie"
+        },
+        {
+            "key": "field_fg_hero_titre",
+            "label": "Hero — titre",
+            "name": "fg_hero_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Que sont les frais de <em>garantie</em> ?"
+        },
+        {
+            "key": "field_fg_hero_soustitre",
+            "label": "Hero — sous-titre",
+            "name": "fg_hero_soustitre",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Une banque ne prête jamais sans contrepartie. Trois dispositifs existent, avec des coûts et des conditions très différents."
+        },
+        {
+            "key": "field_fg_hero_bouton",
+            "label": "Hero — bouton",
+            "name": "fg_hero_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Comparer mon dossier",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_fg_definition_eyebrow",
+            "label": "Définition — étiquette",
+            "name": "fg_definition_eyebrow",
+            "type": "text",
+            "default_value": "Pourquoi une garantie"
+        },
+        {
+            "key": "field_fg_definition_texte",
+            "label": "Définition — texte",
+            "name": "fg_definition_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Un établissement bancaire demande systématiquement une garantie en contrepartie du prêt : en cas de défaillance de l'emprunteur, elle lui permet de récupérer les fonds prêtés, au besoin en faisant saisir et vendre le logement aux enchères judiciaires."
+        },
+        {
+            "key": "field_fg_comparatif_eyebrow",
+            "label": "Comparatif — étiquette",
+            "name": "fg_comparatif_eyebrow",
+            "type": "text",
+            "default_value": "Les 3 dispositifs"
+        },
+        {
+            "key": "field_fg_comparatif_titre",
+            "label": "Comparatif — titre",
+            "name": "fg_comparatif_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Hypothèque, PPD ou <em>caution</em> ?"
+        },
+        {
+            "key": "field_fg_comparatif_col1",
+            "label": "Comparatif — en-tête colonne 1",
+            "name": "fg_comparatif_col1",
+            "type": "text",
+            "default_value": "Dispositif"
+        },
+        {
+            "key": "field_fg_comparatif_col2",
+            "label": "Comparatif — en-tête colonne 2",
+            "name": "fg_comparatif_col2",
+            "type": "text",
+            "default_value": "Ce qu'il faut savoir"
+        },
+        {
+            "key": "field_fg_comparatif_ligne_1",
+            "label": "Comparatif — ligne 1",
+            "name": "fg_comparatif_ligne_1",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_fg_l1_c1", "label": "Colonne 1", "name": "col1", "type": "text", "default_value": "Hypothèque" },
+                { "key": "field_fg_l1_c2", "label": "Colonne 2", "name": "col2", "type": "textarea", "rows": 2, "default_value": "La garantie la plus connue. Inscrite chez le notaire, elle donne à la banque un droit direct sur le bien. Coûteuse à mettre en place et à lever en cas de revente anticipée." }
+            ]
+        },
+        {
+            "key": "field_fg_comparatif_ligne_2",
+            "label": "Comparatif — ligne 2",
+            "name": "fg_comparatif_ligne_2",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_fg_l2_c1", "label": "Colonne 1", "name": "col1", "type": "text", "default_value": "Privilège de prêteur de deniers (PPD)" },
+                { "key": "field_fg_l2_c2", "label": "Colonne 2", "name": "col2", "type": "textarea", "rows": 2, "default_value": "Réservé à l'achat dans l'ancien. Fonctionne comme l'hypothèque mais avec des frais d'enregistrement moins élevés, car exonéré de taxe de publicité foncière." }
+            ]
+        },
+        {
+            "key": "field_fg_comparatif_ligne_3",
+            "label": "Comparatif — ligne 3",
+            "name": "fg_comparatif_ligne_3",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_fg_l3_c1", "label": "Colonne 1", "name": "col1", "type": "text", "default_value": "Cautionnement" },
+                { "key": "field_fg_l3_c2", "label": "Colonne 2", "name": "col2", "type": "textarea", "rows": 2, "default_value": "Un organisme spécialisé se porte garant pour vous, sans passage chez le notaire. Souvent moins cher, et une partie de la contribution peut être restituée à la fin du crédit." }
+            ]
+        },
+        {
+            "key": "field_fg_comparatif_note_label",
+            "label": "Note — étiquette",
+            "name": "fg_comparatif_note_label",
+            "type": "text",
+            "default_value": "Bon à savoir :"
+        },
+        {
+            "key": "field_fg_comparatif_note_texte",
+            "label": "Note — texte",
+            "name": "fg_comparatif_note_texte",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Les frais de garantie sont moins élevés pour un prêt épargne logement (CEL, PEL), un prêt à taux zéro (PTZ) ou un prêt accession sociale (PAS) que pour un prêt bancaire classique."
+        },
+        {
+            "key": "field_fg_calculette_titre",
+            "label": "Calculette — titre",
+            "name": "fg_calculette_titre",
+            "type": "text",
+            "default_value": "Estimez vos frais de garantie"
+        },
+        {
+            "key": "field_fg_calculette_texte",
+            "label": "Calculette — texte",
+            "name": "fg_calculette_texte",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Renseignez votre projet et votre département pour obtenir une estimation, quel que soit le dispositif retenu."
+        },
+        {
+            "key": "field_fg_calculette_bouton",
+            "label": "Calculette — bouton",
+            "name": "fg_calculette_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Lancer la calculette",
+                "url": "/simu-frais-notaire-garantie/",
+                "target": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-ci-frais-garantie.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782590400
+}

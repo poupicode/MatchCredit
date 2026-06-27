@@ -38,3 +38,61 @@
 		margin-bottom: mixins.to-dvw(24, 390);
 	}
 }
+
+// Variante compacte pour les sous-pages d'article : pas de carte RDV, une seule
+// colonne resserrée — évite que chaque sous-page commence par le même hero
+// "split" que la page pilier.
+.page-hero--article {
+	padding: mixins.to-dvw(64) 0 mixins.to-dvw(80);
+
+	.page-hero-title {
+		font-size: mixins.to-dvw(40);
+		max-width: mixins.to-dvw(760);
+	}
+
+	.page-hero-subtitle {
+		max-width: mixins.to-dvw(640);
+	}
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(40, 390) 0 mixins.to-dvw(40, 390);
+	}
+}
+
+.page-breadcrumb {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-family: $font-mono;
+	font-size: 11px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: $text-mid;
+	margin-bottom: mixins.to-dvw(28);
+	flex-wrap: wrap;
+
+	a {
+		color: $text-mid;
+		text-decoration: none;
+		border-bottom: 1px solid transparent;
+
+		&:hover {
+			color: $purple-deep;
+			border-bottom-color: $purple-soft;
+		}
+	}
+
+	.is-current {
+		color: $purple-deep;
+		font-weight: 600;
+	}
+
+	.sep {
+		color: $purple-soft;
+	}
+
+	@media (max-width: 600px) {
+		font-size: 10px;
+		margin-bottom: mixins.to-dvw(18, 390);
+	}
+}
