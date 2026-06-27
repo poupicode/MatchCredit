@@ -392,6 +392,14 @@
             "rows": 6,
             "new_lines": "",
             "default_value": "Offre de prêt initiale\nTableau d'amortissement à jour\nDernier avis d'imposition\n3 derniers relevés de compte\n3 derniers bulletins de salaire"
+        },
+        {
+            "key": "field_rc_documents_note",
+            "label": "Carte de réassurance — texte",
+            "name": "rc_documents_note",
+            "type": "textarea",
+            "rows": 4,
+            "default_value": "Rien n'est figé : si un document manque, on vous le dit précisément lors de l'étude. Rien ne vous est demandé avant le premier rendez-vous."
         }
     ],
     "location": [
@@ -408,5 +416,5 @@
     "style": "default",
     "active": true,
     "show_in_rest": 0,
-    "modified": 1782047475
+    "modified": 1782558850
 }
