@@ -1,4 +1,4 @@
-<section class="page-section page-section--cream">
+<section class="page-section page-section--white">
 	<div class="container">
 		<div class="page-split-head">
 			<div class="eyebrow"><?php the_field( 'rg_comparatif_eyebrow' ); ?></div>

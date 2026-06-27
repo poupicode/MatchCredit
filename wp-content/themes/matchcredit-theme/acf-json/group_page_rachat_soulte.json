@@ -1,6 +1,6 @@
 {
     "key": "group_page_rachat_soulte",
-    "title": "Sous-page Rachat de soulte",
+    "title": "RC — Rachat de soulte",
     "fields": [
         {
             "key": "field_rs_tab_hero",
@@ -73,24 +73,14 @@
             "default_value": "Séparation"
         },
         {
-            "key": "field_rs_intro_titre",
-            "label": "Titre (repère colonne gauche)",
-            "name": "rs_intro_titre",
-            "type": "wysiwyg",
-            "tabs": "text",
-            "media_upload": 0,
-            "toolbar": "basic",
-            "default_value": "Garder le bien, <em>racheter</em> la part"
-        },
-        {
             "key": "field_rs_intro_texte",
-            "label": "Texte",
+            "label": "Texte (chapeau centré)",
             "name": "rs_intro_texte",
             "type": "wysiwyg",
             "tabs": "text",
             "media_upload": 0,
             "toolbar": "basic",
-            "default_value": "Un bien acheté à deux, un crédit souscrit en commun : quand la vie de couple prend un autre chemin, la question du logement se pose vite. Le revendre et repartir à zéro ? Le garder ? Si l'un de vous souhaite conserver le bien, il devra racheter la part de l'autre — c'est ce qu'on appelle la soulte."
+            "default_value": "Chaque année en France, environ 130 000 divorces sont prononcés — avec, bien souvent, un crédit immobilier souscrit à deux au milieu des démarches. Si l'un des ex-conjoints souhaite garder le bien commun et en devenir seul propriétaire, il doit verser à l'autre une compensation financière : la soulte."
         },
         {
             "key": "field_rs_intro_note",
@@ -157,14 +147,110 @@
             "default_value": "Ce qui entre dans <em>le calcul</em> du rachat de soulte"
         },
         {
-            "key": "field_rs_calcul_liste",
-            "label": "Liste (un élément par ligne)",
-            "name": "rs_calcul_liste",
-            "type": "textarea",
-            "rows": 6,
-            "new_lines": "",
-            "instructions": "Pour les pourcentages réglementaires (droits de partage, contribution de sécurité immobilière), laisser le repère [% à confirmer] tant que le chiffre exact n'a pas été validé avec un notaire — ne jamais publier un pourcentage non vérifié.",
-            "default_value": "Le capital restant dû sur le crédit en cours\nLa soulte due par l'un des ex-conjoints à l'autre\nLes droits de partage, un pourcentage de l'actif net global fixé par la loi [% à confirmer]\nLa contribution de sécurité immobilière [% à confirmer]\nLes émoluments du notaire"
+            "key": "field_rs_calcul_col1",
+            "label": "En-tête colonne 1",
+            "name": "rs_calcul_col1",
+            "type": "text",
+            "default_value": "Poste"
+        },
+        {
+            "key": "field_rs_calcul_col2",
+            "label": "En-tête colonne 2",
+            "name": "rs_calcul_col2",
+            "type": "text",
+            "default_value": "Ce qu'il représente"
+        },
+        {
+            "key": "field_rs_calcul_ligne_1",
+            "label": "Ligne 1",
+            "name": "rs_calcul_ligne_1",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rs_cl1_c1",
+                    "label": "Colonne 1",
+                    "name": "col1",
+                    "type": "text",
+                    "default_value": "Capital restant dû"
+                },
+                {
+                    "key": "field_rs_cl1_c2",
+                    "label": "Colonne 2",
+                    "name": "col2",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Le solde du crédit en cours au moment du rachat — c'est la base de tout le calcul."
+                }
+            ]
+        },
+        {
+            "key": "field_rs_calcul_ligne_2",
+            "label": "Ligne 2",
+            "name": "rs_calcul_ligne_2",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rs_cl2_c1",
+                    "label": "Colonne 1",
+                    "name": "col1",
+                    "type": "text",
+                    "default_value": "Droits de partage"
+                },
+                {
+                    "key": "field_rs_cl2_c2",
+                    "label": "Colonne 2",
+                    "name": "col2",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "2,5% de l'actif net partagé — un taux réduit depuis 2021 pour les séparations."
+                }
+            ]
+        },
+        {
+            "key": "field_rs_calcul_ligne_3",
+            "label": "Ligne 3",
+            "name": "rs_calcul_ligne_3",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rs_cl3_c1",
+                    "label": "Colonne 1",
+                    "name": "col1",
+                    "type": "text",
+                    "default_value": "Contribution de sécurité immobilière"
+                },
+                {
+                    "key": "field_rs_cl3_c2",
+                    "label": "Colonne 2",
+                    "name": "col2",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "0,10% de la valeur du bien, perçue lors de la publication de l'acte."
+                }
+            ]
+        },
+        {
+            "key": "field_rs_calcul_ligne_4",
+            "label": "Ligne 4",
+            "name": "rs_calcul_ligne_4",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rs_cl4_c1",
+                    "label": "Colonne 1",
+                    "name": "col1",
+                    "type": "text",
+                    "default_value": "Émoluments du notaire"
+                },
+                {
+                    "key": "field_rs_cl4_c2",
+                    "label": "Colonne 2",
+                    "name": "col2",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Environ 0,70% de la valeur du bien, un tarif encadré par décret."
+                }
+            ]
         },
         {
             "key": "field_rs_tab_etapes",
@@ -311,31 +397,30 @@
             "placement": "left"
         },
         {
-            "key": "field_rs_accompagnement_eyebrow",
-            "label": "Étiquette",
-            "name": "rs_accompagnement_eyebrow",
+            "key": "field_rs_accompagnement_titre_court",
+            "label": "Titre",
+            "name": "rs_accompagnement_titre_court",
             "type": "text",
-            "default_value": "Et après ?"
-        },
-        {
-            "key": "field_rs_accompagnement_titre",
-            "label": "Titre (repère colonne gauche)",
-            "name": "rs_accompagnement_titre",
-            "type": "wysiwyg",
-            "tabs": "text",
-            "media_upload": 0,
-            "toolbar": "basic",
-            "default_value": "Votre <em>courtier</em> à vos côtés"
+            "default_value": "Votre courtier à vos côtés"
         },
         {
             "key": "field_rs_accompagnement_texte",
             "label": "Texte",
             "name": "rs_accompagnement_texte",
-            "type": "wysiwyg",
-            "tabs": "text",
-            "media_upload": 0,
-            "toolbar": "basic",
-            "default_value": "Le rachat de soulte s'effectue obligatoirement chez un notaire. En parallèle, monter un nouveau dossier de prêt demande de trouver la solution de financement la plus adaptée à votre nouvelle situation — c'est exactement là que votre courtier MatchCrédit intervient : un accompagnement 100 % personnalisé, dans votre intérêt."
+            "type": "textarea",
+            "rows": 3,
+            "default_value": "Le rachat de soulte s'effectue obligatoirement chez un notaire. En parallèle, monter un nouveau dossier de prêt demande de trouver la solution de financement la plus adaptée à votre nouvelle situation — c'est exactement là que votre courtier MatchCrédit intervient, avec un accompagnement 100% personnalisé."
+        },
+        {
+            "key": "field_rs_accompagnement_bouton",
+            "label": "Bouton",
+            "name": "rs_accompagnement_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Prendre rendez-vous",
+                "url": "/rendez-vous",
+                "target": ""
+            }
         }
     ],
     "location": [
@@ -352,5 +437,5 @@
     "style": "default",
     "active": true,
     "show_in_rest": 0,
-    "modified": 1782047475
+    "modified": 1782556300
 }

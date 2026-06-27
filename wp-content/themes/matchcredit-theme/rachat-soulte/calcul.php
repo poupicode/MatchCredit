@@ -1,4 +1,4 @@
-<section class="page-section page-section--white">
+<section class="page-section page-section--cream">
 	<div class="container">
 		<div class="page-split-head">
 			<div class="eyebrow"><?php the_field( 'rs_calcul_eyebrow' ); ?></div>
@@ -9,16 +9,25 @@
 			</div>
 
 			<div class="page-split-content">
-				<ul class="page-list">
-					<?php
-					$rs_calcul_liste = explode( "\n", (string) get_field( 'rs_calcul_liste' ) );
-					foreach ( $rs_calcul_liste as $item ) :
-						$item = trim( $item );
-						if ( ! $item ) continue;
-						?>
-						<li><?php echo esc_html( $item ); ?></li>
-					<?php endforeach; ?>
-				</ul>
+				<table class="page-table">
+					<thead>
+						<tr>
+							<th><?php the_field( 'rs_calcul_col1' ); ?></th>
+							<th><?php the_field( 'rs_calcul_col2' ); ?></th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php foreach ( array( 'rs_calcul_ligne_1', 'rs_calcul_ligne_2', 'rs_calcul_ligne_3', 'rs_calcul_ligne_4' ) as $ligne_key ) :
+							$ligne = get_field( $ligne_key );
+							if ( ! $ligne ) continue;
+							?>
+							<tr>
+								<td><strong><?php echo esc_html( $ligne['col1'] ); ?></strong></td>
+								<td><?php echo esc_html( $ligne['col2'] ); ?></td>
+							</tr>
+						<?php endforeach; ?>
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,210 @@
+{
+    "key": "group_page_rc_renegocier_taux",
+    "title": "RC — Renégocier ses taux",
+    "fields": [
+        {
+            "key": "field_rrt_hero_eyebrow",
+            "label": "Hero — fil d'ariane",
+            "name": "rrt_hero_eyebrow",
+            "type": "text",
+            "default_value": "Renégocier ses taux"
+        },
+        {
+            "key": "field_rrt_hero_titre",
+            "label": "Hero — titre",
+            "name": "rrt_hero_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Quand <em>renégocier</em> son emprunt ?"
+        },
+        {
+            "key": "field_rrt_hero_soustitre",
+            "label": "Hero — sous-titre",
+            "name": "rrt_hero_soustitre",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Pourquoi continuer à payer des mensualités au prix fort si les conditions d'emprunt ont changé depuis la signature ?"
+        },
+        {
+            "key": "field_rrt_hero_bouton",
+            "label": "Hero — bouton",
+            "name": "rrt_hero_bouton",
+            "type": "link",
+            "default_value": {
+                "title": "Vérifier mon contrat",
+                "url": "/rendez-vous",
+                "target": ""
+            }
+        },
+        {
+            "key": "field_rrt_intro_eyebrow",
+            "label": "Intro — étiquette",
+            "name": "rrt_intro_eyebrow",
+            "type": "text",
+            "default_value": "Faire jouer la concurrence"
+        },
+        {
+            "key": "field_rrt_intro_texte",
+            "label": "Intro — texte",
+            "name": "rrt_intro_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Si vous ne savez pas par où commencer, un courtier spécialisé saura vous proposer les offres adaptées à votre profil. Son conseil compte d'autant plus que le taux n'est qu'une partie du prix d'un crédit : indemnités de remboursement anticipé, frais de dossier... une simulation rigoureuse, avant et après, reste le moyen le plus sûr d'objectiver la décision."
+        },
+        {
+            "key": "field_rrt_intro_note_label",
+            "label": "Intro — note, étiquette",
+            "name": "rrt_intro_note_label",
+            "type": "text",
+            "default_value": "À retenir :"
+        },
+        {
+            "key": "field_rrt_intro_note_texte",
+            "label": "Intro — note, texte",
+            "name": "rrt_intro_note_texte",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Une renégociation se fait auprès de votre banque actuelle. Si elle refuse ou propose mal, le rachat de crédit par un autre établissement reste l'autre option à étudier."
+        },
+        {
+            "key": "field_rrt_regles_eyebrow",
+            "label": "Règles — étiquette",
+            "name": "rrt_regles_eyebrow",
+            "type": "text",
+            "default_value": "Avant de vous lancer"
+        },
+        {
+            "key": "field_rrt_regles_titre",
+            "label": "Règles — titre",
+            "name": "rrt_regles_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Les 4 règles d'<em>or</em>"
+        },
+        {
+            "key": "field_rrt_regle_1",
+            "label": "Règle 1",
+            "name": "rrt_regle_1",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_rrt_r1_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "Les crédits anciens, sur longue durée" },
+                { "key": "field_rrt_r1_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "C'est là que la renégociation prend tout son sens : elle permet souvent de réduire la durée restante et, surtout, le coût total du crédit." }
+            ]
+        },
+        {
+            "key": "field_rrt_regle_2",
+            "label": "Règle 2",
+            "name": "rrt_regle_2",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_rrt_r2_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "Les crédits de moins de 5 ans" },
+                { "key": "field_rrt_r2_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "C'est en début de prêt que l'on rembourse le plus d'intérêts : l'opération a donc le plus d'impact sur le coût total à ce moment précis." }
+            ]
+        },
+        {
+            "key": "field_rrt_regle_3",
+            "label": "Règle 3",
+            "name": "rrt_regle_3",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_rrt_r3_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "Un taux au moins 1 point plus bas" },
+                { "key": "field_rrt_r3_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "Le nouveau taux proposé doit être inférieur d'au moins 1 point au taux initial pour que l'opération soit réellement rentable." }
+            ]
+        },
+        {
+            "key": "field_rrt_regle_4",
+            "label": "Règle 4",
+            "name": "rrt_regle_4",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_rrt_r4_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "Un capital restant dû d'au moins 70 000 €" },
+                { "key": "field_rrt_r4_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "En moyenne, sous ce seuil, les frais liés à l'opération rognent une trop grande partie du gain espéré." }
+            ]
+        },
+        {
+            "key": "field_rrt_arbitrage_eyebrow",
+            "label": "Arbitrage — étiquette",
+            "name": "rrt_arbitrage_eyebrow",
+            "type": "text",
+            "default_value": "Mensualités ou durée ?"
+        },
+        {
+            "key": "field_rrt_arbitrage_texte",
+            "label": "Arbitrage — texte",
+            "name": "rrt_arbitrage_texte",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Ou les deux ! Vous pouvez réduire vos mensualités en conservant la même durée de remboursement, ou réduire la durée en conservant la même mensualité. Une simulation financière permet d'élaborer la meilleure stratégie selon votre objectif — et, pourquoi pas, d'en profiter pour financer un nouveau projet."
+        },
+        {
+            "key": "field_rrt_services_eyebrow",
+            "label": "Services — étiquette",
+            "name": "rrt_services_eyebrow",
+            "type": "text",
+            "default_value": "Comment ça se passe"
+        },
+        {
+            "key": "field_rrt_services_titre",
+            "label": "Services — titre",
+            "name": "rrt_services_titre",
+            "type": "wysiwyg",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "basic",
+            "default_value": "Ce qu'on vous <em>apporte</em>"
+        },
+        {
+            "key": "field_rrt_service_1",
+            "label": "Service 1",
+            "name": "rrt_service_1",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_rrt_s1_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "Simulation" },
+                { "key": "field_rrt_s1_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "Visualisez en un coup d'œil le montant du prêt accessible par rapport à votre revenu." }
+            ]
+        },
+        {
+            "key": "field_rrt_service_2",
+            "label": "Service 2",
+            "name": "rrt_service_2",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_rrt_s2_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "Conseils" },
+                { "key": "field_rrt_s2_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "Un courtier expérimenté, dédié tout au long de votre projet de renégociation." }
+            ]
+        },
+        {
+            "key": "field_rrt_service_3",
+            "label": "Service 3",
+            "name": "rrt_service_3",
+            "type": "group",
+            "sub_fields": [
+                { "key": "field_rrt_s3_titre", "label": "Titre", "name": "titre", "type": "text", "default_value": "Gagnez du temps" },
+                { "key": "field_rrt_s3_texte", "label": "Texte", "name": "texte", "type": "textarea", "rows": 2, "default_value": "1 rendez-vous suffit pour être fixé sur la faisabilité financière de votre projet." }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-rc-renegocier-taux.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "active": true,
+    "show_in_rest": 0,
+    "modified": 1782556400
+}

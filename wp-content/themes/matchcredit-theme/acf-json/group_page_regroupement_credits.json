@@ -1,6 +1,6 @@
 {
     "key": "group_page_regroupement_credits",
-    "title": "Sous-page Regroupement de crédits",
+    "title": "RC — Regroupement de crédits",
     "fields": [
         {
             "key": "field_rg_tab_hero",
@@ -71,16 +71,6 @@
             "name": "rg_intro_eyebrow",
             "type": "text",
             "default_value": "Simplifier son budget"
-        },
-        {
-            "key": "field_rg_intro_titre",
-            "label": "Titre (repère colonne gauche)",
-            "name": "rg_intro_titre",
-            "type": "wysiwyg",
-            "tabs": "text",
-            "media_upload": 0,
-            "toolbar": "basic",
-            "default_value": "Une seule <em>mensualité</em>"
         },
         {
             "key": "field_rg_intro_texte",
@@ -334,13 +324,73 @@
             "default_value": "Au-delà de <em>la simplicité</em> du quotidien"
         },
         {
-            "key": "field_rg_avantages_liste",
-            "label": "Liste (un avantage par ligne)",
-            "name": "rg_avantages_liste",
-            "type": "textarea",
-            "rows": 4,
-            "new_lines": "",
-            "default_value": "Mieux anticiper une baisse de revenus\nDégager de la marge pour financer un nouveau projet\nAdapter la mensualité à votre budget réel, le plus souvent avec un allongement de la durée totale"
+            "key": "field_rg_avantage_1",
+            "label": "Avantage 1",
+            "name": "rg_avantage_1",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rg_av1_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Anticiper une baisse de revenus"
+                },
+                {
+                    "key": "field_rg_av1_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Une mensualité allégée absorbe mieux un changement de situation — retraite, congé parental, changement de poste."
+                }
+            ]
+        },
+        {
+            "key": "field_rg_avantage_2",
+            "label": "Avantage 2",
+            "name": "rg_avantage_2",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rg_av2_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Dégager de la marge"
+                },
+                {
+                    "key": "field_rg_av2_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "La marge récupérée chaque mois peut financer un nouveau projet, plutôt que de rester absorbée par plusieurs crédits dispersés."
+                }
+            ]
+        },
+        {
+            "key": "field_rg_avantage_3",
+            "label": "Avantage 3",
+            "name": "rg_avantage_3",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_rg_av3_titre",
+                    "label": "Titre",
+                    "name": "titre",
+                    "type": "text",
+                    "default_value": "Adapter la mensualité à votre budget réel"
+                },
+                {
+                    "key": "field_rg_av3_texte",
+                    "label": "Texte",
+                    "name": "texte",
+                    "type": "textarea",
+                    "rows": 2,
+                    "default_value": "Le plus souvent avec un allongement de la durée totale — un compromis assumé entre confort immédiat et coût global."
+                }
+            ]
         },
         {
             "key": "field_rg_tab_exemple",
@@ -398,6 +448,27 @@
             "name": "rg_exemple_apres_montant",
             "type": "text",
             "default_value": "620 €/mois"
+        },
+        {
+            "key": "field_rg_tab_citation",
+            "label": "07. Citation",
+            "type": "tab",
+            "placement": "left"
+        },
+        {
+            "key": "field_rg_citation_texte",
+            "label": "Citation",
+            "name": "rg_citation_texte",
+            "type": "text",
+            "default_value": "Dis-moi ce que tu veux, je te dirai ce que tu peux"
+        },
+        {
+            "key": "field_rg_citation_soustexte",
+            "label": "Sous-texte",
+            "name": "rg_citation_soustexte",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Votre courtier négocie auprès des banques la mensualité de crédit la plus juste pour votre situation."
         }
     ],
     "location": [
@@ -414,5 +485,5 @@
     "style": "default",
     "active": true,
     "show_in_rest": 0,
-    "modified": 1782047880
+    "modified": 1782556400
 }
