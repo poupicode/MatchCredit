@@ -4,15 +4,15 @@
 .footer {
   background: $purple-ink;
   color: rgba(255, 255, 255, 0.6);
-  padding: 100px 0 32px;
+  padding: mixins.to-dvw(100) 0 mixins.to-dvw(32);
 
   h4 {
-    font-size: 13px;
+    font-size: mixins.to-dvw(13);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: rgba(255, 255, 255, 0.4);
     font-weight: 600;
-    margin: 0 0 20px;
+    margin: 0 0 mixins.to-dvw(20);
   }
 
   ul {
@@ -21,12 +21,12 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: mixins.to-dvw(12);
   }
 
   a {
     color: white;
-    font-size: 15px;
+    font-size: mixins.to-dvw(15);
     font-weight: 500;
     transition: color 0.15s;
     text-decoration: none;
@@ -39,52 +39,88 @@
   .logo {
     color: white;
   }
+
+  @media (max-width: 600px) {
+    padding: mixins.to-dvw(56, 390) 0 mixins.to-dvw(24, 390);
+
+    h4 {
+      font-size: mixins.to-dvw(12, 390);
+      margin-bottom: mixins.to-dvw(16, 390);
+    }
+
+    ul {
+      gap: mixins.to-dvw(10, 390);
+    }
+
+    a {
+      font-size: mixins.to-dvw(15, 390);
+    }
+  }
 }
 
 .footer-top {
   display: grid;
   grid-template-columns: 1.6fr 1fr 1fr;
-  gap: 64px;
-  padding-bottom: 64px;
+  gap: mixins.to-dvw(64);
+  padding-bottom: mixins.to-dvw(64);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: mixins.to-dvw(48, 390);
+    padding-bottom: mixins.to-dvw(48, 390);
   }
 }
 
 .footer-tag {
-  margin-top: 24px;
-  font-size: 15px;
+  margin-top: mixins.to-dvw(24);
+  font-size: mixins.to-dvw(15);
   line-height: 1.7;
-  max-width: 320px;
+  max-width: mixins.to-dvw(320);
+
+  @media (max-width: 600px) {
+    margin-top: mixins.to-dvw(16, 390);
+    font-size: mixins.to-dvw(15, 390);
+    max-width: none;
+  }
 }
 
 .footer-quote {
   font-family: $font-serif;
   font-style: italic;
   color: $yellow;
-  font-size: 19px;
+  font-size: mixins.to-dvw(19);
   line-height: 1.4;
-  padding: 16px 0 16px 18px;
+  padding: mixins.to-dvw(16) 0 mixins.to-dvw(16) mixins.to-dvw(18);
   border-left: 2px solid $yellow;
-  margin-top: 24px;
+  margin-top: mixins.to-dvw(24);
+
+  @media (max-width: 600px) {
+    font-size: mixins.to-dvw(17, 390);
+    padding: mixins.to-dvw(12, 390) 0 mixins.to-dvw(12, 390) mixins.to-dvw(14, 390);
+    margin-top: mixins.to-dvw(16, 390);
+  }
 }
 
 .footer-agence-card {
   background: rgba(255, 255, 255, 0.04);
-  padding: 16px;
+  padding: mixins.to-dvw(16);
   border-radius: 4px;
-  margin-bottom: 20px;
-  font-size: 13px;
+  margin-bottom: mixins.to-dvw(20);
+  font-size: mixins.to-dvw(13);
   line-height: 1.55;
 
   strong {
     display: block;
     color: white;
     font-family: $font-sans;
-    margin-bottom: 6px;
+    margin-bottom: mixins.to-dvw(6);
+  }
+
+  @media (max-width: 600px) {
+    padding: mixins.to-dvw(14, 390);
+    margin-bottom: mixins.to-dvw(16, 390);
+    font-size: mixins.to-dvw(13, 390);
   }
 }
 
@@ -95,35 +131,46 @@
   color: rgba(255, 255, 255, 0.05);
   letter-spacing: -0.04em;
   line-height: 0.9;
-  margin: 64px 0 0;
+  margin: mixins.to-dvw(64) 0 0;
   text-align: center;
   user-select: none;
 
   @media (max-width: 600px) {
     font-size: mixins.to-dvw(60, 390);
+    margin-top: mixins.to-dvw(40, 390);
   }
 }
 
 .footer-bottom {
-  padding-top: 32px;
+  padding-top: mixins.to-dvw(32);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 13px;
+  font-size: mixins.to-dvw(13);
   color: rgba(255, 255, 255, 0.4);
   flex-wrap: wrap;
-  gap: 16px;
+  gap: mixins.to-dvw(16);
+
+  @media (max-width: 600px) {
+    padding-top: mixins.to-dvw(24, 390);
+    font-size: mixins.to-dvw(12, 390);
+    gap: mixins.to-dvw(14, 390);
+  }
 }
 
 .footer-legal-links {
   display: flex;
-  gap: 24px;
+  gap: mixins.to-dvw(24);
   flex-wrap: wrap;
+
+  @media (max-width: 600px) {
+    gap: mixins.to-dvw(16, 390);
+  }
 }
 
 .legal-mention {
   background: white;
-  padding: 32px 0 36px;
+  padding: mixins.to-dvw(32) 0 mixins.to-dvw(36);
   border-top: 1px solid $rule;
 
   .container {
@@ -131,13 +178,21 @@
   }
 
   p {
-    font-size: 11.5px;
+    font-size: mixins.to-dvw(11.5);
     line-height: 1.6;
     color: $text-mid;
     letter-spacing: 0.005em;
 
     strong {
       color: $purple-ink;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: mixins.to-dvw(24, 390) 0 mixins.to-dvw(28, 390);
+
+    p {
+      font-size: mixins.to-dvw(12, 390);
     }
   }
 }
