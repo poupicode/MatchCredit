@@ -74,11 +74,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: mixins.to-dvw(16) mixins.to-dvw(32);
+	padding-top: mixins.to-dvw(16);
+	padding-bottom: mixins.to-dvw(16);
 	gap: mixins.to-dvw(32);
 
 	@media (max-width: 800px) {
-		padding: mixins.to-dvw(14, 390) mixins.to-dvw(20, 390);
+		padding-top: mixins.to-dvw(14, 390);
+		padding-bottom: mixins.to-dvw(14, 390);
 		gap: mixins.to-dvw(16, 390);
 	}
 }
@@ -191,8 +193,15 @@
 	padding: 0;
 	flex-wrap: wrap;
 
+	li {
+		position: relative;
+	}
+
 	a {
 		position: relative;
+		display: inline-flex;
+		align-items: center;
+		gap: 6px;
 		font-size: 14px;
 		font-weight: 500;
 		color: $text;
@@ -219,12 +228,125 @@
 		}
 	}
 
-	.current-menu-item > a {
+	.current-menu-item > a,
+	.current-menu-ancestor > a {
 		color: $purple-ink;
 
 		&::after {
 			right: 0;
 			background: $purple-ink;
+		}
+	}
+
+	// Boutons : ajouter la classe CSS "menu-btn-primary" ou "menu-btn-secondary"
+	// à un élément depuis Apparence > Menus (Options de l'écran > Classes CSS).
+	.menu-btn-primary,
+	.menu-btn-secondary {
+		> a {
+			padding: 10px 18px;
+			border-radius: 4px;
+
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	.menu-btn-primary > a {
+		background: $purple-ink;
+		color: $yellow;
+		transition: background 0.15s $ease;
+
+		&:hover {
+			background: $purple-deep;
+			color: $yellow;
+		}
+	}
+
+	.menu-btn-secondary > a {
+		border: 1px solid $rule;
+		color: $purple-ink;
+		transition: border-color 0.15s $ease;
+
+		&:hover {
+			border-color: $purple-ink;
+		}
+	}
+
+	// Sous-menus
+	.menu-item-has-children {
+		> a {
+			flex-direction: row-reverse;
+		}
+
+		> a::before {
+			content: "";
+			width: 6px;
+			height: 6px;
+			border-right: 1.5px solid currentColor;
+			border-bottom: 1.5px solid currentColor;
+			transform: rotate(45deg);
+			transition: transform 0.2s $ease;
+		}
+
+		&.is-open > a::before {
+			transform: rotate(225deg);
+		}
+	}
+
+	.sub-menu {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	@media (min-width: 801px) {
+		.menu-item-has-children {
+			&:hover,
+			&:focus-within {
+				.sub-menu {
+					opacity: 1;
+					visibility: visible;
+					pointer-events: auto;
+					transform: translateY(0);
+				}
+
+				> a::before {
+					transform: rotate(225deg);
+				}
+			}
+		}
+
+		.sub-menu {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			min-width: 200px;
+			background: $cream;
+			border: 1px solid $rule;
+			border-radius: 8px;
+			box-shadow: 0 16px 32px rgba(26, 20, 40, 0.08);
+			padding: 8px;
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+			transform: translateY(-6px);
+			transition: opacity 0.2s $ease, transform 0.2s $ease, visibility 0.2s;
+			z-index: 10;
+
+			li {
+				width: 100%;
+			}
+
+			a {
+				display: block;
+				padding: 8px 12px;
+				white-space: nowrap;
+
+				&::after {
+					display: none;
+				}
+			}
 		}
 	}
 
@@ -237,52 +359,25 @@
 		a {
 			font-size: mixins.to-dvw(16, 390);
 		}
-	}
-}
 
-.nav-cta {
-	display: flex;
-	align-items: center;
-	gap: mixins.to-dvw(24);
+		.menu-item-has-children {
+			width: 100%;
 
-	@media (max-width: 800px) {
-		flex-direction: column;
-		align-items: flex-start;
-		gap: mixins.to-dvw(16, 390);
-		width: 100%;
-	}
-}
+			> a {
+				justify-content: space-between;
+				width: 100%;
+			}
+		}
 
-.nav-blog {
-	font-size: 14px;
-	font-weight: 500;
-	color: $text;
-	text-decoration: none;
+		.sub-menu {
+			max-height: 0;
+			overflow: hidden;
+			padding-left: mixins.to-dvw(16, 390);
+			transition: max-height 0.2s $ease;
+		}
 
-	&:hover {
-		color: $purple-ink;
-	}
-}
-
-.nav-btn {
-	display: inline-flex;
-	align-items: center;
-	gap: 8px;
-	background: $purple-ink;
-	color: $yellow;
-	font-size: 14px;
-	font-weight: 600;
-	padding: 10px 18px;
-	border-radius: 4px;
-	text-decoration: none;
-	transition: background 0.15s $ease;
-
-	&:hover {
-		background: $purple-deep;
-	}
-
-	@media (max-width: 800px) {
-		width: 100%;
-		justify-content: center;
+		.menu-item-has-children.is-open .sub-menu {
+			max-height: 60vh;
+		}
 	}
 }

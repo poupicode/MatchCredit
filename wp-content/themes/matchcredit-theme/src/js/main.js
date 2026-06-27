@@ -9,8 +9,22 @@ if (navBurger && navCollapse) {
 		document.body.classList.toggle('nav-open', isOpen);
 	});
 
+	// Sur mobile, un parent avec sous-menu s'ouvre au clic au lieu de naviguer.
+	navCollapse.querySelectorAll('.menu-item-has-children > a').forEach((link) => {
+		link.addEventListener('click', (event) => {
+			if (window.innerWidth > 800) {
+				return;
+			}
+			event.preventDefault();
+			link.parentElement.classList.toggle('is-open');
+		});
+	});
+
 	navCollapse.querySelectorAll('a').forEach((link) => {
 		link.addEventListener('click', () => {
+			if (link.parentElement.classList.contains('menu-item-has-children') && window.innerWidth <= 800) {
+				return;
+			}
 			navCollapse.classList.remove('is-open');
 			navBurger.classList.remove('is-open');
 			navBurger.setAttribute('aria-expanded', 'false');
@@ -106,7 +120,7 @@ if (lexiqueLayout) {
 			const reference = target.nextElementSibling || target;
 			const headerH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 0;
 			const barH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--lexique-bar-h')) || 0;
-			const top = getDocumentTop(reference) - headerH - barH + 10;
+			const top = getDocumentTop(reference) - headerH - barH + 18;
 			window.scrollTo({ top, behavior: 'smooth' });
 		});
 	});

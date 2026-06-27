@@ -37,10 +37,6 @@ $haut_telephone_tel = preg_replace( '/[^0-9+]/', '', (string) $haut_telephone );
 
 		<div class="nav-collapse" id="nav-mobile">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav-menu', 'fallback_cb' => false ) ); ?>
-			<div class="nav-cta">
-				<a href="#" class="nav-blog">Blog</a>
-				<a href="#rdv" class="nav-btn">Prendre RDV <?php matchcredit_icon_arrow( 14 ); ?></a>
-			</div>
 		</div>
 	</div>
 </header>
