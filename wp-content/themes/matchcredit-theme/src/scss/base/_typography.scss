@@ -75,3 +75,43 @@
 		}
 	}
 }
+
+// Variante centrée du bloc titre — pour ouvrir une section sans split, en gardant
+// le titre wysiwyg complet (contrairement à .section-intro--lead qui n'a qu'un <p>).
+.section-intro--center {
+	max-width: mixins.to-dvw(720);
+	margin: 0 auto mixins.to-dvw(56);
+	text-align: center;
+
+	.eyebrow {
+		justify-content: center;
+	}
+
+	@media (max-width: 600px) {
+		margin-bottom: mixins.to-dvw(32, 390);
+	}
+}
+
+// Variante "chapeau" : un seul paragraphe éditorial, centré, plus grand —
+// pour ouvrir un article sans repartir sur le schéma titre-gauche/texte-droite.
+.section-intro--lead {
+	max-width: mixins.to-dvw(720);
+	margin: 0 auto mixins.to-dvw(56);
+	text-align: center;
+
+	.lead-text {
+		font-size: mixins.to-dvw(24);
+		color: $purple-ink;
+		line-height: 1.45;
+		margin: mixins.to-dvw(16) 0 0;
+	}
+
+	@media (max-width: 600px) {
+		margin-bottom: mixins.to-dvw(32, 390);
+
+		.lead-text {
+			font-size: mixins.to-dvw(19, 390);
+			margin-top: mixins.to-dvw(12, 390);
+		}
+	}
+}

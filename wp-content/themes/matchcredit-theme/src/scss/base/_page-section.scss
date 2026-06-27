@@ -24,6 +24,16 @@
 	}
 }
 
+.page-note--center {
+	max-width: mixins.to-dvw(720);
+	margin-left: auto;
+	margin-right: auto;
+
+	@media (max-width: 600px) {
+		max-width: none;
+	}
+}
+
 .page-note {
 	background: $purple-bg;
 	border-left: 3px solid $purple-deep;
@@ -44,6 +54,108 @@
 		max-width: none;
 		margin-top: mixins.to-dvw(16, 390);
 	}
+}
+
+.page-citation {
+	background: $purple-ink;
+	color: $white;
+	padding: mixins.to-dvw(96) 0;
+	text-align: center;
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(56, 390) 0;
+	}
+}
+
+.page-citation-text {
+	font-family: $font-serif;
+	font-style: italic;
+	font-weight: 300;
+	font-size: mixins.to-dvw(40);
+	line-height: 1.25;
+	color: $yellow;
+	max-width: mixins.to-dvw(820);
+	margin: 0 auto mixins.to-dvw(20);
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(26, 390);
+		max-width: none;
+	}
+}
+
+.page-citation-sub {
+	font-size: mixins.to-dvw(16);
+	color: rgba(255, 255, 255, 0.65);
+	max-width: mixins.to-dvw(520);
+	margin: 0 auto;
+
+	@media (max-width: 600px) {
+		font-size: mixins.to-dvw(14, 390);
+		max-width: none;
+	}
+}
+
+.tool-callout {
+	background: $purple-bg;
+	padding: mixins.to-dvw(48);
+	text-align: center;
+	max-width: mixins.to-dvw(640);
+	margin: 0 auto;
+
+	h3 {
+		font-size: mixins.to-dvw(24);
+		color: $purple-ink;
+		margin: 0 0 mixins.to-dvw(12);
+	}
+
+	p {
+		font-size: mixins.to-dvw(15);
+		color: $text-mid;
+		margin: 0 0 mixins.to-dvw(28);
+	}
+
+	@media (max-width: 600px) {
+		padding: mixins.to-dvw(32, 390);
+		max-width: none;
+
+		h3 {
+			font-size: mixins.to-dvw(20, 390);
+		}
+
+		p {
+			font-size: mixins.to-dvw(14, 390);
+			margin-bottom: mixins.to-dvw(20, 390);
+		}
+	}
+}
+
+// Bloc de texte éditorial centré, sans le schéma titre-gauche/texte-droite —
+// pour 2-3 paragraphes courts ouvrant une section (alternative à .page-split).
+.page-text {
+	margin: 0 auto;
+	display: grid;
+	gap: mixins.to-dvw(20);
+
+	p {
+		font-size: mixins.to-dvw(17);
+		color: $text-mid;
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	@media (max-width: 600px) {
+		gap: mixins.to-dvw(16, 390);
+
+		p {
+			font-size: mixins.to-dvw(15, 390);
+		}
+	}
+}
+
+.page-list--center,
+.page-accordion--center {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .page-list {
@@ -82,4 +194,58 @@
 			font-size: mixins.to-dvw(15, 390);
 		}
 	}
+}
+
+// Liste + carte de réassurance à côté — pour éviter qu'une simple liste à puces
+// ne laisse un grand vide à droite sur une section large (ex. documents à préparer).
+.page-list-grid {
+	display: grid;
+	grid-template-columns: 1fr mixins.to-dvw(320);
+	gap: mixins.to-dvw(64);
+	align-items: start;
+	max-width: mixins.to-dvw(1040);
+	margin: 0 auto;
+
+	.page-list {
+		max-width: none;
+	}
+
+	.page-note {
+		margin-top: 0;
+		max-width: none;
+	}
+
+	@media (max-width: 800px) {
+		grid-template-columns: 1fr;
+		gap: mixins.to-dvw(32, 390);
+	}
+}
+
+// Grille 2 colonnes équilibrée générique (ex. étapes + mise en avant chiffrée,
+// liste d'outils + FAQ) — variante non-split de .page-list-grid, deux colonnes
+// de poids proche plutôt qu'une colonne fixe étroite.
+.page-grid-2 {
+	display: grid;
+	grid-template-columns: 1.3fr 1fr;
+	gap: mixins.to-dvw(64);
+	align-items: center;
+	max-width: mixins.to-dvw(1040);
+	margin: 0 auto;
+
+	@media (max-width: 800px) {
+		grid-template-columns: 1fr;
+		gap: mixins.to-dvw(32, 390);
+	}
+}
+
+.formulaire-card--center {
+	max-width: mixins.to-dvw(640);
+	margin: 0 auto;
+}
+
+// .profile-edit-links (home/_projet.scss) est pensée pour une colonne de
+// .page-split — variante centrée et resserrée pour un usage en pleine largeur.
+.profile-edit-links--center {
+	max-width: mixins.to-dvw(480);
+	margin: 0 auto;
 }
