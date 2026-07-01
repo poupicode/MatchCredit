@@ -138,3 +138,106 @@ if (lexiqueLayout) {
 	azList?.addEventListener('scroll', updateScrollMasks);
 	window.addEventListener('resize', updateScrollMasks);
 }
+
+// Simulateur "Votre banque, ou nous" de la home : recalcule en live les deux
+// mensualités (taux banque vs taux MatchCrédit) et l'économie totale en
+// appelant le moteur RÉEL du plugin matchcredit-tools (endpoint REST public
+// /compute, le même que les pages calculette dédiées) — deux calculettes
+// mc_tool "simu-comparatif-banque" / "simu-comparatif-matchcredit", mêmes
+// champs (capital, duree_mois, taux_annuel), preset pret_amortissable,
+// seul le taux fixe diffère entre les deux. Repli local (même formule,
+// recopiée à l'identique du preset PHP) uniquement si l'API ne répond pas,
+// pour que le widget ne tombe jamais en panne — jamais la source de vérité.
+const compareGrid = document.querySelector('[data-compare]');
+
+if (compareGrid) {
+	const montantInput = compareGrid.querySelector('[data-compare-montant]');
+	const dureeInput = compareGrid.querySelector('[data-compare-duree]');
+	const montantOut = compareGrid.querySelector('[data-compare-montant-out]');
+	const dureeOut = compareGrid.querySelector('[data-compare-duree-out]');
+	const bar1 = compareGrid.querySelector('[data-compare-bar="1"]');
+	const bar2 = compareGrid.querySelector('[data-compare-bar="2"]');
+	const val1 = compareGrid.querySelector('[data-compare-val="1"]');
+	const val2 = compareGrid.querySelector('[data-compare-val="2"]');
+	const economieOut = compareGrid.querySelector('[data-compare-economie]');
+
+	const restUrl = compareGrid.dataset.restUrl;
+	const slug1 = compareGrid.dataset.slug1;
+	const slug2 = compareGrid.dataset.slug2;
+	const taux1 = parseFloat(compareGrid.dataset.taux1);
+	const taux2 = parseFloat(compareGrid.dataset.taux2);
+
+	const formatEuros = (value) => Math.round(value).toLocaleString('fr-FR') + ' €';
+
+	// Repli local : copie fidèle de MC_Tools_Preset_Pret_Amortissable::mensualite()
+	// (includes/class-presets.php), utilisée seulement si l'appel REST échoue.
+	const mensualiteFallback = (capital, tauxAnnuel, dureeMois) => {
+		const t = (tauxAnnuel / 100) / 12;
+		if (t === 0) {
+			return capital / dureeMois;
+		}
+		return (capital * t) / (1 - (1 + t) ** -dureeMois);
+	};
+
+	const computeViaApi = async (slug, capital, dureeMois, tauxAnnuel) => {
+		const response = await fetch(restUrl, {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({
+				slug,
+				values: { capital, duree_mois: dureeMois, taux_annuel: tauxAnnuel },
+			}),
+		});
+		if (!response.ok) {
+			throw new Error('mc_tools compute failed');
+		}
+		const data = await response.json();
+		return data.results.mensualite;
+	};
+
+	let debounceTimer = null;
+
+	const render = (capital, dureeAns, m1, m2) => {
+		const dureeMois = dureeAns * 12;
+		const economie = (m1 - m2) * dureeMois;
+
+		montantOut.textContent = formatEuros(capital);
+		dureeOut.textContent = `${dureeAns} ans`;
+
+		val1.innerHTML = `${formatEuros(m1)}<span class="bar-unit">/mois</span>`;
+		val2.innerHTML = `${formatEuros(m2)}<span class="bar-unit">/mois</span>`;
+
+		bar1.style.setProperty('--fill', '100%');
+		bar2.style.setProperty('--fill', `${Math.max(0, Math.min(100, (m2 / m1) * 100))}%`);
+
+		economieOut.textContent = formatEuros(Math.max(0, economie));
+	};
+
+	const recompute = async () => {
+		const capital = parseFloat(montantInput.value);
+		const dureeAns = parseFloat(dureeInput.value);
+		const dureeMois = dureeAns * 12;
+
+		try {
+			const [m1, m2] = await Promise.all([
+				computeViaApi(slug1, capital, dureeMois, taux1),
+				computeViaApi(slug2, capital, dureeMois, taux2),
+			]);
+			render(capital, dureeAns, m1, m2);
+		} catch (error) {
+			// Calculette pas encore créée côté admin, ou API injoignable : repli local.
+			const m1 = mensualiteFallback(capital, taux1, dureeMois);
+			const m2 = mensualiteFallback(capital, taux2, dureeMois);
+			render(capital, dureeAns, m1, m2);
+		}
+	};
+
+	const recomputeDebounced = () => {
+		clearTimeout(debounceTimer);
+		debounceTimer = setTimeout(recompute, 150);
+	};
+
+	montantInput.addEventListener('input', recomputeDebounced);
+	dureeInput.addEventListener('input', recomputeDebounced);
+	recompute();
+}

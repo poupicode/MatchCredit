@@ -182,7 +182,11 @@
 		margin: 0 0 mixins.to-dvw(8);
 		letter-spacing: -0.02em;
 
-		.ital {
+		.ital,
+		em {
+			font-family: $font-serif;
+			font-style: italic;
+			font-weight: 400;
 			color: $yellow;
 		}
 	}

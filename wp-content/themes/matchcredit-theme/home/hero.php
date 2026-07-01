@@ -18,7 +18,9 @@
 			</div>
 
 			<div class="hero-rdv-card" id="rdv">
-				<h3><?php the_field( 'carte_titre' ); ?></h3>
+				<div class="label"><?php the_field( 'carte_eyebrow' ); ?></div>
+				<h3><?php matchcredit_title( 'carte_titre' ); ?></h3>
+				<p class="sub"><?php the_field( 'carte_sous_titre' ); ?></p>
 				<?php
 				$cf7_shortcode = get_field( 'carte_cf7_shortcode' );
 				if ( $cf7_shortcode ) {
@@ -27,6 +29,7 @@
 					echo '<p class="sub">Formulaire Contact Form 7 à venir — coller le shortcode dans le champ ACF « Carte rappel — shortcode Contact Form 7 ».</p>';
 				}
 				?>
+				<p class="legal-mini"><?php the_field( 'carte_legal' ); ?></p>
 			</div>
 		</div>
 	</div>

@@ -62,11 +62,26 @@
             }
         },
         {
+            "key": "field_pa_hero_carte_eyebrow",
+            "label": "Carte rappel — étiquette",
+            "name": "carte_eyebrow",
+            "type": "text",
+            "default_value": "Demande de rappel"
+        },
+        {
             "key": "field_pa_hero_carte_titre",
             "label": "Carte rappel — titre",
             "name": "carte_titre",
-            "type": "text",
-            "default_value": "En 3 minutes, on vous rappelle."
+            "type": "wysiwyg",
+            "default_value": "En 2 minutes, <em>on vous rappelle</em>."
+        },
+        {
+            "key": "field_pa_hero_carte_sous_titre",
+            "label": "Carte rappel — sous-titre",
+            "name": "carte_sous_titre",
+            "type": "textarea",
+            "rows": 2,
+            "default_value": "Un courtier MatchCrédit vous recontacte sous 24h ouvrées."
         },
         {
             "key": "field_pa_hero_carte_cf7",
@@ -75,6 +90,13 @@
             "type": "text",
             "instructions": "Coller ici le shortcode du formulaire CF7 (ex : [contact-form-7 id=\"123\" title=\"Demande de rappel\"]).",
             "default_value": ""
+        },
+        {
+            "key": "field_pa_hero_carte_legal",
+            "label": "Carte rappel — mention légale",
+            "name": "carte_legal",
+            "type": "text",
+            "default_value": "Données traitées dans le respect du RGPD. Aucun engagement."
         },
         {
             "key": "field_pa_tab_projet",
@@ -1554,5 +1576,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1781963981
+    "modified": 1782811064
 }
